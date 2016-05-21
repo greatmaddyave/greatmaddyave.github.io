@@ -1,30 +1,242 @@
 ---
 layout: null
 ---
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
-      <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
-      </item>
-    {% endfor %}
-  </channel>
-</rss>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Your Brain On Code - A newbies journey into the world of web development</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--Ad -->
+
+</head>
+
+<body id = "bkgrdimg">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">ThisIsYourBrainOnCode</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Your Brain On Code</h1>
+                        <h3 style = "color: black; text-shadow: -2px -2px 2px rgba(150, 150, 150, 1);"><b>A blog from a prospective programmer in the midst of a mid life career change.</b></h3>
+                        <hr class="small">
+                        <img style = "height: 10em; width: auto; margin-bottom: -100px; padding-bottom: 0px"src = "img/BrainLogo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container" id = "bkgrdimg">
+        <div class="row">
+            <div  class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class = "post-framing" >
+              <div class = "post-seperator">
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            One small step...or giant leap?
+                        </h2>
+                        <h3 class="post-subtitle">
+                            I wrote my first unabashful line of code and it felt great!
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="about.html">John Cossack</a> on January 6, 2016</p>
+                </div>
+                <div>
+                  <ul class="pager">
+                      <li style = "float: left" class="next">
+                          <a href="post.html">Read On &rarr;</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class = "post-framing" >
+                <div class="post-preview">
+                    <a href="post2.html">
+                        <h2 class="post-title">
+                            Top 5 best website to learn to code from
+                        </h2>
+                        <h3 class="post-subtitle">
+                            (For Web Development)
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by<a href="about.html"> John Cossack</a> on May 8th, 2016</p>
+                </div>
+                <div>
+                  <ul class="pager">
+                      <li style = "float: left" class="next">
+                          <a href="post2.html">Read On &rarr;</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+                <hr>
+                <div class = "post-framing" >
+                <div class="post-preview">
+                    <a href="post3.html">
+                        <h2 class="post-title">
+                            Which computer language should I learn for my first Language?
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Everything you've been told has been wrong!
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="about.html">John Cossack</a> on May 8th, 2016</p>
+                </div>
+                <div>
+                  <ul class="pager">
+                      <li style = "float: left" class="next">
+                          <a href="post3.html">Read On &rarr;</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+                <hr>
+                <div class = "post-framing">
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Failure is not an option
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="about.html">John Cossack</a> on July 8, 2014</p>
+                </div>
+                <div>
+                  <ul class="pager">
+                      <li style = "float: left" class="next">
+                          <a href="post3.html">Read On &rarr;</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#">Older Posts &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
