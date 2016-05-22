@@ -8,9 +8,7 @@
     {% include header.html %}
 
     <div class="page-content">
-      <div class="wrapper">
         {{ content }}
-      </div>
     </div>
 
     {% include footer.html %}
@@ -18,3 +16,18 @@
   </body>
 
 </html>
+
+<style>
+
+body {
+  background: -moz-linear-gradient(186deg, rgba(255,255,250,1) 0%, rgba(255,255,250,0.72) 52%, rgba(204,206,204,0.45) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(204,206,204,0.45)), color-stop(48%, rgba(255,255,250,0.72)), color-stop(100%, rgba(255,255,250,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(186deg, rgba(255,255,250,1) 0%, rgba(255,255,250,0.72) 52%, rgba(204,206,204,0.45) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(186deg, rgba(255,255,250,1) 0%, rgba(255,255,250,0.72) 52%, rgba(204,206,204,0.45) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(186deg, rgba(255,255,250,1) 0%, rgba(255,255,250,0.72) 52%, rgba(204,206,204,0.45) 100%); /* ie10+ */
+  background: linear-gradient(264deg, rgba(255,255,250,1) 0%, rgba(255,255,250,0.72) 52%, rgba(204,206,204,0.45) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccecc', endColorstr='#FFFFFA',GradientType=1 ); /* ie6-9 */
+  width: 100%
+}
+
+</style>
