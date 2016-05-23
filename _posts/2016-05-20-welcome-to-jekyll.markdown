@@ -2,11 +2,13 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-05-20 20:08:05 -0700
+author: John Cossack
 categories: jekyll update
 imageurl: https://jekyll.github.io/brand/jekyll-logo-light-solid.png
 caption: You guessed it! This site is running Jekyll. Yes, that also means I'm running off of githubs very own servers...which I happen to think is pretty cool! Anyways thought I would just share that tid-bit with you as you may see some upcoming posts that talk about Jekyll. If you're lucky I may even do a tutorial or two. As for now I'm still figuring it out, but so far it's a blast!
+subtitle: Look at us, We're running Jekyll!
 ---
-<div class = "wrapper">
+<div class = "wrapper" style = "background-color: white;">
 <h2>Hi Folks!</h2>
 <div><br></div>
 

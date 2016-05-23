@@ -1,21 +1,24 @@
 ---
 layout: default
 ---
-<div class = "intro-header" style = "width: 100%; height: 25em; position: relative; bottom: 90px">
+
+<div class = "intro-header" style = "width: 100%; height: 25em; position: relative; bottom: 30px; z-index: -1">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="site-heading">
-          <h1>The Coders Brain</h1>
+          <div><a>the</a></div>
+          <h1><span>coders</span>Brain</h1>
           <h3 style = "color: black; text-shadow: -2px -2px 2px rgba(150, 150, 150, 1);"><b>A blog from a prospective programmer in the midst of a mid life career change.</b></h3>
           <hr class="small"></hr>
+          <img src ='https://i.imgsafe.org/47111e1.png' style = "height: 100px; width: auto;">
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class = "wrapper">
+<div class = "wrapper" >
   <div class="home">
       <h1 class="page-heading">Posts</h1>
       <ul class="post-list">
@@ -44,8 +47,37 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>
 </div>
-
 <style>
+
+.site-heading h1 span {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(155,89,182,1);
+  padding: 25px;
+  box-shadow:  -70px 120px 200px 150px #9b59b6;
+  box-shadow:  70px 120px 200px 150px #9b59b6;
+
+}
+.site-heading a {
+  font-family: cursive;
+  font-style: normal;
+  color: rgba(215, 44, 44, 0.7);
+  font-size: 3em;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  position: relative;
+  left: -300px;
+  bottom: 120px;
+  -webkit-transform: rotate(325deg);
+  -moz-transform: rotate(325deg);
+  -o-transform: rotate(325deg);
+}
+
+.site-heading div {
+  -webkit-transform: rotate(325deg);
+  -moz-transform: rotate(325deg);
+  -o-transform: rotate(325deg);
+}
+
 .post-top {
   color: white;
   height: 16em;
@@ -57,6 +89,11 @@ layout: default
   vertical-align: middle;
 }
 
+.site-heading h3 b{
+  background: black;
+  color: white;
+  padding: 10px;
+}
 
 .post-framing {
   margin: 0px;
@@ -73,9 +110,8 @@ layout: default
 }
 
 .post-framing:hover{
-  box-shadow: 0 0 0;
   transform: translate(0px, 1px);
-  background-color: transparent;
+  background-color: white;
 }
 
 
@@ -135,7 +171,7 @@ button {
 }
 
 .post-framing {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
   width: 100%;
   padding: 15px;
   box-shadow: 2px 3px 10px 1px;
@@ -278,7 +314,7 @@ hr.small {
 }
 .intro-header {
   background-color: #808080;
-  background: url('https://images.unsplash.com/photo-1444086798547-11000e647498?crop=entropy&fit=crop&fm=jpg&h=650&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1275') no-repeat center center fixed;
+  background: url('https://images.unsplash.com/photo-1444086798547-11000e647498?crop=entropy&fit=crop&fm=jpg&h=650&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1275')no-repeat center center fixed, url('https://i.imgsafe.org/16dad30.png')no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -292,7 +328,7 @@ hr.small {
   font-size: 25px;
   text-transform: uppercase;
   text-align: center;
-  color: #8e44ad;
+  color: white;
 }
 
 .heading {

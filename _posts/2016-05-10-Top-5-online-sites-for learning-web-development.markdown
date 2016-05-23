@@ -6,6 +6,7 @@ author: John Cossack
 imageurl: http://s32.postimg.org/l0jj9hoxx/top10.jpg
 categories: jekyll update
 caption: First off let me preface this by saying this list applies to Web Development since I happen to have the most experience in this area and feel comfortable explaining the landscape of said programming avenue and the best places to pick up the knowledge base fairly quickly and easily.
+subtitle: The best websites to learn how to code from for budding web developers.
 ---
 <div class = "wrapper" style = " background-color: white">
 <p>First off let me preface this by saying this list applies to Web Development since I happen to have the most experience in this area and feel comfortable explaining the landscape of said programming avenue and the best places to pick up the knowledge base fairly quickly and easily.</p>
