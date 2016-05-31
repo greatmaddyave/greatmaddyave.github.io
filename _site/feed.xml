@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TheCodersBrain</title>
+    <title>supercooltitle</title>
     <description>A unique perspective on would-be coders as a simple blog evolves alongside the educational process of a newbie coder to his journey of becoming a promanent force in the Web Development Industry.
 </description>
     <link>http://TheCodersBrain.com/</link>
     <atom:link href="http://TheCodersBrain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 23 May 2016 01:35:04 -0700</pubDate>
-    <lastBuildDate>Mon, 23 May 2016 01:35:04 -0700</lastBuildDate>
+    <pubDate>Tue, 31 May 2016 15:51:47 -0700</pubDate>
+    <lastBuildDate>Tue, 31 May 2016 15:51:47 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Top/Best Computer Languages to learn in 2016!</title>
+        <description>&lt;div class=&quot;wrapper&quot;&gt;
+Which computer language should I learn for my first Language?
+You&#39;ve gotten bad advice from other sites or no advise at all. I&#39;ll tell you which language is best for YOU.
+
+&lt;h2&gt;Let me guess...&lt;/h2&gt;
+&lt;p&gt;You did a &lt;span style=&quot;color: blue&quot;&gt;G&lt;/span&gt;&lt;span style=&quot;color: red&quot;&gt;o&lt;/span&gt;&lt;span style=&quot;color: yellow&quot;&gt;o&lt;/span&gt;&lt;span style=&quot;color: blue&quot;&gt;g&lt;/span&gt;&lt;span style=&quot;color: green&quot;&gt;l&lt;/span&gt;&lt;span style=&quot;color: red&quot;&gt;e&lt;/span&gt; search and came up with a bunch of results that either told you there is no wrong answer or to go with a specific programming language. Right? I know, it&#39;s like I&#39;m reading you&#39;re freaking mind. The reason is I too did the google search with the same lack-luster results.&lt;/p&gt;
+&lt;img src=&quot;http://s33.postimg.org/rjty1m5q7/post3google.jpg&quot; /&gt;
+
+&lt;h3&gt;Why is this though?&lt;/h3&gt;&lt;p&gt;Well the reason is really quiet simple and the very reason why I created this site to help newbies. See people who write these articles have been working in the industry for multiple years, how do I know this? Well they showed up in your google results right, did they have a big fancy website....yep, that&#39;s a professional alright! The problem is that they are disconnected to what it means to not only be new to the scene but forgot their are new technologies (languages) that have arrived on the scene that they haven&#39;t even considered. So they are going to tell you the language they learned. Well someones personal favorite language and learning process is like other peoples assholes. You acknowledge they have them but you will always prefer your own. You don&#39;t want someone telling you their &lt;strike&gt;asshole&lt;/strike&gt; preferred language should be the one that you should be interacting with, do you? Seriously, do you?&lt;/p&gt;
+&lt;h3&gt; Of course you dont! Right?&lt;/h3&gt;
+&lt;img src=&quot;http://exiledonline.com/wp-content/uploads/2008/12/computernerd-450x341.jpg&quot; /&gt;
+&lt;blockquote&gt;Do you really want to get your advice from this guy?&lt;/blockquote&gt;
+&lt;p&gt;So there is no one in a better position to tell you what languages are cool, easy to pick up and saturated into the industry that you can find a NEW job faster. Because, well I&#39;m a newbie a long-side of you. &quot;But John, you&#39;re site looks awesome and I found you on google!&quot;. All the more reason to trust my opinion you judgmental prick, you! See, I&#39;m so good at google and research that I am able to have this website up and running and you funnling in here in less than a year of touching my first line of code.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2 class=&quot;section-heading&quot;&gt;Now that you understand where I coming from and that I&#39;m here to &lt;em&gt;actually&lt;/em&gt; here to help you...&lt;/h2&gt;
+&lt;p&gt;I thought long and hard about what the best medium would be to help you decide what language it is you need to learn for your first language.&lt;em&gt;Yes, I said &lt;b&gt;&quot;Need&quot;&lt;/b&gt; because there is definitely a right and wrong answer here, it just needs to be tailored to you.&lt;/em&gt;&lt;/p&gt;
+&lt;img src=&quot;http://gloriumtech.com/blog/wp-content/uploads/2015/01/coolv-moss-mh-round-2500x1443.jpg&quot; /&gt;
+&lt;p&gt;Then, I had a thought. I had always been interested in technology and computers, and I had always wanted to learn to code, even bought a book or two, but I never had the time to commit to such an eguasting ciriculum. &lt;/p&gt;
+&lt;h3 style=&quot;line-height: 0&quot;&gt;So what&#39;s the medium?&lt;/h3&gt;
+&lt;br /&gt;
+&lt;p style=&quot;line-height: 0&quot;&gt;What better than a graphical flow chart?&lt;p&gt;
+&lt;br /&gt;
+&lt;h6 style=&quot;line-height: 0&quot;&gt;What are you waiting for; get &quot;interacting&quot;&lt;/h6&gt;
+&lt;br /&gt;
+&lt;img src=&quot;http://s33.postimg.org/4yjeqyav3/infograph.jpg&quot; /&gt;
+&lt;/p&gt;&lt;/p&gt;&lt;/div&gt;
+</description>
+        <pubDate>Tue, 31 May 2016 11:36:05 -0700</pubDate>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/05/31/Top-Programming-languages-to-learn-in-2015.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/05/31/Top-Programming-languages-to-learn-in-2015.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
