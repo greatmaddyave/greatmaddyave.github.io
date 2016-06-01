@@ -6,8 +6,8 @@
 </description>
     <link>http://TheCodersBrain.com/</link>
     <atom:link href="http://TheCodersBrain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 31 May 2016 21:08:47 -0700</pubDate>
-    <lastBuildDate>Tue, 31 May 2016 21:08:47 -0700</lastBuildDate>
+    <pubDate>Tue, 31 May 2016 22:57:29 -0700</pubDate>
+    <lastBuildDate>Tue, 31 May 2016 22:57:29 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -22,6 +22,9 @@
 	&lt;li&gt;Who is Jekyll for?&lt;/li&gt;
 	&lt;li&gt;How to install Jekyll.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:inline-block;width:336px;height:280px; z-index: 9999;&quot; data-ad-client=&quot;ca-pub-4085915336649467&quot; data-ad-slot=&quot;1120956636&quot;&gt;
+&lt;/ins&gt;
+
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;h4&gt;&lt;b&gt;What is Jekyll?&lt;/b&gt;&lt;/h4&gt;
 &lt;img src=&quot;http://s33.postimg.org/4wcimsh7z/jekyll_hyde.jpg&quot; /&gt;
@@ -33,6 +36,9 @@ Jekyll is a parsing engine bundled as a ruby gem used to build static websites f
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 If you didn’t understand all of that, that’s fine. Basically Jekyll is a ruby based framework that structures your static website. The benefits of Jekyll are really taking the developers industry by storm. Mainly for its “blog awareness”. Which is a fancy way of saying “It automatically sorts and organizes your blog post in chronological order and even display’s them for you on the main index.html page. Of course there is a lot more to what Jekyll is capable of, but I don’t want to over saturate you with information just yet. Just know that Jekyll makes the process way simpler for you.
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:inline-block;width:336px;height:280px; z-index: 9999;&quot; data-ad-client=&quot;ca-pub-4085915336649467&quot; data-ad-slot=&quot;1120956636&quot;&gt;
+&lt;/ins&gt;
+
 &lt;h4&gt;&lt;b&gt;Who is Jekyll for?&lt;/b&gt;&lt;/h4&gt;
 Well as you probably guess Jekyll is tailor made for bloggers. However there are many themes (more on theme’s in the future) that the community have available to suit any needs you would have for a static webpage.
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
@@ -92,6 +98,8 @@ Below I’ve compiled a list of common command lines you should familiarize your
 &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;no&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;watch&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Same as `jekyll serve` but will not watch for changes.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:inline-block;width:336px;height:280px; z-index: 9999;&quot; data-ad-client=&quot;ca-pub-4085915336649467&quot; data-ad-slot=&quot;1120956636&quot;&gt;
+&lt;/ins&gt;
 &lt;/div&gt;
 
 &lt;style&gt;

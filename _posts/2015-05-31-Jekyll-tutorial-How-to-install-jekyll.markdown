@@ -19,6 +19,10 @@ keywords: jekyll, how, to, install, tutorial, jekyll server, ruby, gem,
 	<li>Who is Jekyll for?</li>
 	<li>How to install Jekyll.</li>
 </ul>
+<ins class="adsbygoogle"
+ style="display:inline-block;width:336px;height:280px; z-index: 9999;" data-ad-client="ca-pub-4085915336649467" data-ad-slot="1120956636">
+</ins>
+
 <div><br></div>
 <h4><b>What is Jekyll?</b></h4>
 <img src = "http://s33.postimg.org/4wcimsh7z/jekyll_hyde.jpg">
@@ -30,6 +34,10 @@ Jekyll is a parsing engine bundled as a ruby gem used to build static websites f
 <div><br></div>
 If you didn’t understand all of that, that’s fine. Basically Jekyll is a ruby based framework that structures your static website. The benefits of Jekyll are really taking the developers industry by storm. Mainly for its “blog awareness”. Which is a fancy way of saying “It automatically sorts and organizes your blog post in chronological order and even display’s them for you on the main index.html page. Of course there is a lot more to what Jekyll is capable of, but I don’t want to over saturate you with information just yet. Just know that Jekyll makes the process way simpler for you.
 <div><br></div>
+<ins class="adsbygoogle"
+ style="display:inline-block;width:336px;height:280px; z-index: 9999;" data-ad-client="ca-pub-4085915336649467" data-ad-slot="1120956636">
+</ins>
+
 <h4><b>Who is Jekyll for?</b></h4>
 Well as you probably guess Jekyll is tailor made for bloggers. However there are many themes (more on theme’s in the future) that the community have available to suit any needs you would have for a static webpage.
 <div><br></div>
@@ -46,15 +54,7 @@ Open up your terminal and type in the following command:
 {% highlight ruby %}
 $ gem install jekyll
 {% endhighlight %}
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- jekyll ad -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:336px;height:280px"
-     data-ad-client="ca-pub-4085915336649467"
-     data-ad-slot="1120956636"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
 All of Jekyll’s gem dependencies are automatically installed by the above command, so you won’t have to worry about them at all.
 <div><br></div>
 <h3 class = "steps" >Step 3:</h3>
@@ -97,7 +97,11 @@ $ jekyll serve --detach
 $ jekyll serve --no-watch
 # => Same as `jekyll serve` but will not watch for changes.
 {% endhighlight %}
+<ins class="adsbygoogle"
+ style="display:inline-block;width:336px;height:280px; z-index: 9999;" data-ad-client="ca-pub-4085915336649467" data-ad-slot="1120956636">
+</ins>
 </div>
+
 
 <style>
 .steps {
