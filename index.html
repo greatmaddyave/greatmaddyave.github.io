@@ -22,7 +22,9 @@ layout: default
 
 <div class = "wrapper" >
   <div class="home">
-      <h1 class="page-heading">Posts</h1>
+    <br>
+
+      <h1 class="page-heading"><hr></hr>Posts<hr></hr></h1>
       <ul class="post-list">
         {% for post in site.posts %}
       </ul>
@@ -53,12 +55,25 @@ layout: default
 * {
   font-family: 'Jura', sans-serif;
 }
+
+.home {
+  width: 100%;
+}
 .site-heading h1 span {
   color: transparent;
   text-shadow: 1px 2px 5px rgba(155,89,182,1);
   padding: 25px;
   box-shadow:  70px -120px 200px -50px #9b59b6;
 
+}
+.page-heading{
+  text-align: center;
+  padding: 50px;
+  font-size: 50px;
+  color: white;
+  width: 200px;
+  margin-left: 30%;
+  margin-right: auto;
 }
 .site-heading a {
 

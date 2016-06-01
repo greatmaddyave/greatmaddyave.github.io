@@ -46,7 +46,15 @@ Open up your terminal and type in the following command:
 {% highlight ruby %}
 $ gem install jekyll
 {% endhighlight %}
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- jekyll ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-4085915336649467"
+     data-ad-slot="1120956636"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 All of Jekyll’s gem dependencies are automatically installed by the above command, so you won’t have to worry about them at all.
 <div><br></div>
 <h3 class = "steps" >Step 3:</h3>
