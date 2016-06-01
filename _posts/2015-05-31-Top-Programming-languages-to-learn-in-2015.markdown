@@ -13,7 +13,16 @@ keywords: 2016, top, computer, languages, to, learn, first, computer, language,
 <div class = "wrapper">
 Which computer language should I learn for my first Language?
 You've gotten bad advice from other sites or no advise at all. I'll tell you which language is best for YOU.
-
+<script type="text/javascript">
+google_ad_client = "ca-pub-4085915336649467";
+google_ad_slot = "1120956636";
+google_ad_width = 336;
+google_ad_height = 280;
+</script>
+<!-- jekyll ad -->
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
 <h2>Let me guess...</h2>
 <p>You did a <span style = "color: blue">G</span><span style = "color: red">o</span><span style = "color: yellow">o</span><span style = "color: blue">g</span><span style = "color: green">l</span><span style = "color: red">e</span> search and came up with a bunch of results that either told you there is no wrong answer or to go with a specific programming language. Right? I know, it's like I'm reading you're freaking mind. The reason is I too did the google search with the same lack-luster results.</p>
 <img src = "http://s33.postimg.org/rjty1m5q7/post3google.jpg">
@@ -24,6 +33,25 @@ You've gotten bad advice from other sites or no advise at all. I'll tell you whi
 <blockquote>Do you really want to get your advice from this guy?</blockquote>
 <p>So there is no one in a better position to tell you what languages are cool, easy to pick up and saturated into the industry that you can find a NEW job faster. Because, well I'm a newbie a long-side of you. "But John, you're site looks awesome and I found you on google!". All the more reason to trust my opinion you judgmental prick, you! See, I'm so good at google and research that I am able to have this website up and running and you funnling in here in less than a year of touching my first line of code.</p>
 <br>
+<script type="text/javascript">
+google_ad_client = "ca-pub-4085915336649467";
+google_ad_slot = "1120956636";
+google_ad_width = 336;
+google_ad_height = 280;
+</script>
+<!-- jekyll ad -->
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5JC4RX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5JC4RX');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
 <h2 class="section-heading">Now that you understand where I coming from and that I'm here to <em>actually</em> here to help you...</h2>
 <p>I thought long and hard about what the best medium would be to help you decide what language it is you need to learn for your first language.<em>Yes, I said <b>"Need"</b> because there is definitely a right and wrong answer here, it just needs to be tailored to you.</em></p>
 <img src ="http://gloriumtech.com/blog/wp-content/uploads/2015/01/coolv-moss-mh-round-2500x1443.jpg">

@@ -6,13 +6,22 @@
 </description>
     <link>http://TheCodersBrain.com/</link>
     <atom:link href="http://TheCodersBrain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 31 May 2016 22:57:29 -0700</pubDate>
-    <lastBuildDate>Tue, 31 May 2016 22:57:29 -0700</lastBuildDate>
+    <pubDate>Tue, 31 May 2016 23:18:51 -0700</pubDate>
+    <lastBuildDate>Tue, 31 May 2016 23:18:51 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>How to install Jekyll</title>
-        <description>&lt;div class=&quot;wrapper&quot;&gt;
+        <description>&lt;!-- Google Tag Manager --&gt;
+&lt;noscript&gt;&lt;iframe src=&quot;//www.googletagmanager.com/ns.html?id=GTM-5JC4RX&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+&#39;//www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5JC4RX&#39;);&lt;/script&gt;
+
+&lt;!-- End Google Tag Manager --&gt;
+&lt;div class=&quot;wrapper&quot;&gt;
 &lt;i&gt;This tutorial is a series of tutorials on Jekyll, if you are interested in learning how you can utilize all the features of Jekyll click here for more tutorials.&lt;/i&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;img src=&quot;http://s33.postimg.org/r0qjauysv/jekyll_tutorial.jpg&quot; /&gt;
@@ -98,8 +107,12 @@ Below I’ve compiled a list of common command lines you should familiarize your
 &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;no&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;watch&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; Same as `jekyll serve` but will not watch for changes.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:inline-block;width:336px;height:280px; z-index: 9999;&quot; data-ad-client=&quot;ca-pub-4085915336649467&quot; data-ad-slot=&quot;1120956636&quot;&gt;
-&lt;/ins&gt;
+&lt;script async=&quot;&quot; src=&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+&lt;!-- jekyll ad --&gt;
+&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:inline-block;width:336px;height:280px&quot; data-ad-client=&quot;ca-pub-4085915336649467&quot; data-ad-slot=&quot;1120956636&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+(adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;
 &lt;/div&gt;
 
 &lt;style&gt;
@@ -131,7 +144,15 @@ Below I’ve compiled a list of common command lines you should familiarize your
         <description>&lt;div class=&quot;wrapper&quot;&gt;
 Which computer language should I learn for my first Language?
 You&#39;ve gotten bad advice from other sites or no advise at all. I&#39;ll tell you which language is best for YOU.
-
+&lt;script type=&quot;text/javascript&quot;&gt;
+google_ad_client = &quot;ca-pub-4085915336649467&quot;;
+google_ad_slot = &quot;1120956636&quot;;
+google_ad_width = 336;
+google_ad_height = 280;
+&lt;/script&gt;
+&lt;!-- jekyll ad --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
 &lt;h2&gt;Let me guess...&lt;/h2&gt;
 &lt;p&gt;You did a &lt;span style=&quot;color: blue&quot;&gt;G&lt;/span&gt;&lt;span style=&quot;color: red&quot;&gt;o&lt;/span&gt;&lt;span style=&quot;color: yellow&quot;&gt;o&lt;/span&gt;&lt;span style=&quot;color: blue&quot;&gt;g&lt;/span&gt;&lt;span style=&quot;color: green&quot;&gt;l&lt;/span&gt;&lt;span style=&quot;color: red&quot;&gt;e&lt;/span&gt; search and came up with a bunch of results that either told you there is no wrong answer or to go with a specific programming language. Right? I know, it&#39;s like I&#39;m reading you&#39;re freaking mind. The reason is I too did the google search with the same lack-luster results.&lt;/p&gt;
 &lt;img src=&quot;http://s33.postimg.org/rjty1m5q7/post3google.jpg&quot; /&gt;
@@ -142,6 +163,23 @@ You&#39;ve gotten bad advice from other sites or no advise at all. I&#39;ll tell
 &lt;blockquote&gt;Do you really want to get your advice from this guy?&lt;/blockquote&gt;
 &lt;p&gt;So there is no one in a better position to tell you what languages are cool, easy to pick up and saturated into the industry that you can find a NEW job faster. Because, well I&#39;m a newbie a long-side of you. &quot;But John, you&#39;re site looks awesome and I found you on google!&quot;. All the more reason to trust my opinion you judgmental prick, you! See, I&#39;m so good at google and research that I am able to have this website up and running and you funnling in here in less than a year of touching my first line of code.&lt;/p&gt;
 &lt;br /&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+google_ad_client = &quot;ca-pub-4085915336649467&quot;;
+google_ad_slot = &quot;1120956636&quot;;
+google_ad_width = 336;
+google_ad_height = 280;
+&lt;/script&gt;
+&lt;!-- jekyll ad --&gt;
+&lt;!-- Google Tag Manager --&gt;
+&lt;noscript&gt;&lt;iframe src=&quot;//www.googletagmanager.com/ns.html?id=GTM-5JC4RX&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+&#39;//www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5JC4RX&#39;);&lt;/script&gt;
+&lt;!-- End Google Tag Manager --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
 &lt;h2 class=&quot;section-heading&quot;&gt;Now that you understand where I coming from and that I&#39;m here to &lt;em&gt;actually&lt;/em&gt; here to help you...&lt;/h2&gt;
 &lt;p&gt;I thought long and hard about what the best medium would be to help you decide what language it is you need to learn for your first language.&lt;em&gt;Yes, I said &lt;b&gt;&quot;Need&quot;&lt;/b&gt; because there is definitely a right and wrong answer here, it just needs to be tailored to you.&lt;/em&gt;&lt;/p&gt;
 &lt;img src=&quot;http://gloriumtech.com/blog/wp-content/uploads/2015/01/coolv-moss-mh-round-2500x1443.jpg&quot; /&gt;
@@ -213,7 +251,16 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
     
       <item>
         <title>Top 5 Sites to learn Web Development</title>
-        <description>&lt;div class=&quot;wrapper&quot; style=&quot; background-color: white&quot;&gt;
+        <description>&lt;!-- Google Tag Manager --&gt;
+&lt;noscript&gt;&lt;iframe src=&quot;//www.googletagmanager.com/ns.html?id=GTM-5JC4RX&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+&#39;//www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5JC4RX&#39;);&lt;/script&gt;
+
+&lt;!-- End Google Tag Manager --&gt;
+&lt;div class=&quot;wrapper&quot; style=&quot; background-color: white&quot;&gt;
 &lt;p&gt;First off let me preface this by saying this list applies to Web Development since I happen to have the most experience in this area and feel comfortable explaining the landscape of said programming avenue and the best places to pick up the knowledge base fairly quickly and easily.&lt;/p&gt;
 &lt;p&gt;Okay, you still here? Great! So I&#39;m assuming you are looking for starting or adding to a career in Web Development. First lets get the &lt;b&gt;What&lt;/b&gt; of &quot;What you need to learn&quot;. Web Development is a vast enterprise, with the advent of mobile devices and the capability of being able to access the internet from a multitude of device from a multitude of places the need for web developers, and good one&#39;s at that, are in HIGH demand. So what is Web development? First and foremost there are two kinds of web developers. Front End and Back End. Then there is a third mysterious and some believe to be a myth the &quot;Full Stack&quot; Developer. (this just means someone does front end and back end development).&lt;/p&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
@@ -228,15 +275,21 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 &lt;img src=&quot;http://www.catonmat.net/images/lol-browserling-com/full-stack.png&quot; /&gt;
 &lt;h3&gt;Okay, now that you&#39;re up to speed, here are the...&lt;/h3&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    google_ad_client = &quot;ca-pub-4085915336649467&quot;;
+    google_ad_slot = &quot;1120956636&quot;;
+    google_ad_width = 336;
+    google_ad_height = 280;
+&lt;/script&gt;
+&lt;!-- jekyll ad --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
 &lt;hr /&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;img src=&quot;http://s32.postimg.org/lq7tl1pmd/top5.jpg&quot; /&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;hr /&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;article&gt;
     &lt;div class=&quot;container&quot; style=&quot;overflow: hidden&quot;&gt;
@@ -258,7 +311,15 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
                 &lt;p&gt;You may or may not have heard of this site before, if you haven&#39;t then you are surely not researching enough.&lt;/p&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-
+                &lt;script type=&quot;text/javascript&quot;&gt;
+                google_ad_client = &quot;ca-pub-4085915336649467&quot;;
+                google_ad_slot = &quot;1120956636&quot;;
+                google_ad_width = 336;
+                google_ad_height = 280;
+                &lt;/script&gt;
+                &lt;!-- jekyll ad --&gt;
+                &lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+                &lt;/script&gt;
                 &lt;p&gt;&lt;a href=&quot;Codecademy.com&quot;&gt;Codecademy.com&lt;/a&gt; is pretty much an standard for developers to recommend to new budding web developers. Why is it recommended so much? Well for starters it&#39;s free. That is if you don&#39;t require access to quizes and other perks like projects and a personal interview to set up your &quot;path&quot;. They cover everything from HTML basics to advanced SQL and Ruby. The user interface is clean, interactive and does a good job of giving you an idea of how to write code in a text editor. You pass levels by making your code pass as they teach you bits of the syntax and language basics along the way.&lt;/p&gt;
                 &lt;img src=&quot;http://s32.postimg.org/al8rmu2dh/codecademy2.png&quot; /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
@@ -280,8 +341,15 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;img src=&quot;http://s32.postimg.org/4vsj2iw79/freecodecamp.png&quot; /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;script type=&quot;text/javascript&quot;&gt;
+                google_ad_client = &quot;ca-pub-4085915336649467&quot;;
+                google_ad_slot = &quot;1120956636&quot;;
+                google_ad_width = 336;
+                google_ad_height = 280;
+                &lt;/script&gt;
+                &lt;!-- jekyll ad --&gt;
+                &lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+                &lt;/script&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;span class=&quot;caption text-muted&quot;&gt;Takes a page from CodeCademy and expands with a new and interesting take on the subject.&lt;/span&gt;
 
@@ -305,8 +373,15 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;img src=&quot;http://s32.postimg.org/odil4q3r9/epicodus.jpg&quot; /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;script type=&quot;text/javascript&quot;&gt;
+                google_ad_client = &quot;ca-pub-4085915336649467&quot;;
+                google_ad_slot = &quot;1120956636&quot;;
+                google_ad_width = 336;
+                google_ad_height = 280;
+                &lt;/script&gt;
+                &lt;!-- jekyll ad --&gt;
+                &lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+                &lt;/script&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;span style=&quot;font-style: italic; color: grey&quot;&gt;&quot;Free&quot; more on that in a bit. Taking the bootcamp curriculum and bringing it online for free. &lt;/span&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
@@ -356,8 +431,15 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
                 &lt;!-- Treehouse End --&gt;
                 &lt;!-- Coursera Start --&gt;
-                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;script type=&quot;text/javascript&quot;&gt;
+                google_ad_client = &quot;ca-pub-4085915336649467&quot;;
+                google_ad_slot = &quot;1120956636&quot;;
+                google_ad_width = 336;
+                google_ad_height = 280;
+                &lt;/script&gt;
+                &lt;!-- jekyll ad --&gt;
+                &lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+                &lt;/script&gt;
                 &lt;hr /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
@@ -381,12 +463,6 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
                          &lt;a href=&quot;#&quot;&gt;Next Artical &amp;rarr;&lt;/a&gt;
                     &lt;/li&gt;
                 &lt;/ul&gt;
-            &amp;lt;/div&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-&amp;lt;/article&amp;gt;
-
-&amp;lt;/div&amp;gt;
 &lt;/p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/article&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 10 May 2016 12:13:05 -0700</pubDate>
@@ -402,7 +478,16 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
     
       <item>
         <title>One small step...or giant leap?</title>
-        <description>&lt;div class=&quot;wrapper&quot;&gt;
+        <description>&lt;!-- Google Tag Manager --&gt;
+&lt;noscript&gt;&lt;iframe src=&quot;//www.googletagmanager.com/ns.html?id=GTM-5JC4RX&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+&#39;//www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5JC4RX&#39;);&lt;/script&gt;
+
+&lt;!-- End Google Tag Manager --&gt;
+&lt;div class=&quot;wrapper&quot;&gt;
 It&#39;s never easy to do something new, at least not when you&#39;ve been doing &#39;mundane&#39; for the past six or so years; is it time to do something insane? Should I take the leap to learn something completely new this late in the game, (I&#39;m nearly 30 btw) or is it a chance to rediscover what I&#39;m capable of?
 
 Let me back up for a minute. My name is John and I&#39;m starting this blog nearly 4 months into my Web Development career, or at the very least what i hope is my Web Development career. Why four months in? Well to be frank, I didn&#39;t even know how to write a web page 4 months ago. I came from zero code experience. I know, right? Insane. Why, you ask again? (Geez you are a curious one.) Well I lost my job. Yep, I got laid off...after 6 years with the company. This devastated me to say the least. I just became a father 3 months prior, just purchased a new car and was looking at purchasing my first home. So what now?

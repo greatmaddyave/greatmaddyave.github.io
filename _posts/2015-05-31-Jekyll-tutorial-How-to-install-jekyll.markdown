@@ -8,7 +8,15 @@ categories: jekyll update
 caption: The Great Jekyll Tutorial - Part I This tutorial is a series of tutorials on Jekyll, if you are interested in learning how you can utilize all the features of Jekyll click here for more tutorials.
 keywords: jekyll, how, to, install, tutorial, jekyll server, ruby, gem,
 ---
-
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5JC4RX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5JC4RX');</script>
+<!-- End Google Tag Manager -->
 <div class = "wrapper">
 <i>This tutorial is a series of tutorials on Jekyll, if you are interested in learning how you can utilize all the features of Jekyll click here for more tutorials.</i>
 <div><br></div>
@@ -97,9 +105,15 @@ $ jekyll serve --detach
 $ jekyll serve --no-watch
 # => Same as `jekyll serve` but will not watch for changes.
 {% endhighlight %}
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- jekyll ad -->
 <ins class="adsbygoogle"
- style="display:inline-block;width:336px;height:280px; z-index: 9999;" data-ad-client="ca-pub-4085915336649467" data-ad-slot="1120956636">
-</ins>
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-4085915336649467"
+     data-ad-slot="1120956636"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 </div>
 
 

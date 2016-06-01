@@ -9,6 +9,15 @@ caption: First off let me preface this by saying this list applies to Web Develo
 subtitle: The best websites to learn how to code from for budding web developers.
 keywords: best, online, sources, to, learn, to, write, code, computer, programming, codecademy, coursera, freecodecamp.com, team, treehouse, learnhowtoprogram.com,
 ---
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5JC4RX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5JC4RX');</script>
+<!-- End Google Tag Manager -->
 <div class = "wrapper" style = " background-color: white">
 <p>First off let me preface this by saying this list applies to Web Development since I happen to have the most experience in this area and feel comfortable explaining the landscape of said programming avenue and the best places to pick up the knowledge base fairly quickly and easily.</p>
 <p>Okay, you still here? Great! So I'm assuming you are looking for starting or adding to a career in Web Development. First lets get the <b>What</b> of "What you need to learn". Web Development is a vast enterprise, with the advent of mobile devices and the capability of being able to access the internet from a multitude of device from a multitude of places the need for web developers, and good one's at that, are in HIGH demand. So what is Web development? First and foremost there are two kinds of web developers. Front End and Back End. Then there is a third mysterious and some believe to be a myth the "Full Stack" Developer. (this just means someone does front end and back end development).</p>
@@ -24,15 +33,22 @@ keywords: best, online, sources, to, learn, to, write, code, computer, programmi
 <img src = "http://www.catonmat.net/images/lol-browserling-com/full-stack.png">
 <h3>Okay, now that you're up to speed, here are the...</h3>
 <div><br></div>
-<div><br></div>
+<script type="text/javascript">
+    google_ad_client = "ca-pub-4085915336649467";
+    google_ad_slot = "1120956636";
+    google_ad_width = 336;
+    google_ad_height = 280;
+</script>
+<!-- jekyll ad -->
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
 <hr>
 <div><br></div>
 <div><br></div>
 <img src = "http://s32.postimg.org/lq7tl1pmd/top5.jpg">
 <div><br></div>
-<div><br></div>
 <hr>
-<div><br></div>
 <div><br></div>
 <article>
     <div class="container" style = "overflow: hidden">
@@ -54,7 +70,16 @@ keywords: best, online, sources, to, learn, to, write, code, computer, programmi
 
                 <p>You may or may not have heard of this site before, if you haven't then you are surely not researching enough.</p>
                 <div><br></div>
-
+                <script type="text/javascript">
+                google_ad_client = "ca-pub-4085915336649467";
+                google_ad_slot = "1120956636";
+                google_ad_width = 336;
+                google_ad_height = 280;
+                </script>
+                <!-- jekyll ad -->
+                <script type="text/javascript"
+                src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script>
                 <p><a href = "Codecademy.com">Codecademy.com</a> is pretty much an standard for developers to recommend to new budding web developers. Why is it recommended so much? Well for starters it's free. That is if you don't require access to quizes and other perks like projects and a personal interview to set up your "path". They cover everything from HTML basics to advanced SQL and Ruby. The user interface is clean, interactive and does a good job of giving you an idea of how to write code in a text editor. You pass levels by making your code pass as they teach you bits of the syntax and language basics along the way.</p>
                 <img src = "http://s32.postimg.org/al8rmu2dh/codecademy2.png">
                 <div><br></div>
@@ -76,8 +101,16 @@ keywords: best, online, sources, to, learn, to, write, code, computer, programmi
                 <div><br></div>
                 <img src="http://s32.postimg.org/4vsj2iw79/freecodecamp.png">
                 <div><br></div>
-                <div><br></div>
-                <div><br></div>
+                <script type="text/javascript">
+                google_ad_client = "ca-pub-4085915336649467";
+                google_ad_slot = "1120956636";
+                google_ad_width = 336;
+                google_ad_height = 280;
+                </script>
+                <!-- jekyll ad -->
+                <script type="text/javascript"
+                src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script>
                 <div><br></div>
                 <span class="caption text-muted">Takes a page from CodeCademy and expands with a new and interesting take on the subject.</span>
 
@@ -101,8 +134,16 @@ keywords: best, online, sources, to, learn, to, write, code, computer, programmi
                 <div><br></div>
                 <img src="http://s32.postimg.org/odil4q3r9/epicodus.jpg">
                 <div><br></div>
-                <div><br></div>
-                <div><br></div>
+                <script type="text/javascript">
+                google_ad_client = "ca-pub-4085915336649467";
+                google_ad_slot = "1120956636";
+                google_ad_width = 336;
+                google_ad_height = 280;
+                </script>
+                <!-- jekyll ad -->
+                <script type="text/javascript"
+                src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script>
                 <div><br></div>
                 <span style = "font-style: italic; color: grey">"Free" more on that in a bit. Taking the bootcamp curriculum and bringing it online for free. </span>
                 <div><br></div>
@@ -152,8 +193,16 @@ keywords: best, online, sources, to, learn, to, write, code, computer, programmi
 
                 <!-- Treehouse End -->
                 <!-- Coursera Start -->
-                <div><br></div>
-                <div><br></div>
+                <script type="text/javascript">
+                google_ad_client = "ca-pub-4085915336649467";
+                google_ad_slot = "1120956636";
+                google_ad_width = 336;
+                google_ad_height = 280;
+                </script>
+                <!-- jekyll ad -->
+                <script type="text/javascript"
+                src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script>
                 <hr>
                 <div><br></div>
                 <div><br></div>
@@ -177,9 +226,3 @@ keywords: best, online, sources, to, learn, to, write, code, computer, programmi
                          <a href="#">Next Artical &rarr;</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </div>
-</article>
-
-</div>
