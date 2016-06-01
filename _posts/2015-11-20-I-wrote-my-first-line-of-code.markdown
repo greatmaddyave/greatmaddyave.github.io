@@ -6,7 +6,8 @@ author: John Cossack
 imageurl: http://s32.postimg.org/bqc0jp3lx/post_bg.jpg
 categories: jekyll update
 caption: It's never easy to do something new, at least not when you've been doing 'mundane' for the past six or so years; is it time to do something insane? Should I take the leap to learn something completely new this late in the game, (I'm nearly 30 btw) or is it a chance to rediscover what I'm capable of?
-subtitle: I wrote my first unabashed line of code. 
+subtitle: I wrote my first unabashed line of code.
+keywords: new, computer, programmer, learn, to, code, program, web, development,
 ---
 <div class = "wrapper">
 It's never easy to do something new, at least not when you've been doing 'mundane' for the past six or so years; is it time to do something insane? Should I take the leap to learn something completely new this late in the game, (I'm nearly 30 btw) or is it a chance to rediscover what I'm capable of?

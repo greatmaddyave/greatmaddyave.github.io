@@ -7,6 +7,8 @@ imageurl: https://www.wired.com/wp-content/uploads/2014/07/programming-getty-660
 categories: jekyll update
 caption: Which computer language should I learn for my first Language? You've gotten bad advice from other sites or no advise at all. I'll tell you which language is best for YOU.
 subtitle: 2016's Best Computer Languages for Web Development.
+keywords: 2016, top, computer, languages, to, learn, first, computer, language,
+
 ---
 <div class = "wrapper">
 Which computer language should I learn for my first Language?
