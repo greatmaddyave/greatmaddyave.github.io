@@ -81,10 +81,11 @@ Yes, really? <span class="blink">$</span></p>
 <h2 style = "text-align: center">So now that Jekyll is on your system, I'm assuming you'll want to make an app and run it.</h2>
 <img src = "http://designmodo.com/wp-content/uploads/2015/11/02-jekyll-cli-screenshot.jpg">
 <div><br></div>
-<div style="text-align: center; ">If the directions above seem a little daunting, I've gone through the trouble of laying out a little cheat sheet with small explainations of each command.</div>
+<div class = "wrapper">If the directions above seem a little daunting, I've gone through the trouble of laying out a little cheat sheet with small explainations of each command.
 <div><br></div>
-<h3 style = "margin-left: 15px; margin-right: 15px;">Below I’ve compiled a list of common command lines you should familiarize yourself with running Jekyll. Keep in mind that if you want to run your website locally you will need to run a server.</h3>
 
+<h3 style = "margin-left: 15px; margin-right: 15px;">Below I’ve compiled a list of common command lines you should familiarize yourself with running Jekyll. Keep in mind that if you want to run your website locally you will need to run a server.</h3>
+</div>
 <div class = "highlight">
 <h3 class="steps">Common Commands</h3>
 <p>

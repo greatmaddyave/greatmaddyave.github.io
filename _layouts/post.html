@@ -5,27 +5,57 @@ layout: default
       <div class="container" id = "topcontainer">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="site-heading">
+            <div class="site-heading" style = "padding-top: 400px;">
               <h1>{{ page.title }}</h1>
               <h3 style = "color: #9b59b6;"><b>{{ page.subtitle}}</b></h3>
               <header class="post-header">
-                <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
               </header>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class = "wrapper">
-      <h1 style = "text-align: center; width: 95%; font-size: 3em; font-weight: 600">{{ page.title}}</h1>
+
+    <div class = "wrapper" style = "background-color: transparent;">
+      <div style = "background-color: transparent; margin-left: 30%; width: 100%; overflow: hidden;">
+            <p class="post-meta" style = "background-color: transparent; color: white;"><time style = "background-color: transparent" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author"  itemscope itemtype="http://schema.org/Person"><span style = "color: white; background-color: #9b59b6" itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              <script src="https://apis.google.com/js/platform.js" async defer></script>
+            <div style = "position: relative; bottom: 8px;"class="fb-share-button" data-href="http://www.thecodersbrain.com/jekyll/update/2016/06/01/Jekyll-tutorial-How-to-install-jekyll.html" data-layout="button_count" data-mobile-iframe="true"></div>
+              <div class="g-plus" data-action="share"></div>
+      </div>
       <ins class="adsbygoogle"
        style="display:inline-block;width:336px;height:280px; z-index: 9999;" data-ad-client="ca-pub-4085915336649467" data-ad-slot="1120956636">
       </ins>
+  </div>
 
-    </div>
+    <h1 style = "text-align: center; width: 95%; font-size: 3em; font-weight: 600">{{ page.title}}</h1>
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="post-content" itemprop="articleBody">
       {{ content }}
+      <div id="disqus_thread" class="wrapper"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//thecodersbrain.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
     </div>
 
     <!-- jekyll ad -->
@@ -34,24 +64,40 @@ layout: default
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
     (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-
     </article>
   </div>
-
-
-
   <style>
 
+  .post-buttons {
+    float: right;
+  }
+
+  footer p {
+    background-color: #ecf0f1;
+    color: black;
+    font-size: 12px;
+  }
   .wrapper {
     background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 20px;
   }
   * {
     font-family: 'Jura', sans-serif;
+
+  }
+
+  body {
+    overflow-x: hidden;
   }
   header {
     float: left;
     font-family: times;
+    overflow-x: hidden;
   }
+
   header p time {
     font-size: 1.5em;
     font-style: italic;

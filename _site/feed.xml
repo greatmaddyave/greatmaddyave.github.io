@@ -6,8 +6,8 @@
 </description>
     <link>http://TheCodersBrain.com/</link>
     <atom:link href="http://TheCodersBrain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Jun 2016 22:56:04 -0700</pubDate>
-    <lastBuildDate>Wed, 01 Jun 2016 22:56:04 -0700</lastBuildDate>
+    <pubDate>Thu, 02 Jun 2016 10:17:36 -0700</pubDate>
+    <lastBuildDate>Thu, 02 Jun 2016 10:17:36 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -83,10 +83,11 @@ Yes, really? &lt;span class=&quot;blink&quot;&gt;$&lt;/span&gt;&lt;/p&gt;
 &lt;h2 style=&quot;text-align: center&quot;&gt;So now that Jekyll is on your system, I&#39;m assuming you&#39;ll want to make an app and run it.&lt;/h2&gt;
 &lt;img src=&quot;http://designmodo.com/wp-content/uploads/2015/11/02-jekyll-cli-screenshot.jpg&quot; /&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;div style=&quot;text-align: center; &quot;&gt;If the directions above seem a little daunting, I&#39;ve gone through the trouble of laying out a little cheat sheet with small explainations of each command.&lt;/div&gt;
+&lt;div class=&quot;wrapper&quot;&gt;If the directions above seem a little daunting, I&#39;ve gone through the trouble of laying out a little cheat sheet with small explainations of each command.
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;h3 style=&quot;margin-left: 15px; margin-right: 15px;&quot;&gt;Below I’ve compiled a list of common command lines you should familiarize yourself with running Jekyll. Keep in mind that if you want to run your website locally you will need to run a server.&lt;/h3&gt;
 
+&lt;h3 style=&quot;margin-left: 15px; margin-right: 15px;&quot;&gt;Below I’ve compiled a list of common command lines you should familiarize yourself with running Jekyll. Keep in mind that if you want to run your website locally you will need to run a server.&lt;/h3&gt;
+&lt;/div&gt;
 &lt;div class=&quot;highlight&quot;&gt;
 &lt;h3 class=&quot;steps&quot;&gt;Common Commands&lt;/h3&gt;
 &lt;p&gt;
