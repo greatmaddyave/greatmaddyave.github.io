@@ -6,6 +6,7 @@ author: John Cossack
 imageurl: http://s33.postimg.org/4wcimsh7z/jekyll_hyde.jpg
 categories: jekyll update
 caption: The Great Jekyll Tutorial - Part I This tutorial is a series of tutorials on Jekyll, if you are interested in learning how you can utilize all the features of Jekyll click here for more tutorials.
+subtitle: THE GREAT JEKYLL TUTORIAL - PART I - HOW TO INSTALL JEKYLL
 keywords: jekyll, how, to, install, tutorial, jekyll server, ruby, gem,
 ---
 <!-- Google Tag Manager -->
@@ -21,10 +22,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <i style = "font-weight: muted">This tutorial is a series of tutorials on Jekyll, if you are interested in learning how you can utilize all the features of Jekyll click here for more tutorials.</i>
 <div><br></div>
 <img src = "http://s33.postimg.org/r0qjauysv/jekyll_tutorial.jpg">
-<h1 style = "font-size: 75px;text-align: center; background-color: rgba(0,0,0,0.8); color: rgba(0, 195, 0, 0.6); box-shadow: 0px 2px 4px 1px grey;"><b>PART I</b></h1>
+<div style = "font-size: 75px;text-align: center; background-color: rgba(0,0,0,0.8); color: rgba(0, 195, 0, 0.6); box-shadow: 0px 2px 4px 1px grey;">
+<h1><b>PART I</b><span class="blink"> _ </span></h1>
+</div>
 <h3 class="steps">WHAT'S COVERED IN THIS TUTORIAL</h3>
 
-<div class = "row" style="text-align: center; font-size: 13px;">
+<div class = "row" style="text-align: center; font-size: 13px; padding: 0px 15px 0px 15px;">
 
 			<p style = "box-shadow: 0px 2px 4px 1px grey;">WHAT IS JEKYLL?<br>
 			WHO SHOULD USE JEKYLL.<br>
@@ -113,8 +116,7 @@ $ jekyll serve<br>
 $ jekyll serve --detach<br>
 <span class="terminal-white"># => Same as `jekyll serve` but will detach from the current terminal.</span><br>
 <span class="terminal-white">#    If you need to kill the server, you can `kill -9 1234` where "1234" is the PID.</span><br>
-<span class="terminal-white">#    If you cannot find the PID, then do, `ps aux | grep jekyll` and kill the instance.</span><br>
-[Read more] http://unixhelp.ed.ac.uk/shell/jobz5.html<br>
+<span class="terminal-white">#    If you cannot find the PID, then do, `ps aux | grep jekyll` and kill the instance.</span>
 <br>
 $ jekyll serve --no-watch<br>
 <span class="terminal-white"># => Same as `jekyll serve` but will not watch for changes.</span>
@@ -131,22 +133,6 @@ $ jekyll serve --no-watch<br>
 </script>
 
 <style>
-.steps {
-	background-color: #bdc3c7;
-	border-top-left-radius: 7px;
-	border-top-right-radius: 7px;
-	color: #7f8c8d;
-	padding: 7px;
-	text-align: center;
-	margin-left: 15px;
-	margin-right: 15px;
-	font-weight: bolder;
-	font-size: 1px;
-	box-shadow: 2px 15px 10px -10px grey;
-	margin-bottom: -10px;
-
-}
-
 p{
 	font-weight: bold;
 	text-align: left;
@@ -167,36 +153,5 @@ p span {
 }
 a:hover {
 	color: white;
-}
-.midbreak {
-		background-color: #3498db;
-		margin-left: -30px;
-		margin-right: -30px;
-}
-
-.highlight {
-	padding: 15px;
-	background-color: #3498db;
-}
-
-.blink {
-  animation: blink-animation .5s steps(5, start) infinite;
-  -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
-	transition: ease-in-out 300ms;
-}
-@keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
-.terminal-white {
-	color: rgba(255,255,255, 0.5);
-	background-color: rgba(0, 0, 0, 0.9);
 }
 </style>

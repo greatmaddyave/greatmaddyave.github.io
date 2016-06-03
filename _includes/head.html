@@ -5,6 +5,7 @@
   {% if page.desc %}
   <meta name="description" content="{{ page.desc }}" />{% else %}
   <meta name="description" content="I’m a freelance designer and front-end developer with a passion for details and clean interfaces." />
+
   {% endif %}{% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />{% else %}
   <meta name="keywords" content="freelance, designer, wirral, web design, development, UI designer, freelance developer, jekyll, grunt, sass, front-end developer, Dave McNally, davemcnally, freelance designer wirral, freelance designer, tileable, tileables, photoshop, patterns, textures" />
@@ -13,21 +14,46 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!--Fonts-->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,300italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Jura:400,600' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-  <!--Facebook Meta -->
-  <meta property=”og:title” content= "{{ post.title}}"/>
-  <meta property=”og:type” content=”article”/>
-  <meta property=”og:description” content= "{{ post.subtitle }}"/>
-  <meta property=”fb:admins” content=”USER_ID”/>
-  <meta property=”og:image” content="{{ post.imageurl }}"/>
+  <!-- facebook Open Graph Metadatas -->
+<meta content="your_facebook_app_id" property="fb:app_id">
+<meta content="{{ post.title }}" property="og:site_name">
+{% if page.title %}
+  <meta content="{{ post.title }}" property="og:title">
+{% else %}
+  <meta content="{{ post.title }}" property="og:title">
+{% endif %}{% if page.title %}
+  <meta content="article" property="og:type">
+{% else %}
+  <meta content="website" property="og:type">
+{% endif %}{% if page.description %}
+  <meta content="{{ post.caption }}" property="og:description">
+{% else %}
+  <meta content="{{ post.caption }}" property="og:description">
+{% endif %}{% if page.url %}
+  <meta content="{{ site.url }}{{ post.url }}" property="og:url">
+{% endif %}{% if page.date %}
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+  <meta content="{{ site.url }}/about/" property="article:author">
+{% endif %}{% if page.image %}
+  <meta content="{{ post.imageurl }}" property="og:image">
+{% else %}
+  <meta content="http://designmodo.com/wp-content/uploads/2015/11/02-jekyll-cli-screenshot.jpg" property="og:image">
+{% endif %}{% if page.categories %}{% for category in page.categories limit:1 %}
+  <meta content="{{ category }}" property="article:section">
+{% endfor %}{% endif %}{% if page.tags %}{% for tag in page.tags %}
+  <meta content="{{ tag }}" property="article:tag">
+  {% endfor %}{% endif %}
   <!--End Facebook Meta-->
 
   <!--Twitter Meta -->
