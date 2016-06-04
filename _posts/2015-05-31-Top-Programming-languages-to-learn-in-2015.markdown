@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Top/Best Computer Languages to learn in 2016!
+title:  Top/Best Computer Langua<wbr>ges to learn in 2016!
 date:   2016-05-31 11:36:05 -0700
 author: John Cossack
 imageurl: https://www.wired.com/wp-content/uploads/2014/07/programming-getty-660x495.jpg
