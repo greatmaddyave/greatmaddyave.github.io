@@ -60,6 +60,26 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>
 </div>
+<!--footer animation-->
+<script>
+$(document).ready(function(){
+   var scroll_start = 0;
+   var startchange = $('.intro-header');
+   var offset = startchange.offset();
+   $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+         $('#floater').css('visibility', 'visible');
+         $('#floater').css('bottom', '150px');
+       } else {
+         $('#floater').css('visibility', 'hidden');
+         $('#floater').css('bottom', '-10px');
+       }
+   });
+});
+</script>
+
+
 <style>
 * {
   font-family: 'Jura', sans-serif;
@@ -75,6 +95,8 @@ layout: default
   margin-left: 148px;
   list-style: none;
   width: auto;
+  visibility: hidden;
+  transition-duration: 1s;
 
 }
 #floater li {
@@ -89,6 +111,7 @@ layout: default
   box-shadow: 1px 5px 30px 1px black;
   position: relative;
   left: 130px;
+  transition-duration: 1s;
 }
 #twitter {
   background-color: #00aced;
@@ -100,6 +123,7 @@ layout: default
   position: relative;
   right: 90px;
   top: 100px;
+  transition-duration: 250ms;
 }
 #facebook {
   background-color: #3b5998;
@@ -111,6 +135,7 @@ layout: default
   position: relative;
   top: 50px;
   left: 20px;
+  transition-duration: 600ms;
 }
 #b {
   float: left;
