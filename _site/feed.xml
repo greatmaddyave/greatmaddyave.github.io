@@ -6,8 +6,8 @@
 </description>
     <link>http://TheCodersBrain.com/</link>
     <atom:link href="http://TheCodersBrain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Jun 2016 13:16:52 -0700</pubDate>
-    <lastBuildDate>Sat, 04 Jun 2016 13:16:52 -0700</lastBuildDate>
+    <pubDate>Mon, 06 Jun 2016 14:44:55 -0700</pubDate>
+    <lastBuildDate>Mon, 06 Jun 2016 14:44:55 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -278,77 +278,34 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
     
       <item>
         <title>Top 5 Sites to learn Web Develop&lt;wbr&gt;ment</title>
-        <description>&lt;!-- Google Tag Manager --&gt;
-&lt;noscript&gt;&lt;iframe src=&quot;//www.googletagmanager.com/ns.html?id=GTM-5JC4RX&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
-&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
-new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
-&#39;//www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5JC4RX&#39;);&lt;/script&gt;
-
-&lt;!-- End Google Tag Manager --&gt;
-&lt;div class=&quot;wrapper&quot; style=&quot; background-color: white&quot;&gt;
+        <description>&lt;!-- End Google Tag Manager --&gt;
 &lt;p&gt;First off let me preface this by saying this list applies to Web Development since I happen to have the most experience in this area and feel comfortable explaining the landscape of said programming avenue and the best places to pick up the knowledge base fairly quickly and easily.&lt;/p&gt;
 &lt;p&gt;Okay, you still here? Great! So I&#39;m assuming you are looking for starting or adding to a career in Web Development. First lets get the &lt;b&gt;What&lt;/b&gt; of &quot;What you need to learn&quot;. Web Development is a vast enterprise, with the advent of mobile devices and the capability of being able to access the internet from a multitude of device from a multitude of places the need for web developers, and good one&#39;s at that, are in HIGH demand. So what is Web development? First and foremost there are two kinds of web developers. Front End and Back End. Then there is a third mysterious and some believe to be a myth the &quot;Full Stack&quot; Developer. (this just means someone does front end and back end development).&lt;/p&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;img src=&quot;http://i0.wp.com/derekhat.com/wp-content/uploads/2015/08/2812559753_069f83af6a_z.jpg&quot; /&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;h2&gt;Front end &lt;/h2&gt;
 &lt;p&gt;Front end is the look and feel of a website or web app. They design how the website functions and looks. This is also sometimes referred to as a UX/UI Designer which stands for &quot;User Experience/User Interface&quot;. So what languages do you need to know to become a Front end developer? Well typically you will need to know HTML, CSS, JavaScript, jQuery and most likely bootstrap. I know, this all sounds daunting at the moment but it really is a lot less than you think. HTML and CSS are really more of laying out and styling a website. JavaScript animates the website and jQuery is what is known as a &quot;framework&quot; of JavaScript. Bootstrap is a in a way a framework of CSS but CSS is not referred to as a language. Confused yet. Well the best way to make sense is to dive right in the learning pool and it will all make sense soon.&lt;/p&gt;
-&lt;img src=&quot;https://i.ytimg.com/vi/iJR-TbIjb2w/maxresdefault.jpg&quot; /&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;h2&gt;Back end&lt;/h2&gt;
 &lt;p&gt;Back end is how a website functions and handles data. This is a little more advanced stuff and you need a robust language to handle these tasks in a webpage. Thus it should be noted that one must learn, or at least highly encouraged to learn it first. These technologies require a full fledge language. There are a few standouts in today&#39;s development enviroment and I&#39;ll do my best to cover those so their not confusing. Ruby, JavaScript, Ruby on Rails, Python, PHP. Of course there are a lot more than this but these are some of the current most popular languages at writing this with JavaScript being the most popular by far. &quot;But wait, I thought JavaScript was for Front End&quot;. Well, yes it is, it&#39;s also a great little language for backend as well. This may be why it&#39;s popularity is so high currently. Many believe for this reason that JavaScript should be the first language you learn. I tend to agree with that for the most part but found Ruby really spoke to me and so I learned that as my first language. However the important part is to pick a language and learn it all the way through. Once you learn a language all the way through the difference between other language basically comes down to syntax and you can usually pick up a new language fairly easily after that.&lt;/p&gt;
-&lt;img src=&quot;http://www.catonmat.net/images/lol-browserling-com/full-stack.png&quot; /&gt;
 &lt;h3&gt;Okay, now that you&#39;re up to speed, here are the...&lt;/h3&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-    google_ad_client = &quot;ca-pub-4085915336649467&quot;;
-    google_ad_slot = &quot;1120956636&quot;;
-    google_ad_width = 336;
-    google_ad_height = 280;
-&lt;/script&gt;
-&lt;!-- jekyll ad --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
-&lt;/script&gt;
-&lt;hr /&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;img src=&quot;http://s32.postimg.org/lq7tl1pmd/top5.jpg&quot; /&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;hr /&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;article&gt;
-    &lt;div class=&quot;container&quot; style=&quot;overflow: hidden&quot;&gt;
-        &lt;div class=&quot;row&quot;&gt;
-            &lt;div class=&quot;col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1&quot;&gt;
 
                 &lt;!-- CODE CADEMY --&gt;
-                &lt;h1 style=&quot;text-align: center; color: white; font-size: 5em; border-radius: 5em; background-color: #9b59b6;&quot;&gt;#1&lt;/h1&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;h1 style=&quot;text-align: center;&quot;&gt;  &lt;a href=&quot;codecademy.com&quot; style=&quot;font-size: 3em; text-align: center; overflow: hidden &quot;&gt; Codecademy.com&lt;/a&gt;&lt;/h1&gt;
-                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;img src=&quot;https://avatars1.githubusercontent.com/u/1463944?v=3&amp;amp;s=200&quot; style=&quot;height: 200px; width: auto; position: relative; right: -250px;&quot; /&gt;
+                &lt;h1&gt;&lt;a href=&quot;codecademy.com&quot;&gt;Codecademy.com&lt;/a&gt;&lt;/h1&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-
-                &lt;span class=&quot;caption text-muted&quot;&gt;A free, intuitive website that offers a unique learning enviroment with a proven track record.&lt;/span&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 
                 &lt;p&gt;You may or may not have heard of this site before, if you haven&#39;t then you are surely not researching enough.&lt;/p&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;script type=&quot;text/javascript&quot;&gt;
-                google_ad_client = &quot;ca-pub-4085915336649467&quot;;
-                google_ad_slot = &quot;1120956636&quot;;
-                google_ad_width = 336;
-                google_ad_height = 280;
-                &lt;/script&gt;
-                &lt;!-- jekyll ad --&gt;
-                &lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
-                &lt;/script&gt;
+
                 &lt;p&gt;&lt;a href=&quot;Codecademy.com&quot;&gt;Codecademy.com&lt;/a&gt; is pretty much an standard for developers to recommend to new budding web developers. Why is it recommended so much? Well for starters it&#39;s free. That is if you don&#39;t require access to quizes and other perks like projects and a personal interview to set up your &quot;path&quot;. They cover everything from HTML basics to advanced SQL and Ruby. The user interface is clean, interactive and does a good job of giving you an idea of how to write code in a text editor. You pass levels by making your code pass as they teach you bits of the syntax and language basics along the way.&lt;/p&gt;
-                &lt;img src=&quot;http://s32.postimg.org/al8rmu2dh/codecademy2.png&quot; /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;h3&gt;So what&#39;s the downsides?&lt;/h3&gt;
                 &lt;p&gt;Of course there are downsides, take this as a hint that the rest of this post is going to be exploring the positives and negatives as nothing in life is as cut and dry as &quot;it&#39;s perfect cuz its on my top 10&quot;.&lt;/p&gt;
@@ -362,30 +319,14 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
                 &lt;hr /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;h1 style=&quot;text-align: center; color: white; font-size: 5em; border-radius: 5em; background-color: #9b59b6;&quot;&gt;#2&lt;/h1&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;h1 style=&quot;text-align: center;&quot;&gt;  &lt;a href=&quot;https://www.freecodecamp.com&quot; style=&quot;font-size: 3em; text-align: center; overflow: hidden &quot;&gt; FreeCodeCamp.com&lt;/a&gt;&lt;/h1&gt;
+                &lt;h1&gt; &lt;a href=&quot;https://www.freecodecamp.com&quot;&gt; FreeCodeCamp.com&lt;/a&gt;&lt;/h1&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;img src=&quot;http://s32.postimg.org/4vsj2iw79/freecodecamp.png&quot; /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;script type=&quot;text/javascript&quot;&gt;
-                google_ad_client = &quot;ca-pub-4085915336649467&quot;;
-                google_ad_slot = &quot;1120956636&quot;;
-                google_ad_width = 336;
-                google_ad_height = 280;
-                &lt;/script&gt;
-                &lt;!-- jekyll ad --&gt;
-                &lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
-                &lt;/script&gt;
-                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;span class=&quot;caption text-muted&quot;&gt;Takes a page from CodeCademy and expands with a new and interesting take on the subject.&lt;/span&gt;
-
 
                 &lt;p&gt;&lt;a href=&quot;https://www.freecodecamp.com&quot;&gt;Freecodecamp.com&lt;/a&gt; is an open source community that helps you learn. Work through self paced coding challenges, build projects and earn actual certificates. Free Code Camp also has active groups within your city and connects you so that you can pair program together. So why is this #2 on the list behind Code Cademy? Well the short answer is that Code Cademy has a proven track record. Free Code Camp is new on the scene. Although they offer a unique platform coupled with pair programing, certificates and actual projects where you gain experience and add to your resume and portfolio by coding for non-profit organizations, it&#39;s fairly new to the scene. It still has yet to prove itself in terms of whether or not potential employers will know or even acknowledge FreeCodeCamp.com as an industry preparer.&lt;p&gt;
-                &lt;img src=&quot;http://s32.postimg.org/6enx7i2rp/freecodecamp2.png&quot; style=&quot;height: 400px; width: auto; postion: relative; left: -200px&quot; /&gt;
                 &lt;h2 class=&quot;section-heading&quot;&gt;&quot;You get a certificate!&quot;&lt;/h2&gt;
                 &lt;p&gt;Free Code Camp is not easy or something you can finish in a weekend. They have 3 categories or paths that you can take. Front End, Data Wiz &amp;amp; Back End. Or you can choose to do all three. t takes about 2,080 hours to earn all four of our certifications. This translates into one year of full-time coding. That is no joke. Rest assured if you complete this course you can code in your sleep&lt;/p&gt;
-                &lt;img src=&quot;http://s32.postimg.org/nmugcoqrp/freecodecampcertificate.jpg&quot; /&gt;
                 &lt;!-- Freecodecamp End --&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
@@ -393,22 +334,11 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;!-- Learn how to Program Start --&gt;                
-                &lt;h1 style=&quot;text-align: center; color: white; font-size: 5em; border-radius: 5em; background-color: #9b59b6;&quot;&gt;#3&lt;/h1&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;h1 style=&quot;text-align: center;&quot;&gt;  &lt;a href=&quot;learnhowtoprogram.com&quot; style=&quot;font-size: 3em; text-align: center; overflow: hidden &quot;&gt; LearnHowToProgram.com&lt;/a&gt;&lt;/h1&gt;
+                &lt;h1&gt;&lt;a href=&quot;learnhowtoprogram.com&quot;&gt; LearnHowToProgram.com&lt;/a&gt;&lt;/h1&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;img src=&quot;http://s32.postimg.org/odil4q3r9/epicodus.jpg&quot; /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;script type=&quot;text/javascript&quot;&gt;
-                google_ad_client = &quot;ca-pub-4085915336649467&quot;;
-                google_ad_slot = &quot;1120956636&quot;;
-                google_ad_width = 336;
-                google_ad_height = 280;
-                &lt;/script&gt;
-                &lt;!-- jekyll ad --&gt;
-                &lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
-                &lt;/script&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;span style=&quot;font-style: italic; color: grey&quot;&gt;&quot;Free&quot; more on that in a bit. Taking the bootcamp curriculum and bringing it online for free. &lt;/span&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
@@ -416,7 +346,6 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
                 &lt;p&gt;&lt;a href=&quot;http://wwww.learnhowtoprogram.com&quot;&gt;LearnHowToProgram.com&lt;/a&gt; is a little bit different. In what way you ask? Learnhowtoprogram.com is also a for profit bootcamp located in Portland Oregon and Seattle Washington that goes by the name &lt;a href=&quot;http://www.epicodus.com/&quot;&gt;Epicodus&lt;/a&gt; However they offer their exact curriculum online...for free! Of course the bootcamp is the way to go if you can. The reason is you have a team of teachers walking you through those inevitable sticky situations that you encounter in learning to program. However for those that can&#39;t dedicate the time and money to a dedicated bootcamp, LearnHowtoProgram.com is a respectable option. &lt;/p&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;img src=&quot;http://s32.postimg.org/xb3b22w79/epicodus.png&quot; /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;h2 class=&quot;section-heading&quot;&gt;&quot;Internship is part of the process&quot;&lt;/h2&gt;
@@ -430,13 +359,11 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
                 &lt;hr /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;h1 style=&quot;text-align: center; color: white; font-size: 5em; border-radius: 5em; background-color: #9b59b6;&quot;&gt;#4&lt;/h1&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;h1 style=&quot;text-align: center;&quot;&gt;
-                &lt;a href=&quot;https://teamtreehouse.com/join/free-trial-2016?utm_source=google&amp;amp;campaign=105062766&amp;amp;utm_term=&amp;amp;cid=1027&amp;amp;gclid=CjwKEAjw6sC5BRCogcaY_dKZ2nESJABsZihxtpDbbYeJOVW9TJFLj7NMujQW-8sWTKkjIgcN7AHFjBoCxn3w_wcB&quot; style=&quot;font-size: 3em; text-align: center; overflow: hidden &quot;&gt; TeamTreeHouse.com&lt;/a&gt;&lt;/h1&gt;
+                &lt;h1&gt;
+                &lt;a href=&quot;https://teamtreehouse.com/join/free-trial-2016?utm_source=google&amp;amp;campaign=105062766&amp;amp;utm_term=&amp;amp;cid=1027&amp;amp;gclid=CjwKEAjw6sC5BRCogcaY_dKZ2nESJABsZihxtpDbbYeJOVW9TJFLj7NMujQW-8sWTKkjIgcN7AHFjBoCxn3w_wcB&quot;&gt; TeamTreeHouse.com&lt;/a&gt;&lt;/h1&gt;
 
-                &lt;img src=&quot;http://s32.postimg.org/q1hqjdhmt/treehouse.png&quot; style=&quot;width: 100%; height: auto;&quot; /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
@@ -449,7 +376,6 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
                 &lt;p&gt;Up until now are list has consisted of free options, with Team Tree House however they offer two packages. The first of which they aptly name their &quot;Basic&quot; plan which gives you access to 1000+ videos and projects, the ability to practice live coding with their &quot;Engine&quot; and access to their online members-only community. Comes in at $25/month. The next option is $49/month and gives you access to all the latter option but also throws in access to video&#39;s or as they put it &quot;talks&quot; from industry leaders and &quot;bonus material&quot;. For double the price I would go for the $25/month option and if you feel limited by it&#39;s offerings than I would upgrade. However they do offer a Free trial, so there&#39;s that. &lt;/p&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;img src=&quot;http://s32.postimg.org/a8cs2wupx/treehouseplans.png&quot; /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;h2 class=&quot;section-heading&quot;&gt;Why it&#39;s on this list&lt;/h2&gt;
                 &lt;p&gt;For lot&#39;s of reasons really. It&#39;s a solid, well built platform that delivers the goods. It&#39;s recognized by industry leaders and the reviewers are really good. They also have awesome teachers and videos that can walk through the novice to expert through any situation and make it understandable to the intended audience. It really is that you only get this kind of quality with something you pay for.&lt;/p&gt;
@@ -470,17 +396,14 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
                 &lt;hr /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;h1 style=&quot;text-align: center; color: white; font-size: 5em; border-radius: 5em; background-color: #9b59b6;&quot;&gt;#5&lt;/h1&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;h1 style=&quot;text-align: center;&quot;&gt;  &lt;a href=&quot;https://www.coursera.org/&quot; style=&quot;font-size: 3em; text-align: center; overflow: hidden &quot;&gt; Coursera.org&lt;/a&gt;&lt;/h1&gt;
+                &lt;h1&gt;&lt;a href=&quot;https://www.coursera.org/&quot;&gt; Coursera.org&lt;/a&gt;&lt;/h1&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;img src=&quot;https://d3q6qq2zt8nhwv.cloudfront.net/platform/4b9a27f7ca854bbd9a245d55310bc727.png&quot; /&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
                 &lt;span class=&quot;caption text-muted&quot;&gt;Coursera is a venture-backed, for-profit, educational technology company that offers massive open online courses.&lt;/span&gt;
                 &lt;p&gt;&lt;a href=&quot;https://teamtreehouse.com/join/free-trial-2016?utm_source=google&amp;amp;campaign=105062766&amp;amp;utm_term=&amp;amp;cid=1027&amp;amp;gclid=CjwKEAjw6sC5BRCogcaY_dKZ2nESJABsZihxtpDbbYeJOVW9TJFLj7NMujQW-8sWTKkjIgcN7AHFjBoCxn3w_wcB&quot;&gt;Coursera.org&lt;/a&gt; How does being taught to code from some of the top schools in the nation like John Hopkins, Duke, University of Michigan, University of San Diego, Penn State and even Standford sound? Amazing right. Enter stage right; Coursera.org. Coursera is a for profit online resource that offers, you guessed it, courses on all things computer scienc(y). Each course is offered and you get a certificate stating that you have finished the course. Just like traditional school, there will be test. They even offer a lot of courses for free but eventually you&#39;ll run into one you&#39;ll have to pay for. This really is a great resource I can&#39;t recommend enough.&lt;/p&gt;
                 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-                &lt;img src=&quot;http://s32.postimg.org/ltrjod5l1/courseraschools.jpg&quot; /&gt;
 
                 &lt;!-- Coursera End --&gt;
 
@@ -490,7 +413,26 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
                          &lt;a href=&quot;#&quot;&gt;Next Artical &amp;rarr;&lt;/a&gt;
                     &lt;/li&gt;
                 &lt;/ul&gt;
-&lt;/p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/article&gt;&lt;/div&gt;
+                &amp;lt;/article&amp;gt;
+
+&lt;style&gt;
+p {
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 3vw;
+}
+article {
+  background-color: white;
+  padding: 25px;
+}
+
+img {
+  max-width: 800px;
+}
+&lt;/style&gt;
+&lt;/p&gt;&lt;/p&gt;&lt;/article&gt;
 </description>
         <pubDate>Tue, 10 May 2016 12:13:05 -0700</pubDate>
         <link>http://TheCodersBrain.com/jekyll/update/2016/05/10/Top-5-online-sites-for-learning-web-development.html</link>

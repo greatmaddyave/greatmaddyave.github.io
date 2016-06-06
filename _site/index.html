@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   
   <meta name="description" content="I’m a freelance designer and front-end developer with a passion for details and clean interfaces." />
 
@@ -95,20 +99,24 @@
     <div class="navbar-header">
       <a class="site-title" style = "font-family: 'Open Sans', sans-serif;"href="/">TheCodersBrain</a>
       <img  style = "height: 30px; width: auto; padding-top: 5px"src = "http://www.davidbott.com/img/icons/brain.png">
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li ><a class = "nav-link" href="noi.html" target="_blank">Home</a></li>
-        <li ><a class = "nav-link" href="#">Contact</a></li>
-        <li ><a class = "nav-link" href="#"></a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
+
+      <div class="dropdown" style = "float: right;">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">MENU
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-book" style = "color: #9b59b6" aria-hidden="true"></span> Code Class</a></li>
+  </ul>
+</div>
+  </div>
   </div>
 </nav>
 <script>
 $(document).ready(function(){
    var scroll_start = 0;
-   var startchange = $('.navbar');
+   var startchange = $('body');
    var offset = startchange.offset();
    $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
@@ -132,7 +140,27 @@ $(document).ready(function(){
 .navbar {
   transition-duration: 1s;
   border: none;
+  padding: 25px;
 }
+
+.btn {
+  border-radius: 0;
+  padding: 15px 25px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  margin-right: 15px;
+  margin-left: 25px;
+
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  font-size: 25px;
+  margin-right: 15px;
+  text-align: center;
+}
+
 </style>
 
 
@@ -313,7 +341,7 @@ $(document).ready(function(){
   height:50px;
   width:50px;
   position: fixed;
-  bottom: 150px;
+  bottom: -10px;
   right: 50%;  /* Put the left edge on the horizontal center */
   margin-left: 148px;
   list-style: none;
