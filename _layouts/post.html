@@ -7,13 +7,16 @@ layout: default
               <h1>{{ page.title }}</h1>
               <h3 style = "color: #9b59b6;line-height: 42px;"><b>{{ page.subtitle}}</b></h3>
               <p class="post-meta" style = "background-color: transparent; color: white;"><time style = "background-color: transparent" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author"  itemscope itemtype="http://schema.org/Person"><span style = "color: white; background-color: #9b59b6" itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-              <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                <script src="https://apis.google.com/js/platform.js" async defer></script>
-              <div style = "position: relative; bottom: 8px;"class="fb-share-button" data-href="http://www.thecodersbrain.com/jekyll/update/2016/06/01/Jekyll-tutorial-How-to-install-jekyll.html" data-layout="button_count" data-mobile-iframe="true"></div>
-                <div class="g-plus" data-action="share"></div>
-            </div>
 
+
+          </div>
+          <span class='st_sharethis_large' displayText='ShareThis'></span>
+          <span class='st_facebook_large' displayText='Facebook'></span>
+          <span class='st_googleplus_large' displayText='Google +'></span>
+          <span class='st_twitter_large' displayText='Tweet'></span>
+          <span class='st_linkedin_large' displayText='LinkedIn'></span>
+          <span class='st_pinterest_large' displayText='Pinterest'></span>
+          <span class='st_email_large' displayText='Email'></span>
     </div>
 
     <div class = "wrapper" style = "background-color: transparent;">
@@ -24,6 +27,16 @@ layout: default
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="post-content" itemprop="articleBody">
       {{ content }}
+      <div class = "wrapper" style = "background-color: transparent; padding: 25px;">
+        <h4>Share this post:</h4>
+      <span class='st_sharethis_large' displayText='ShareThis'></span>
+      <span class='st_facebook_large' displayText='Facebook'></span>
+      <span class='st_googleplus_large' displayText='Google +'></span>
+      <span class='st_twitter_large' displayText='Tweet'></span>
+      <span class='st_linkedin_large' displayText='LinkedIn'></span>
+      <span class='st_pinterest_large' displayText='Pinterest'></span>
+      <span class='st_email_large' displayText='Email'></span>
+    </div>
       <div id="disqus_thread" class="wrapper"></div>
 <script>
 /**
@@ -61,9 +74,10 @@ s.setAttribute('data-timestamp', +new Date());
 body {
   overflow-x: hidden;
 }
-  .post-buttons {
-    float: right;
-  }
+.site-title {
+  color: white;
+}
+
 
   footer p {
     background-color: #ecf0f1;
@@ -255,5 +269,9 @@ body {
   .terminal-white {
   	color: rgba(255,255,255, 0.5);
   	background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .post-buttons {
+    float: right;
   }
   </style>
