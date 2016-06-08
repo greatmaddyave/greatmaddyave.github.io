@@ -9,6 +9,7 @@ caption: The Great Jekyll Tutorial - Part II This tutorial is a series of tutori
 subtitle: THE GREAT JEKYLL TUTORIAL - PART II - CONFIGURING JEKYLL
 keywords: jekyll, how, to, install, configure, tutorial, jekyll server, ruby, gem,
 baseurl: How_to_config_jekyll
+path: /jekyll/update/2016/06/06/Jekyll-Tutorial-Configuration.html
 ---
 
 <div><br></div>
