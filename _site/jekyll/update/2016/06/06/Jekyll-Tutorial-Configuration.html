@@ -109,7 +109,7 @@
       <div class="dropdown" style = "float: right;">
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">MENU
   <span class="caret"></span></button>
-  <ul class="dropdown-menu">
+  <ul class="dropdown-menu" style = "color: black;">
     <li><a href="/">Home</a></li>
     <li><a href="/about/">About</a></li>
     <li><a href="#">Contact</a></li>
@@ -137,6 +137,7 @@ $(document).ready(function(){
           $('.navbar').css('background-color', 'transparent');
           $('.navbar').css('padding', '25px');
           $('.navbar a').css('color', 'white');
+          $('li a').css('color', 'black');
           $('.nav-link').css('color', 'black');
        }
    });
@@ -178,7 +179,7 @@ $(document).ready(function(){
             <div class="site-heading" style = "padding-top: 400px; margin-top: -50px">
               <h1>Configuring Jekyll</h1>
               <h3 style = "color: #9b59b6;line-height: 42px;"><b>THE GREAT JEKYLL TUTORIAL - PART II - CONFIGURING JEKYLL</b></h3>
-              <p class="post-meta" style = "background-color: transparent; color: white;"><time style = "background-color: transparent" datetime="2016-06-06T14:38:05-07:00" itemprop="datePublished">Jun 6, 2016</time> • <span itemprop="author"  itemscope itemtype="http://schema.org/Person"><span style = "color: white; background-color: #9b59b6" itemprop="name">John Cossack</span></span></p>
+              <p class="post-meta" style = "background-color: transparent; color: grey; font-size: 25px; font-style: italic; text-shadow: 2px 2px 2px white;><time style = "background-color: transparent" datetime="2016-06-06T14:38:05-07:00" itemprop="datePublished">Jun 6, 2016</time> • <span itemprop="author"  itemscope itemtype="http://schema.org/Person"><span style = "color: grey; background-color: transparent" itemprop="name">John Cossack</span></span></p>
 
 
           </div>
@@ -417,14 +418,11 @@ body {
   .intro-header {
     background-color: #808080;
     background-image: url('http://joelglovier.com/img/ogimgs/jekyll.jpg');
-    width: 100%;
-    height: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    text-transform: uppercase;
-    text-align: center;
+    background-position: center;
   }
   img {
     width: 100%;

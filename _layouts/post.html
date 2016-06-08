@@ -6,7 +6,7 @@ layout: default
             <div class="site-heading" style = "padding-top: 400px; margin-top: -50px">
               <h1>{{ page.title }}</h1>
               <h3 style = "color: #9b59b6;line-height: 42px;"><b>{{ page.subtitle}}</b></h3>
-              <p class="post-meta" style = "background-color: transparent; color: white;"><time style = "background-color: transparent" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author"  itemscope itemtype="http://schema.org/Person"><span style = "color: white; background-color: #9b59b6" itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+              <p class="post-meta" style = "background-color: transparent; color: grey; font-size: 25px; font-style: italic; text-shadow: 2px 2px 2px white;><time style = "background-color: transparent" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author"  itemscope itemtype="http://schema.org/Person"><span style = "color: grey; background-color: transparent" itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
 
 
           </div>
@@ -126,14 +126,11 @@ body {
   .intro-header {
     background-color: #808080;
     background-image: url('{{ page.imageurl }}');
-    width: 100%;
-    height: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    text-transform: uppercase;
-    text-align: center;
+    background-position: center;
   }
   img {
     width: 100%;
