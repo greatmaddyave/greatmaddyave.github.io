@@ -117,10 +117,10 @@
 <nav  style = "background-color: transparent"class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <a class="site-title" style = "font-family: 'Open Sans', sans-serif;color: white;"href="/">TheCodersBrain</a>
+      <a class="site-title" style = "font-family: 'Open Sans', sans-serif;color: white; "href="/">TheCodersBrain</a>
       <img  style = "height: 30px; width: auto; padding-top: 5px; margin-right: 5px"src = "http://www.davidbott.com/img/icons/brain.png">
 
-      <div class="dropdown" style = "float: right;">
+      <div class="dropdown" style = "float: right; visibility: hidden">
   <button class="btn btn-primary dropdown-toggle" style = "margin: 0"type="button" data-toggle="dropdown">MENU
   <span class="caret"></span></button>
   <ul class="dropdown-menu" style = "color: black; text-align: left; margin-left: -90px;">
@@ -148,6 +148,7 @@ $(document).ready(function(){
           $('.nav-link').css('color', '#2c3e50');
           $('.intro-header').css('bottom', '80px');
           $('.site-title').css('color', 'black');
+          $('.dropdown').css('visibility', 'visible');
        } else {
          $('.navbar').css('box-shadow', '0px 0px 0px 0px rgba(255,255,255, 1)');
           $('.navbar').css('background-color', 'transparent');
@@ -155,7 +156,7 @@ $(document).ready(function(){
           $('.site-title').css('color', 'white');
           $('dropdown-menu li a').css('color', 'black');
           $('.nav-link').css('color', 'black');
-
+          $('.dropdown').css('visibility', 'visible');
        }
    });
 });
@@ -187,6 +188,12 @@ $(document).ready(function(){
   text-align: center;
 }
 
+.site-title {
+  transition: all 900ms ease-out;
+  font-size: 50px;
+  text-align: center;
+
+}
 </style>
 
 
@@ -384,6 +391,7 @@ $(document).ready(function() {
     setTimeout(function(){
         $('body').addClass('loaded');
         $('h1').css('color','white');
+        $('.site-title').css('font-size','25px');
     }, 1000);
 });
 $('body').toggleClass('loaded');
