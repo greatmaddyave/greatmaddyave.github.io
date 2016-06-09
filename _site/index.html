@@ -118,10 +118,10 @@
   <div class="container">
     <div class="navbar-header">
       <a class="site-title" style = "font-family: 'Open Sans', sans-serif;color: white;"href="/">TheCodersBrain</a>
-      <img  style = "height: 30px; width: auto; padding-top: 5px"src = "http://www.davidbott.com/img/icons/brain.png">
+      <img  style = "height: 30px; width: auto; padding-top: 5px; margin-right: 5px"src = "http://www.davidbott.com/img/icons/brain.png">
 
       <div class="dropdown" style = "float: right;">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">MENU
+  <button class="btn btn-primary dropdown-toggle" style = "margin: 0"type="button" data-toggle="dropdown">MENU
   <span class="caret"></span></button>
   <ul class="dropdown-menu" style = "color: black;">
     <li><a href="/">Home</a></li>
@@ -144,15 +144,18 @@ $(document).ready(function(){
           $('.navbar').css('background-color', 'rgba(255,255,255,1)');
           $('.navbar').css('box-shadow', '2px 2px 2px 1px grey');
           $('.navbar').css('padding', '10px');
-          $('.navbar a').css('color', 'black');
+          $('dropdown-menu li a').css('color', 'black');
           $('.nav-link').css('color', '#2c3e50');
+          $('.intro-header').css('bottom', '80px');
+          $('.site-title').css('color', 'black');
        } else {
          $('.navbar').css('box-shadow', '0px 0px 0px 0px rgba(255,255,255, 1)');
           $('.navbar').css('background-color', 'transparent');
           $('.navbar').css('padding', '25px');
-          $('.navbar a').css('color', 'white');
-          $('li a').css('color', 'black');
+          $('.site-title').css('color', 'white');
+          $('dropdown-menu li a').css('color', 'black');
           $('.nav-link').css('color', 'black');
+
        }
    });
 });
@@ -188,29 +191,18 @@ $(document).ready(function(){
 
 
     <div class="page-content">
-        <div id="loader-wrapper">
-  <div id="loader"></div>
-
-  <div class="loader-section section-left"></div>
-  <div class="loader-section section-right"></div>
-
-</div>
-<div class = "intro-header" style = "width: 100%; height: 25em; position: relative; bottom: 30px; z-index: -1">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="site-heading">
-          <div class = "wrapper">
-            <h1 style="margin-top: 50px; text-shadow: 0px 0px 2px black">the<br><span style="color: rgba(255, 255, 255, 0.4);"><b>coders</b></span><br>Brain</h1>
+        <div class = "intro-header" style = "width: 100%; height: 700px; position: relative; bottom: 30px; z-index: -1; ">
+          <div class = "wrapper" style = " width: 100%; height: 100%; position: relative; text-align: center;">
+            <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%)">
+              <h1 style = "font-size: 4em; text-shadow: 1px 1px 1px black;  padding: 25px">the<br><span style="color: rgba(255, 255, 255, 0.4); text-shadow: 2px 2px 2px limegreen;"><b>coders</b></span><br>Brain</h1>
+              <h3  class = "caption" style = " background-color: black; line-height: 25px; font-size: 27px ;color: white; text-shadow: -2px -2px 2px rgba(150, 150, 150, 1);"><b>A blog from a prospective programmer in the midst of a mid life career change.</b></h3>
+            </div>
           </div>
-          <h3 style = "line-height: 42px; color: black; text-shadow: -2px -2px 2px rgba(150, 150, 150, 1);"><b>A blog from a prospective programmer in the midst of a mid life career change.</b></h3>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 <div>
-
+<div class = "container">
+<h1 style = "font-weight: normal; text-shadow: 2px 20px 20px black">LATEST POSTS</h1>
+</div>
   <div>
     <ul id = "floater">
       <li id ="twitter"><a href="https://twitter.com/share"></a><img src="https://g.twimg.com/dev/documentation/image/DTC_Services_1h_hero_bg.png"></li>
@@ -222,7 +214,7 @@ $(document).ready(function(){
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
 </div>
-<div class = "wrapper">
+<div class = "wrapper" style = "margin-left: 0;">
   <div class="home">
     <br>
 
@@ -399,7 +391,7 @@ $('body').toggleClass('loaded');
 <script>
 $(document).ready(function(){
    var scroll_start = 0;
-   var startchange = $('.intro-header');
+   var startchange = $('.caption');
    var offset = startchange.offset();
    $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
@@ -416,6 +408,9 @@ $(document).ready(function(){
 
 
 <style>
+#post {
+  float: left;
+}
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -644,25 +639,26 @@ h1 {
   margin-bottom: 15px;
   transition: all ease-in-out 300ms;
   transition-delay: 100ms;
+  color: white;
 }
 
 #b:active{
-  transform: translate(0px, -100px);
+  transform: translate(0px, -10px);
 }
 
 
 .post-framing:hover #b {
   background-color: #9b59b6;
+  color: white;
 }
 .home {
   width: 100%;
 }
 .site-heading h1 span {
   color: transparent;
-  text-shadow: 1px 2px 5px rgba(155,89,182,1);
+  text-shadow: 1px 1px 100px rgba(155,89,182,1);
   padding: 25px;
-  box-shadow:  70px -120px 200px -50px #9b59b6;
-
+  font-weight: bolder;
 }
 .page-heading{
   text-align: center;

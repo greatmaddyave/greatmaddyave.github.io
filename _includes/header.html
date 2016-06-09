@@ -5,10 +5,10 @@
   <div class="container">
     <div class="navbar-header">
       <a class="site-title" style = "font-family: 'Open Sans', sans-serif;color: white;"href="{{ site.baseurl }}/">{{ site.title }}</a>
-      <img  style = "height: 30px; width: auto; padding-top: 5px"src = "http://www.davidbott.com/img/icons/brain.png">
+      <img  style = "height: 30px; width: auto; padding-top: 5px; margin-right: 5px"src = "http://www.davidbott.com/img/icons/brain.png">
 
       <div class="dropdown" style = "float: right;">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">MENU
+  <button class="btn btn-primary dropdown-toggle" style = "margin: 0"type="button" data-toggle="dropdown">MENU
   <span class="caret"></span></button>
   <ul class="dropdown-menu" style = "color: black;">
     <li><a href="{{ site.baseurl }}/">Home</a></li>
@@ -31,15 +31,18 @@ $(document).ready(function(){
           $('.navbar').css('background-color', 'rgba(255,255,255,1)');
           $('.navbar').css('box-shadow', '2px 2px 2px 1px grey');
           $('.navbar').css('padding', '10px');
-          $('.navbar a').css('color', 'black');
+          $('dropdown-menu li a').css('color', 'black');
           $('.nav-link').css('color', '#2c3e50');
+          $('.intro-header').css('bottom', '80px');
+          $('.site-title').css('color', 'black');
        } else {
          $('.navbar').css('box-shadow', '0px 0px 0px 0px rgba(255,255,255, 1)');
           $('.navbar').css('background-color', 'transparent');
           $('.navbar').css('padding', '25px');
-          $('.navbar a').css('color', 'white');
-          $('li a').css('color', 'black');
+          $('.site-title').css('color', 'white');
+          $('dropdown-menu li a').css('color', 'black');
           $('.nav-link').css('color', 'black');
+
        }
    });
 });

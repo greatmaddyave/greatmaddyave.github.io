@@ -121,10 +121,10 @@
   <div class="container">
     <div class="navbar-header">
       <a class="site-title" style = "font-family: 'Open Sans', sans-serif;color: white;"href="/">TheCodersBrain</a>
-      <img  style = "height: 30px; width: auto; padding-top: 5px"src = "http://www.davidbott.com/img/icons/brain.png">
+      <img  style = "height: 30px; width: auto; padding-top: 5px; margin-right: 5px"src = "http://www.davidbott.com/img/icons/brain.png">
 
       <div class="dropdown" style = "float: right;">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">MENU
+  <button class="btn btn-primary dropdown-toggle" style = "margin: 0"type="button" data-toggle="dropdown">MENU
   <span class="caret"></span></button>
   <ul class="dropdown-menu" style = "color: black;">
     <li><a href="/">Home</a></li>
@@ -147,15 +147,18 @@ $(document).ready(function(){
           $('.navbar').css('background-color', 'rgba(255,255,255,1)');
           $('.navbar').css('box-shadow', '2px 2px 2px 1px grey');
           $('.navbar').css('padding', '10px');
-          $('.navbar a').css('color', 'black');
+          $('dropdown-menu li a').css('color', 'black');
           $('.nav-link').css('color', '#2c3e50');
+          $('.intro-header').css('bottom', '80px');
+          $('.site-title').css('color', 'black');
        } else {
          $('.navbar').css('box-shadow', '0px 0px 0px 0px rgba(255,255,255, 1)');
           $('.navbar').css('background-color', 'transparent');
           $('.navbar').css('padding', '25px');
-          $('.navbar a').css('color', 'white');
-          $('li a').css('color', 'black');
+          $('.site-title').css('color', 'white');
+          $('dropdown-menu li a').css('color', 'black');
           $('.nav-link').css('color', 'black');
+
        }
    });
 });
@@ -191,35 +194,23 @@ $(document).ready(function(){
 
 
     <div class="page-content">
-            <div class = "intro-header">
-
+            <div class = "intro-header" style = "position: relative;">
             <div class="site-heading" style = "padding-top: 400px; margin-top: -50px">
-              <h1>How to install Jekyll</h1>
-              <h3 style = "color: #9b59b6;line-height: 42px;"><b>THE GREAT JEKYLL TUTORIAL - PART I - HOW TO INSTALL JEKYLL</b></h3>
-              <p class="post-meta" style = "background-color: transparent; color: grey; font-size: 25px; font-style: italic; text-shadow: 2px 2px 2px white;><time style = "background-color: transparent" datetime="2016-05-31T19:38:05-07:00" itemprop="datePublished">May 31, 2016</time> • <span itemprop="author"  itemscope itemtype="http://schema.org/Person"><span style = "color: grey; background-color: transparent" itemprop="name">John Cossack</span></span></p>
-
-
-          </div>
-          <span class='st_sharethis_large' displayText='ShareThis'></span>
-          <span class='st_facebook_large' displayText='Facebook'></span>
-          <span class='st_googleplus_large' displayText='Google +'></span>
-          <span class='st_twitter_large' displayText='Tweet'></span>
-          <span class='st_linkedin_large' displayText='LinkedIn'></span>
-          <span class='st_pinterest_large' displayText='Pinterest'></span>
-          <span class='st_email_large' displayText='Email'></span>
+              <h1>How to install Jekyll</h1><h3 style = "color: #9b59b6;line-height: 42px;"><b>THE GREAT JEKYLL TUTORIAL - PART I - HOW TO INSTALL JEKYLL</b></h3><p class="post-meta" style = "background-color: transparent; color: grey; font-size: 25px; font-style: italic; text-shadow: 2px 2px 2px white;"><time style = "background-color: transparent" datetime= "2016-05-31T19:38:05-07:00" itemprop="datePublished">May 31, 2016</time> • <span itemprop="author"  itemscope itemtype="http://schema.org/Person"><span style = "color: grey; background-color: transparent" itemprop="name">John Cossack</span></span></p>
+            </div>
     </div>
-    <a href="https://twitter.com/intent/tweet?text=How to install Jekyll&url=http://TheCodersBrain.com/jekyll/update/2016/05/31/Jekyll-tutorial-How-to-install-jekyll.html&via=johncossack&related=johncossack" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=http://TheCodersBrain.com/jekyll/update/2016/05/31/Jekyll-tutorial-How-to-install-jekyll.html" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
-    <a href="https://plus.google.com/share?url=http://TheCodersBrain.com" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
-
+    <div class = "wrapper" style = "background-color: transparent; padding: 25px; padding-top: 5px">
+      <h4>Share this post:</h4>
+            <span class="st_sharethis_large" displayText="ShareThis"></span><span class="st_facebook_large" displayText="Facebook"></span><span class="st_googleplus_large" displayText="Google +"></span><span class="st_twitter_large" displayText="Tweet"></span><span class="st_linkedin_large" displayText="LinkedIn"></span>
+            <span class="st_pinterest_large" displayText="Pinterest"></span><span class="st_email_large" displayText="Email"></span>
+    </div>
     <div class = "wrapper" style = "background-color: transparent;">
-      <div style = "background-color: transparent; width: 100%; overflow: hidden;">
-      </div>
-  </div>
+      <div style = "background-color: transparent; width: 100%; overflow: hidden;"></div>
+    </div>
 
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="post-content" itemprop="articleBody">
-      <!-- Google Tag Manager -->
+      <div class="post-content" itemprop="articleBody">
+            <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5JC4RX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -362,16 +353,16 @@ a:hover {
 </style>
 </destination></destination></p></div></div></div>
 
-      <div class = "wrapper" style = "background-color: transparent; padding: 25px;">
-        <h4>Share this post:</h4>
-      <span class='st_sharethis_large' displayText='ShareThis'></span>
-      <span class='st_facebook_large' displayText='Facebook'></span>
-      <span class='st_googleplus_large' displayText='Google +'></span>
-      <span class='st_twitter_large' displayText='Tweet'></span>
-      <span class='st_linkedin_large' displayText='LinkedIn'></span>
-      <span class='st_pinterest_large' displayText='Pinterest'></span>
-      <span class='st_email_large' displayText='Email'></span>
-    </div>
+            <div class = "wrapper" style = "background-color: transparent; padding: 25px;">
+              <h4>Share this post:</h4>
+                <span class="st_sharethis_large" displayText="ShareThis"></span>
+                <span class="st_facebook_large" displayText="Facebook"></span>
+                <span class="st_googleplus_large" displayText="Google +"></span>
+                <span class="st_twitter_large" displayText="Tweet"></span>
+                <span class="st_linkedin_large" displayText="LinkedIn"></span>
+                <span class="st_pinterest_large" displayText="Pinterest"></span>
+                <span class="st_email_large" displayText="Email"></span>
+            </div>
       <div id="disqus_thread" class="wrapper"></div>
 <script>
 /**
@@ -380,30 +371,22 @@ a:hover {
 */
 /*
 var disqus_config = function () {
-this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page"s canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page"s unique identifier variable
 };
 */
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
+(function() { // DON"T EDIT BELOW THIS LINE
+var d = document, s = d.createElement("script");
 
-s.src = '//thecodersbrain.disqus.com/embed.js';
+s.src = "//thecodersbrain.disqus.com/embed.js";
 
-s.setAttribute('data-timestamp', +new Date());
+s.setAttribute("data-timestamp", +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
     </div>
-
-    <!-- jekyll ad -->
-
-
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
     </article>
-  </div>
   <style>
 
 body {
@@ -428,7 +411,7 @@ body {
     border-radius: 5px;
   }
   * {
-    font-family: 'Jura', sans-serif;
+    font-family: "Jura", sans-serif;
 
   }
 
@@ -457,7 +440,7 @@ body {
 
   .intro-header {
     background-color: #808080;
-    background-image: url('http://s33.postimg.org/4wcimsh7z/jekyll_hyde.jpg');
+    background-image: url("http://s33.postimg.org/4wcimsh7z/jekyll_hyde.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -514,7 +497,7 @@ body {
     font-size: 24px;
     line-height: 1.1;
     display: block;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     margin: 0px 0 0;
   }
@@ -533,13 +516,13 @@ body {
     display: block;
   }
   .intro-header .post-heading .subheading {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 24px;
     margin: 10px 0 30px;
     font-weight: 600;
   }
   .intro-header .post-heading .meta {
-    font-family: 'Lora', 'Times New Roman', serif;
+    font-family: "Lora", "Times New Roman', serif;
     font-style: italic;
     font-weight: 300;
     font-size: 20px;
