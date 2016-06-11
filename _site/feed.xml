@@ -6,8 +6,8 @@
 </description>
     <link>http://TheCodersBrain.com/</link>
     <atom:link href="http://TheCodersBrain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 10 Jun 2016 21:10:32 -0700</pubDate>
-    <lastBuildDate>Fri, 10 Jun 2016 21:10:32 -0700</lastBuildDate>
+    <pubDate>Sat, 11 Jun 2016 15:51:54 -0700</pubDate>
+    <lastBuildDate>Sat, 11 Jun 2016 15:51:54 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -26,7 +26,9 @@
 &lt;h3&gt;Websites first need to be submitted (You can&#39;t expect them to know about every single website out there). After that the community votes based on &lt;b&gt;four&lt;/b&gt; main categories: Design, Usability, Creativity and Content. Each category is awarded a score, valuing from 0.0 to 10.0. Those scores are then averaged, giving an overall average score.&lt;/h3&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 
-&lt;img style=&quot;padding: 0px 150px;&quot; src=&quot;http://s33.postimg.org/fofbf9x8f/Screen_Shot_2016_06_10_at_9_32_17_AM.png&quot; /&gt;
+&lt;div class=&quot;row&quot; style=&quot;text-align: center;&quot;&gt;
+    &lt;img style=&quot;padding: 0px; width: 300px;&quot; src=&quot;http://s33.postimg.org/fofbf9x8f/Screen_Shot_2016_06_10_at_9_32_17_AM.png&quot; /&gt;
+&lt;/div&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 
 &lt;h2&gt;The takeaway&lt;/h2&gt;
@@ -37,14 +39,14 @@
 &lt;h1&gt;1. &lt;a href=&quot;http://waaark.com/&quot;&gt;waaark.com&lt;/a&gt;&lt;h1&gt;
 &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-waaark-1.jpg&quot; /&gt;
 
-  &lt;div class=&quot;row&quot; style=&quot;padding-top: 15px;&quot;&gt;
-    &lt;div class=&quot;col-md-4&quot; style=&quot;padding-right: 0px&quot;&gt;
+  &lt;div class=&quot;row&quot; style=&quot;padding: 15px;&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
       &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-waaark-2.jpg&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-md-4&quot; style=&quot;margin-left: 0px margin-right: 0px&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
       &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-waaark-3.jpg&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-md-4&quot; style=&quot;padding-left: 0px&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
       &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-waaark-4.jpg&quot; /&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -57,26 +59,36 @@
             &lt;h4 style=&quot;color: white; background-color: #d35400; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Design&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.19&lt;/h4&gt;
           &lt;/div&gt;
+
           &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
           &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.39&lt;/h4&gt;
           &lt;/div&gt;
+
           &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
             &lt;h4 style=&quot;color: white; background-color: #1abc9c; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Creativity&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.20&lt;/h4&gt;
           &lt;/div&gt;
+
           &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
             &lt;h4 style=&quot;color: white; background-color: #3498db; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Content&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.69&lt;/h4&gt;
           &lt;/div&gt;
-          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; background-color; grey&quot;&gt;
-            &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
-            &lt;h4 style=&quot;font-size: 35px; color: black;  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.90&lt;/h4&gt;
+        &lt;/div&gt;
+  &lt;/div&gt;
+
+          &lt;div style=&quot;text-align: center; margin-top: 20px&quot;&gt;
+            &lt;div id=&quot;box&quot; class=&quot;col-md-10 col-xs-12&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; width:100%; background-color; grey; display: inline-block&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 35px; color: black; background-color: white font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.90&lt;/h4&gt;
+            &lt;/div&gt;
           &lt;/div&gt;
-        &lt;/div&gt;  
-&lt;/div&gt;
+
+
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;h4&gt;Not surprisingly &lt;i&gt;Waaark&lt;/i&gt; is a French web designing firm that, on their website, list that they currently service such clients as &lt;b&gt;Melville Design&lt;/b&gt;, &lt;b&gt;Alix B d’Anthenay&lt;/b&gt;, &lt;b&gt;Bonne Marque&lt;/b&gt; among many others. I can tell you that each one of their websites is visually stunning. The firm is headed by a Art Director &lt;i&gt;Jimmy Raheriarisoa&lt;/i&gt; who boast an impressive 6 CSS design awards, 5 of the fore-mentioned Awwwards as well as 3 FWA&#39;s. The second half of this duo is none-other than Senior Developer &lt;i&gt;Antoine Wodniack&lt;/i&gt; who is no slouch in the awards department either, claiming a total of 9 CSS design awards, 8 Awwwards and 3 FWA&#39;s. All said Jimmy and Antoine have 8 years of working with each other and it definitely shows in their work.&lt;/h4&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;br /&gt;Not surprisingly &lt;i&gt;Waaark&lt;/i&gt; is a French web designing firm that, on their website, list that they currently service such clients as &lt;b&gt;Melville Design&lt;/b&gt;, &lt;b&gt;Alix B d’Anthenay&lt;/b&gt;, &lt;b&gt;Bonne Marque&lt;/b&gt; among many others. I can tell you that each one of their websites is visually stunning. The firm is headed by a Art Director &lt;i&gt;Jimmy Raheriarisoa&lt;/i&gt; who boast an impressive 6 CSS design awards, 5 of the fore-mentioned Awwwards as well as 3 FWA&#39;s. The second half of this duo is none-other than Senior Developer &lt;i&gt;Antoine Wodniack&lt;/i&gt; who is no slouch in the awards department either, claiming a total of 9 CSS design awards, 8 Awwwards and 3 FWA&#39;s. All said Jimmy and Antoine have 8 years of working with each other and it definitely shows in their work.&lt;/h4&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;a href=&quot;&quot;&gt;&lt;button class=&quot;btn btn-default&quot;&gt;&lt;b&gt;Visit Waaark.com&lt;/b&gt;&lt;/button&gt;&lt;/a&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
@@ -86,20 +98,21 @@
 
 &lt;!--Get lost START--&gt;
 
-  &lt;h1&gt;2. &lt;a href=&quot;http://eng.getlost-getnatural.ru/&quot;&gt;GET LOST. GET NATURAL&lt;/a&gt;&lt;h1&gt;
-  &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/05/awwwards-sotd-getlost-getnatural-1.jpg&quot; /&gt;
+    &lt;h1&gt;1. &lt;a href=&quot;http://eng.getlost-getnatural.ru/&quot;&gt;GET LOST. GET NATURAL&lt;/a&gt;&lt;h1&gt;
+    &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/05/awwwards-sotd-getlost-getnatural-1.jpg&quot; /&gt;
 
-    &lt;div class=&quot;row&quot; style=&quot;padding-top: 15px;&quot;&gt;
-      &lt;div class=&quot;col-md-4&quot; style=&quot;padding-right: 0px&quot;&gt;
-        &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/05/awwwards-sotd-getlost-getnatural-2.jpg&quot; /&gt;
+      &lt;div class=&quot;row&quot; style=&quot;padding: 15px;&quot;&gt;
+        &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+          &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/05/awwwards-sotd-getlost-getnatural-2.jpg&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+          &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/05/awwwards-sotd-getlost-getnatural-3.jpg&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+          &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/05/awwwards-sotd-getlost-getnatural-5.jpg&quot; /&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;col-md-4&quot; style=&quot;margin-left: 0px margin-right: 0px&quot;&gt;
-        &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/05/awwwards-sotd-getlost-getnatural-3.jpg&quot; /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-md-4&quot; style=&quot;padding-left: 0px&quot;&gt;
-        &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/05/awwwards-sotd-getlost-getnatural-5.jpg&quot; /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
+
 
 &lt;div class=&quot;score-wrapper&quot;&gt;
 &lt;h2 style=&quot;text-align:center; font-weight: bolder; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: white;&quot;&gt;SCORE CARD&lt;/h2&gt;
@@ -109,26 +122,34 @@
             &lt;h4 style=&quot;color: white; background-color: #d35400; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Design&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.84&lt;/h4&gt;
           &lt;/div&gt;
+
           &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
-          &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
+            &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.27&lt;/h4&gt;
           &lt;/div&gt;
+
           &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
             &lt;h4 style=&quot;color: white; background-color: #1abc9c; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Creativity&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.60&lt;/h4&gt;
           &lt;/div&gt;
+
           &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
             &lt;h4 style=&quot;color: white; background-color: #3498db; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Content&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.45&lt;/h4&gt;
           &lt;/div&gt;
-          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; background-color; grey&quot;&gt;
-            &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
-            &lt;h4 style=&quot;font-size: 35px; color: black;  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.58&lt;/h4&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;  
-&lt;/div&gt;
+        &lt;/div&gt;
+  &lt;/div&gt;
+
+      &lt;div style=&quot;text-align: center; margin-top: 20px&quot;&gt;
+        &lt;div id=&quot;box&quot; class=&quot;col-md-10 col-xs-12&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; width:100%; background-color; grey; display: inline-block&quot;&gt;
+          &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
+          &lt;h4 style=&quot;font-size: 35px; color: black; background-color: white font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.58&lt;/h4&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;h4&gt;GET LOST. GET NATURAL is a website built for the sole purpose to inform about the Grand Tour route and to show that Switzerland is not just about cheese, chocolate and watches....There are a bunch of other adjectives that &lt;i&gt;Hungry Boys&lt;/i&gt; (the Russian based web design firm behind GET LOST. GET NATURAL) uses to describe the site, but to me, it just is a bunch of fluff words strung together to make it sound like they have art degree, which I&#39;m sure they do, but my audience isn&#39;t a bunch of high brow do-gooders that require to be pandered and ostracized from the art community. So...you&#39;re welcome for saving you from reading their description.&lt;/h4&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;br /&gt;GET LOST. GET NATURAL is a website built for the sole purpose to inform about the Grand Tour route and to show that Switzerland is not just about cheese, chocolate and watches....There are a bunch of other adjectives that &lt;i&gt;Hungry Boys&lt;/i&gt; (the Russian based web design firm behind GET LOST. GET NATURAL) uses to describe the site, but to me, it just is a bunch of fluff words strung together to make it sound like they have art degree, which I&#39;m sure they do, but my audience isn&#39;t a bunch of high brow do-gooders that require to be pandered and ostracized from the art community. So...you&#39;re welcome for saving you from reading their description.&lt;/h4&gt;
 
 &lt;h4&gt;Hungry Boys has two more entries in this years Awwwards that you can check out below, they pretty much all hover around the same score so I thought they were worth at least mentioning in passing.
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
@@ -153,14 +174,14 @@
   &lt;h1&gt;3. &lt;a href=&quot;https://www.thiswaslouisesphone.com/&quot;&gt;Ths Was Louises Phone&lt;/a&gt;&lt;h1&gt;
   &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-This-Was-Louises-phone-1.jpg&quot; /&gt;
 
-    &lt;div class=&quot;row&quot; style=&quot;padding-top: 15px;&quot;&gt;
-      &lt;div class=&quot;col-md-4&quot; style=&quot;padding-right: 0px&quot;&gt;
+    &lt;div class=&quot;row&quot; style=&quot;padding: 15px;&quot;&gt;
+      &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
         &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-This-Was-Louises-phone-2.jpg&quot; /&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;col-md-4&quot; style=&quot;margin-left: 0px margin-right: 0px&quot;&gt;
+      &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
         &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-This-Was-Louises-phone-3.jpg&quot; /&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;col-md-4&quot; style=&quot;padding-left: 0px&quot;&gt;
+      &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
         &lt;img src=&quot;http://s33.postimg.org/3wxg9oyhr/Screen_Shot_2016_06_10_at_2_55_05_PM.png&quot; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -173,26 +194,35 @@
             &lt;h4 style=&quot;color: white; background-color: #d35400; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Design&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.49&lt;/h4&gt;
           &lt;/div&gt;
+
           &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
-          &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
+            &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.54&lt;/h4&gt;
           &lt;/div&gt;
+
           &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
             &lt;h4 style=&quot;color: white; background-color: #1abc9c; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Creativity&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.50&lt;/h4&gt;
           &lt;/div&gt;
+
           &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
             &lt;h4 style=&quot;color: white; background-color: #3498db; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Content&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.85&lt;/h4&gt;
           &lt;/div&gt;
-          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; background-color; grey&quot;&gt;
-            &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
-            &lt;h4 style=&quot;font-size: 35px; color: black;  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.74&lt;/h4&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;  
+        &lt;/div&gt;
 &lt;/div&gt;
+          &lt;div style=&quot;text-align: center; margin-top: 20px&quot;&gt;
+            &lt;div id=&quot;box&quot; class=&quot;col-md-10 col-xs-12&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; width:100%; background-color; grey; display: inline-block&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 35px; color: black; background-color: white font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.74&lt;/h4&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;h4&gt;This was Louises Phone, is a full immersive and interactive website that plays more like a video game. The message conveyed is narrated by Louises father, detailing the &lt;b&gt;&quot;hells of cyber-bullying&quot;&lt;/b&gt; by reading, then 16 year old, Louises attackers text messages. You may have guessed that Louise ended up ending her own life. Although the over-arching message is to end bullying, through the &lt;b&gt;No Hate Network&lt;/b&gt;, Louises story is the main vehicle to spread that message. Originally in French, the website has been translated to English to help spread the awareness. &lt;br /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;h4&gt;&lt;br /&gt;This was Louises Phone, is a full immersive and interactive website that plays more like a video game. The message conveyed is narrated by Louises father, detailing the &lt;b&gt;&quot;hells of cyber-bullying&quot;&lt;/b&gt; by reading, then 16 year old, Louises attackers text messages. You may have guessed that Louise ended up ending her own life. Although the over-arching message is to end bullying, through the &lt;b&gt;No Hate Network&lt;/b&gt;, Louises story is the main vehicle to spread that message. Originally in French, the website has been translated to English to help spread the awareness. &lt;br /&gt;
 &lt;br /&gt;A few note worthy points are that the site is entirely transitioned on Javascript, essentially making it one huge web-based application. There are a few oddities within how the app performs which is why I am putting this one a little lower on the list. Don&#39;t get me wrong this is a beautiful site but there are a few mistakes like a huge white space on the page while scrolling down the page.&lt;/h4&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 
@@ -210,14 +240,14 @@
   &lt;h1&gt;4. &lt;a href=&quot;http://www.pocketpenguins.com/&quot;&gt;Pocket Penguins&lt;/a&gt;&lt;h1&gt;
   &lt;img src=&quot;http://www.awwwards.com/awards/submissions/2016/06/575806fb14c16.png&quot; /&gt;
 
-    &lt;div class=&quot;row&quot; style=&quot;padding-top: 15px;&quot;&gt;
-      &lt;div class=&quot;col-md-4&quot; style=&quot;padding-right: 0px&quot;&gt;
+    &lt;div class=&quot;row&quot; style=&quot;padding: 15px;&quot;&gt;
+      &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
         &lt;img src=&quot;http://s33.postimg.org/cufc5l8gv/Screen_Shot_2016_06_10_at_7_02_30_PM.png&quot; /&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;col-md-4&quot; style=&quot;margin-left: 0px margin-right: 0px&quot;&gt;
+      &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
         &lt;img src=&quot;http://s33.postimg.org/n9w4fnbq7/Screen_Shot_2016_06_10_at_7_03_21_PM.png&quot; /&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;col-md-4&quot; style=&quot;padding-left: 0px&quot;&gt;
+      &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
         &lt;img src=&quot;http://s33.postimg.org/n7pir4isf/Screen_Shot_2016_06_10_at_7_03_02_PM.png&quot; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -230,26 +260,35 @@
             &lt;h4 style=&quot;color: white; background-color: #d35400; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Design&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.48&lt;/h4&gt;
           &lt;/div&gt;
+
           &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
-          &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
+            &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.25&lt;/h4&gt;
           &lt;/div&gt;
+
           &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
             &lt;h4 style=&quot;color: white; background-color: #1abc9c; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Creativity&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.32&lt;/h4&gt;
           &lt;/div&gt;
+
           &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
             &lt;h4 style=&quot;color: white; background-color: #3498db; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Content&lt;/h4&gt;
             &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.31&lt;/h4&gt;
           &lt;/div&gt;
-          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; background-color; grey&quot;&gt;
-            &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
-            &lt;h4 style=&quot;font-size: 35px; color: black;  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.34&lt;/h4&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;  
+        &lt;/div&gt;
 &lt;/div&gt;
+          &lt;div style=&quot;text-align: center; margin-top: 20px&quot;&gt;
+            &lt;div id=&quot;box&quot; class=&quot;col-md-10 col-xs-12&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; width:100%; background-color; grey; display: inline-block&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 35px; color: black; background-color: white font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.34&lt;/h4&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;h4&gt;Pocket Penguins is nothing special, yet at the same time, that is exactly what makes it so special. It isn&#39;t trying too hard, it isn&#39;t full of purposeless gimmick eye candy per sake of eye candy. Yes, Pocket Penguins is quiet unique indeed.&lt;br /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;h4&gt;&lt;br /&gt;Pocket Penguins is nothing special, yet at the same time, that is exactly what makes it so special. It isn&#39;t trying too hard, it isn&#39;t full of purposeless gimmick eye candy per sake of eye candy. Yes, Pocket Penguins is quiet unique indeed.&lt;br /&gt;
 &lt;br /&gt;
 The secret sauce to this masterpiece is in the fine details. For starters, this is a true &lt;a href=&quot;https://en.wikipedia.org/wiki/Single-page_application&quot;&gt;SPA&lt;/a&gt; (single page application). You wont find any menu&#39;s or links taking you off the single page. The scroll effects are coded perfectly, the Javascript; on spot! It&#39;s not a fancy site done well, rather a simple site done to perfection. That&#39;s it&#39;s charm, it&#39;s simplicity, like the Penguin itself it is a truly perfect simplicity.&lt;/h4&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
@@ -280,29 +319,39 @@ The secret sauce to this masterpiece is in the fine details. For starters, this 
 &lt;h2 style=&quot;text-align:center; font-weight: bolder; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: white;&quot;&gt;SCORE CARD&lt;/h2&gt;
 &lt;hr /&gt;
         &lt;div id=&quot;scores&quot; class=&quot;row&quot; style=&quot;text-align: center&quot;&gt;
-          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
-            &lt;h4 style=&quot;color: white; background-color: #d35400; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Design&lt;/h4&gt;
-            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.22&lt;/h4&gt;
-          &lt;/div&gt;
-          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
-          &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
-            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.99&lt;/h4&gt;
-          &lt;/div&gt;
-          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
-            &lt;h4 style=&quot;color: white; background-color: #1abc9c; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Creativity&lt;/h4&gt;
-            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.58&lt;/h4&gt;
-          &lt;/div&gt;
-          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
-            &lt;h4 style=&quot;color: white; background-color: #3498db; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Content&lt;/h4&gt;
-            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.08&lt;/h4&gt;
-          &lt;/div&gt;
-          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; background-color; grey&quot;&gt;
-            &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
-            &lt;h4 style=&quot;font-size: 35px; color: black;  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.22&lt;/h4&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;  
+            &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #d35400; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Design&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.22&lt;/h4&gt;
+            &lt;/div&gt;
+
+            &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.99&lt;/h4&gt;
+            &lt;/div&gt;
+
+            &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #1abc9c; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Creativity&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.58&lt;/h4&gt;
+            &lt;/div&gt;
+
+            &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #3498db; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Content&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.08&lt;/h4&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
 &lt;/div&gt;
+
+        &lt;div style=&quot;text-align: center; margin-top: 20px&quot;&gt;
+          &lt;div id=&quot;box&quot; class=&quot;col-md-10 col-xs-12&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; width:100%; background-color; grey; display: inline-block&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 35px; color: black; background-color: white font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.22&lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
 &lt;h4&gt;&lt;b&gt;The Swiss Army Man&lt;/b&gt; is a marketing page for a Sundance festival winner by the same name. Starring Daniel Radcliffe as &quot;Manny&quot;, a washed ashore body that sheds some hope and a questionable friendship to Paul Dano&#39;s &quot;Hank&quot;, serving as a catalyst for the questionable sanity of the main character himself as he struggles internally of whether he is witnessing a miracle or simply succumbing to the isolation of finding himself alone on a deserted island. I&#39;ve got to say, I love this idea. A refreshing story in a sea of reboots and sequels ten-poles. However this is about website design, and although the premise of this movie is a great inspiration, does the webpage convey that tone equally as well?&lt;br /&gt;
 &lt;br /&gt;
 Well would you look at that score; a bit of runaway; wouldn&#39;t you say? Well, while I do believe this is very deserving of it&#39;s attention as a website, I do believe this score to be a tad bit presumptuous. While the coding behind the realistic physics that go into ...ah....throwing a graphical dead body around and make it convincing to the website visitor is a feat of engineering prowess, you have to ask yourself does it add to the overall design of the medium? I believe it does, however to an extent. Take away the gimmick that is him being tossed around the screen and what are you left with? A bunch of share buttons for your social network peralus and a play button for the trailer.&lt;br /&gt;
@@ -352,8 +401,9 @@ li {
 .score-wrapper {
   background-color: #bdc3c7;
   box-shadow: 1px 12px 15px -3px grey;
-  padding: 25px;
   margin-top: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
 
 
 }
@@ -361,6 +411,8 @@ li {
   display: inline;
   margin-left: 0px;
   margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   text-align: center;
 
 }
@@ -372,14 +424,16 @@ li {
   box-shadow: 2px 12px 15px -3px grey;
   color: #59C3C6;
   text-transform: uppercase;
-  boarder: 3px solid black;
   font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+  display: inline-block;
 
 
 }
-
-#box:nth-child(2) {
-  font-size: 50px;
+.wrapper {
+  padding: 0px;
+}
+#box {
+  min-width: 150px;
 }
 
 #scores #box h4 {
