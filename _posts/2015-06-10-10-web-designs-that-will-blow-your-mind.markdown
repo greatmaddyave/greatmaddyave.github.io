@@ -368,7 +368,14 @@ That being said, I believe this fits nicely into a comfortable second place. Alt
 
 
 <!--Penguin END-->
+<!-- Update your html tag to include the itemscope and itemtype attributes. -->
+<html itemscope itemtype="http://schema.org/Blog">
 
+<!-- Add the following three tags to your body. -->
+<span itemprop="name">5 Web Designs and Websites that will blow your %$#?ing mind!</span>
+<span itemprop="description">As web developers we are always growing, not only in our skills but also in keeping with trends and styles that the current market finds attractive. After all, web developers are designers first. Whether you&#39;re full-stack or just focus on front-end, user experience should be one, if not the, top priority when it comes to your web application.
+subtitle: Testing the limits of UX/UI Design</span>
+<img itemprop="image" src="http://s33.postimg.org/k3rxcgfjy/background.jpg">
 
 <style>
 

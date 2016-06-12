@@ -2,11 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TheCodersBrain</title>
-    <description>  A unique perspective on would-be coders as a simple blog evolves alongside the educational process of a newbie coder to his journey of becoming a promanent force in the Web Development Industry.</description>
-    <link>http://thecodersbrain.com/base/</link>
-    <atom:link href="http://thecodersbrain.com/base/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Jun 2016 06:30:13 +0000</pubDate>
-    <lastBuildDate>Sun, 12 Jun 2016 06:30:13 +0000</lastBuildDate>
+    <description>A unique perspective on would-be coders as a simple blog evolves alongside the educational process of a newbie coder to his journey of becoming a promanent force in the Web Development Industry.
+</description>
+    <link>http://TheCodersBrain.com/</link>
+    <atom:link href="http://TheCodersBrain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 12 Jun 2016 17:34:07 +0000</pubDate>
+    <lastBuildDate>Sun, 12 Jun 2016 17:34:07 +0000</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -365,7 +366,14 @@ That being said, I believe this fits nicely into a comfortable second place. Alt
 
 
 &lt;!--Penguin END--&gt;
+&lt;!-- Update your html tag to include the itemscope and itemtype attributes. --&gt;
+&lt;html itemscope=&quot;&quot; itemtype=&quot;http://schema.org/Blog&quot;&gt;
 
+&lt;!-- Add the following three tags to your body. --&gt;
+&lt;span itemprop=&quot;name&quot;&gt;5 Web Designs and Websites that will blow your %$#?ing mind!&lt;/span&gt;
+&lt;span itemprop=&quot;description&quot;&gt;As web developers we are always growing, not only in our skills but also in keeping with trends and styles that the current market finds attractive. After all, web developers are designers first. Whether you&amp;#39;re full-stack or just focus on front-end, user experience should be one, if not the, top priority when it comes to your web application.
+subtitle: Testing the limits of UX/UI Design&lt;/span&gt;
+&lt;img itemprop=&quot;image&quot; src=&quot;http://s33.postimg.org/k3rxcgfjy/background.jpg&quot; /&gt;
 
 &lt;style&gt;
 
@@ -507,11 +515,11 @@ input, textarea, select{
 }
 
 &lt;/style&gt;
-&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h4&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/i&gt;&lt;/i&gt;&lt;/h3&gt;&lt;/div&gt;
+&lt;/html&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h4&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/i&gt;&lt;/i&gt;&lt;/h3&gt;&lt;/div&gt;
 </description>
         <pubDate>Fri, 10 Jun 2016 09:15:05 +0000</pubDate>
-        <link>http://thecodersbrain.com/base/jekyll/update/2016/06/10/10-web-designs-that-will-blow-your-mind.html</link>
-        <guid isPermaLink="true">http://thecodersbrain.com/base/jekyll/update/2016/06/10/10-web-designs-that-will-blow-your-mind.html</guid>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/06/10/10-web-designs-that-will-blow-your-mind.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/06/10/10-web-designs-that-will-blow-your-mind.html</guid>
         
         
         <category>jekyll</category>
@@ -689,8 +697,8 @@ padding: 5px
 &lt;/h4&gt;&lt;/h4&gt;&lt;/h4&gt;&lt;/h4&gt;&lt;/h4&gt;&lt;/h4&gt;&lt;/h3&gt;&lt;/h3&gt;&lt;/div&gt;
 </description>
         <pubDate>Wed, 08 Jun 2016 00:44:05 +0000</pubDate>
-        <link>http://thecodersbrain.com/base/jekyll/update/2016/06/08/7-Free-E-Books-Worth-Reading.html</link>
-        <guid isPermaLink="true">http://thecodersbrain.com/base/jekyll/update/2016/06/08/7-Free-E-Books-Worth-Reading.html</guid>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/06/08/7-Free-E-Books-Worth-Reading.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/06/08/7-Free-E-Books-Worth-Reading.html</guid>
         
         
         <category>jekyll</category>
@@ -822,8 +830,8 @@ a:hover {
 
 </description>
         <pubDate>Mon, 06 Jun 2016 21:38:05 +0000</pubDate>
-        <link>http://thecodersbrain.com/base/jekyll/update/2016/06/06/Jekyll-Tutorial-Configuration.html</link>
-        <guid isPermaLink="true">http://thecodersbrain.com/base/jekyll/update/2016/06/06/Jekyll-Tutorial-Configuration.html</guid>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/06/06/Jekyll-Tutorial-Configuration.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/06/06/Jekyll-Tutorial-Configuration.html</guid>
         
         
         <category>jekyll</category>
@@ -978,8 +986,8 @@ a:hover {
 &lt;/destination&gt;&lt;/destination&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Wed, 01 Jun 2016 02:38:05 +0000</pubDate>
-        <link>http://thecodersbrain.com/base/jekyll/update/2016/06/01/Jekyll-tutorial-How-to-install-jekyll.html</link>
-        <guid isPermaLink="true">http://thecodersbrain.com/base/jekyll/update/2016/06/01/Jekyll-tutorial-How-to-install-jekyll.html</guid>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/06/01/Jekyll-tutorial-How-to-install-jekyll.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/06/01/Jekyll-tutorial-How-to-install-jekyll.html</guid>
         
         
         <category>jekyll</category>
@@ -1043,8 +1051,8 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
 &lt;/p&gt;&lt;/p&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 31 May 2016 18:36:05 +0000</pubDate>
-        <link>http://thecodersbrain.com/base/jekyll/update/2016/05/31/Top-Programming-languages-to-learn-in-2015.html</link>
-        <guid isPermaLink="true">http://thecodersbrain.com/base/jekyll/update/2016/05/31/Top-Programming-languages-to-learn-in-2015.html</guid>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/05/31/Top-Programming-languages-to-learn-in-2015.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/05/31/Top-Programming-languages-to-learn-in-2015.html</guid>
         
         
         <category>jekyll</category>
@@ -1088,8 +1096,8 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 21 May 2016 03:08:05 +0000</pubDate>
-        <link>http://thecodersbrain.com/base/jekyll/update/2016/05/21/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://thecodersbrain.com/base/jekyll/update/2016/05/21/welcome-to-jekyll.html</guid>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/05/21/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/05/21/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
@@ -1257,8 +1265,8 @@ img {
 &lt;/p&gt;&lt;/p&gt;&lt;/article&gt;
 </description>
         <pubDate>Tue, 10 May 2016 19:13:05 +0000</pubDate>
-        <link>http://thecodersbrain.com/base/jekyll/update/2016/05/10/Top-5-online-sites-for-learning-web-development.html</link>
-        <guid isPermaLink="true">http://thecodersbrain.com/base/jekyll/update/2016/05/10/Top-5-online-sites-for-learning-web-development.html</guid>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/05/10/Top-5-online-sites-for-learning-web-development.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/05/10/Top-5-online-sites-for-learning-web-development.html</guid>
         
         
         <category>jekyll</category>
@@ -1317,8 +1325,8 @@ It&#39;s hard to believe how far I&#39;ve come in just 2 1/2 months but this was
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 20 Nov 2015 19:13:05 +0000</pubDate>
-        <link>http://thecodersbrain.com/base/jekyll/update/2015/11/20/I-wrote-my-first-line-of-code.html</link>
-        <guid isPermaLink="true">http://thecodersbrain.com/base/jekyll/update/2015/11/20/I-wrote-my-first-line-of-code.html</guid>
+        <link>http://TheCodersBrain.com/jekyll/update/2015/11/20/I-wrote-my-first-line-of-code.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2015/11/20/I-wrote-my-first-line-of-code.html</guid>
         
         
         <category>jekyll</category>
