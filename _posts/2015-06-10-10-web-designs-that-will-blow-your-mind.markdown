@@ -1,13 +1,17 @@
 ---
 layout: post
-title:  5 Web Designs and Websites that will blow your <b><i>%$#?ing</i></b> mind!
+title:  5 Web Designs and Websites that will blow your %$#?ing mind!
 date:   2016-06-10 02:15:05 -0700
 author: John Cossack
+link: http://www.thecodersbrain.com/jekyll/update/2016/06/10/10-web-designs-that-will-blow-your-mind.html
 imageurl: http://s33.postimg.org/k3rxcgfjy/background.jpg
 categories: jekyll update
 caption: As web developers we are always growing, not only in our skills but also in keeping with trends and styles that the current market finds attractive. After all, web developers are designers first. Whether you're full-stack or just focus on front-end, user experience should be one, if not the, top priority when it comes to your web application.
 subtitle: Testing the limits of UX/UI Design
 keywords: best, website, websites, designs, ux/ui, ux, ui, awwwards, waaark, get, lost, get, natural, this, was, louises, phone, pocket, penguins, The, Swiss, Army, Man,
+last_modified_at: 2016-06-15T05:20:00+05:45 # last page modified date/time
+image: http://s33.postimg.org/k3rxcgfjy/background.jpg # /assets/img/image.jpg
+excerpt: As web developers we are always growing, not only in our skills but also in keeping with trends and styles that the current market finds attractive. After all, web developers are designers first. Whether you're full-stack or just focus on front-end, user experience should be one, if not the, top priority when it comes to your web application.
 ---
 
 <div class = "wrapper">

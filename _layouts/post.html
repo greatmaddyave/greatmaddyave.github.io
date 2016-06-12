@@ -5,28 +5,43 @@ layout: default
             <div class="site-heading" style = "padding-top: 400px; margin-top: -50px">
               <h1>{{ page.title }}</h1><h3 style = "color: #9b59b6;line-height: 42px;"><b>{{ page.subtitle}}</b></h3><p class="post-meta" style = "background-color: transparent; color: grey; font-size: 25px; font-style: italic; text-shadow: 2px 2px 2px white;"><time style = "background-color: transparent" datetime= "{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author"  itemscope itemtype="http://schema.org/Person"><span style = "color: grey; background-color: transparent" itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
             </div>
+            <div class="fb-like" data-share="true" data-width="450"data-show-faces="true"></div>
     </div>
     <div class = "wrapper" style = "background-color: transparent; padding: 25px; padding-top: 5px">
       <h4>Share this post:</h4>
-            <span class="st_sharethis_large" displayText="ShareThis"></span><span class="st_facebook_large" displayText="Facebook"></span><span class="st_googleplus_large" displayText="Google +"></span><span class="st_twitter_large" displayText="Tweet"></span><span class="st_linkedin_large" displayText="LinkedIn"></span>
-            <span class="st_pinterest_large" displayText="Pinterest"></span><span class="st_email_large" displayText="Email"></span>
+      <ul class="share-buttons">
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="https://cdn3.iconfinder.com/data/icons/sociocons/128/facebook-sociocon.png"></a></li>
+        <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D&text=:%20http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="https://cdn3.iconfinder.com/data/icons/sociocons/128/twitter-sociocon.png"></a></li>
+        <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="https://cdn3.iconfinder.com/data/icons/sociocons/128/google-sociocon.png"></a></li>
+        <li><a href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D&t=&s=" target="_blank" title="Post to Tumblr" onclick="window.open('http://www.tumblr.com/share?v=3&u=' + encodeURIComponent(document.URL) + '&t=' +  encodeURIComponent(document.title)); return false;"><img src="https://cdn0.iconfinder.com/data/icons/flat-social-media-icons-set-round-style-1/550/tumblr-128.png"></a></li>
+        <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="https://cdn3.iconfinder.com/data/icons/sociocons/128/pinterest-sociocon.png"></a></li>
+        <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/reddit_online_social_media-128.png"></a></li>
+        <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D&title=&summary=&source=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="https://cdn3.iconfinder.com/data/icons/sociocons/128/linkedin-sociocon.png"></a></li>
+        <li><a href="mailto:?subject=&body=:%20http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="https://cdn3.iconfinder.com/data/icons/sociocons/128/email-sociocon.png"></a></li>
+      </ul>
     </div>
     <div class = "wrapper" style = "background-color: transparent;">
       <div style = "background-color: transparent; width: 100%; overflow: hidden;"></div>
     </div>
 
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
       <div class="post-content" itemprop="articleBody">
             {{ content }}
+
             <div class = "wrapper" style = "background-color: transparent; padding: 25px;">
               <h4>Share this post:</h4>
-                <span class="st_sharethis_large" displayText="ShareThis"></span>
-                <span class="st_facebook_large" displayText="Facebook"></span>
-                <span class="st_googleplus_large" displayText="Google +"></span>
-                <span class="st_twitter_large" displayText="Tweet"></span>
-                <span class="st_linkedin_large" displayText="LinkedIn"></span>
-                <span class="st_pinterest_large" displayText="Pinterest"></span>
-                <span class="st_email_large" displayText="Email"></span>
+              <ul class="share-buttons">
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="https://cdn3.iconfinder.com/data/icons/sociocons/128/facebook-sociocon.png"></a></li>
+                <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D&text=:%20http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="https://cdn3.iconfinder.com/data/icons/sociocons/128/twitter-sociocon.png"></a></li>
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="https://cdn3.iconfinder.com/data/icons/sociocons/128/google-sociocon.png"></a></li>
+                <li><a href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D&t=&s=" target="_blank" title="Post to Tumblr" onclick="window.open('http://www.tumblr.com/share?v=3&u=' + encodeURIComponent(document.URL) + '&t=' +  encodeURIComponent(document.title)); return false;"><img src="https://cdn0.iconfinder.com/data/icons/flat-social-media-icons-set-round-style-1/550/tumblr-128.png"></a></li>
+                <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="https://cdn3.iconfinder.com/data/icons/sociocons/128/pinterest-sociocon.png"></a></li>
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/reddit_online_social_media-128.png"></a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D&title=&summary=&source=http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="https://cdn3.iconfinder.com/data/icons/sociocons/128/linkedin-sociocon.png"></a></li>
+                <li><a href="mailto:?subject=&body=:%20http%3A%2F%2Fwww.thecodersbrain.com%7B%7B%20page.url%20%7D%7D" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="https://cdn3.iconfinder.com/data/icons/sociocons/128/email-sociocon.png"></a></li>
+              </ul>
+
             </div>
       <div id="disqus_thread" class="wrapper"></div>
 <script>
@@ -57,10 +72,21 @@ s.setAttribute("data-timestamp", +new Date());
 body {
   overflow-x: hidden;
 }
+.share-buttons img {
+  width: 50px;
+  height: auto;
+}
 .site-title {
   color: white;
 }
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
 
+ul.share-buttons li{
+  display: inline;
+}
 
   footer p {
     background-color: #ecf0f1;
