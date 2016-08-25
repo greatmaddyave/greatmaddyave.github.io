@@ -1,0 +1,47 @@
+---
+layout: post
+title: Update
+date: 2016-08-24 14:38:05 -0700
+author: John Cossack
+imageurl: http://media.gettyimages.com/photos/newsboy-holding-paper-and-shouting-on-megaphone-picture-id155016322?k=6&m=155016322&s=170667a&w=0&h=gPdj0HniHn6CRGd6Tl8trwB3a2edkEpTKwT8u97yHJ0=
+categories: update web development
+caption: Ive missed you guys too. All 3 of my daily readers. But its not about how many readers I have, Its about what I started out to do with this website from the beginning and that is to detail my path from novice to web developer. So whats the update? What I have I been up to. Have I landed my first Web Development Job? Well get to all of that shortly just let me get a few updates out of the way
+subtitle: Its not you, its me.
+keywords: web, developer,
+baseurl: Update
+---
+
+<div class = "wrapper">
+<h1>I've been gone awhile</h1>
+
+<p>I've missed you guys too. All 3 of my daily readers. But it's not about how many readers I have,
+It's about what I started out to do with this website from the beginning and that is to detail my path from novice to web developer.
+So what's the update? What I have I been up to. Have I landed my first Web Development Job?</p><br>
+<p>We'll get to all of that shortly just let me get a few updates out of the way.</p><br>
+<h3>First things first</h3><br>
+<p>So I haven't coded in Ruby since last posting on this site which looks to be a little over 2 months ago. It's not that I don't still love Ruby...<em>I still do</em> It's not that I found something better....<em>I haven't</em> The thing is when you are a web developer you have more use for languages like JavaScript and jQuery. So I have been primarily focusing on those two languages. It's just that JavaScript and jQuery can manipulate the DOM so much easier. Now thats not to say Rails and Ruby dont have their place in web development, in fact rails is the language I run this website off of and it has been incremental to the success and implimentation of this site. For instance all I need to do is title an html file a particular way and the code behind this website formats the landing page to include it in the line up of most recent post. I don't touch that page ever. In fact I don't even style the posts, including the one you are currently reading, that's the power of Ruby. But when it comes to DOM traversal, there is just no other language that compares.</p>
+
+<br>
+<p>So I've been using JavaScript but on what?</p><br>
+<p>Well, I have been working on a website for a client that is Huuuuugee. All told, I'm 4 months in and I can almost...<em>ALMOST</em> see the light at the
+end of the tunnel. Let's go over what I had to do:<p>
+
+<ul>
+  <li>Design</li>
+  <li>Write the HTML & CSS from the ground up</li>
+  <li>impliment and code several complex calculators for online quotes</li>
+  <li>Take those quotes and funnel the results into a shopping cart</li>
+  <li>Allow the user to reject the quote as well as update their shopping list, set an appointment</li>
+  <li>Create a database to match service providers with those that checked out through our cart</li>
+  <li>Set up a database and user sign in for our partners</li>
+  <li>Set up a database and user sign in/up for our customers</li>
+  <li>Much much more</li>
+</ul>
+
+<p>And all of this written in HTML, CSS, JavaScript and jQuery so far...from scratch...no real important plug ins. This is all unique code and ther is a lot of it. I'm actually thinking of porting it over to a rails app in the future but for now it is what it is and I just can't handle the thought of doing more work at this point.</p>
+
+<h3>My other Mistress...School</h3>
+<p>I have also been in summer school for college and if you have any idea how stressful an accelerated computer science schedule could be, then you'll understand my reluctancy to blog rather than focus on school. I'm getting ready to start up the fall semester with 18.5 credit units on my plate so you may not be seeing much of me this term either, which is why I'm writing now. However I've made it a point to post a few more times in the coming months that will focus on some plugins I built for the average person to impliment within their websites. I want to focus on making a tutorial for how to include it in your site so keep your eyes peeled for that. <p>
+
+<br>
+<p>...until we meet again, see you soon!</p>

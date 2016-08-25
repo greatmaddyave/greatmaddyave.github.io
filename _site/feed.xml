@@ -6,9 +6,706 @@
 </description>
     <link>http://TheCodersBrain.com/</link>
     <atom:link href="http://TheCodersBrain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Jun 2016 17:34:07 +0000</pubDate>
-    <lastBuildDate>Sun, 12 Jun 2016 17:34:07 +0000</lastBuildDate>
+    <pubDate>Thu, 25 Aug 2016 23:47:47 +0000</pubDate>
+    <lastBuildDate>Thu, 25 Aug 2016 23:47:47 +0000</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>How to add a Carousel to your website.</title>
+        <description>&lt;div class=&quot;wrapper&quot; style=&quot;width: 100%;&quot;&gt;
+&lt;h1&gt;Adding an interactive slider to your website&lt;/h1&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://codepen.io/greatmaddyave/full/QEXOmO/&quot;&gt;&lt;button class=&quot;install&quot;&gt;Visit the CodePen for this Project&lt;/button&gt;&lt;/a&gt;
+&lt;br /&gt;
+&lt;p&gt;A jqueryUI or Bootstrap slider can add, not only some style to your webpage but also give it a level of professionalism. Although generally used to showcase an array of images, a slider can also save vertical space on your website for the many levels of an application that the user may not even interact with otherwise. It really leans up the look of your website and is one of my favorite utilizations of the slider that I don&#39;t see a lot of developers using.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;In this tutorial I&#39;m going to be breaking down the step by step process and hopefully get your slider up and running on your very own website. I&#39;m going to try to be as detailed as possible and easy to follow as there are a lot of steps to this process, that if missed, will leave your sliders functionality broken but that anger problem you have otherwise had under control. I&#39;m looking at you Bruce Banner!&lt;/p&gt;
+&lt;br /&gt;
+&lt;div id=&quot;imageWrapper&quot;&gt;
+  &lt;img src=&quot;https://s13.postimg.io/olwajuck7/slider_1.jpg&quot; /&gt;
+  &lt;img src=&quot;https://s13.postimg.io/ytetw8ys7/slider_two.jpg&quot; /&gt;
+  &lt;img src=&quot;https://s13.postimg.io/651vt0wlz/slider_2.jpg&quot; /&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;h3 class=&quot;orsteps&quot;&gt;Step One:&lt;span class=&quot;title-instruction&quot;&gt;Add bootstrap.css &amp;amp; bootstrap.js&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;Often times when pulling some snippet of code offline to impliment into your own website can be quiet frustrating as many of these folks leave off the fact you need to add libraries for the snippet to actually function correctly. So your first step will be to add these libraries straight away so we don&#39;t run into this, all too common, issue.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Since the order of these matter a great deal and going along with our all over theme, are one of the many little things that can make your code not perform the way you intended or worse; not work at all.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;So what I have recently started doing with all my websites is copy and paste a template of all the libraries I use, in the order they need to be, from there I delete the ones that I never intend on using within the site. The reason I don&#39;t just leave them there is some libraries can increase the loading time of your webpage, and in today&#39;s climate of web development the user may be viewing your website on a data restricted tablet or smartphone and you want the user experience to be your number one priority, removing the unused libraries will speed up your load times as well as make the end user a whole lot happier you didn&#39;t eat up their data for a technology that wasn&#39;t even used.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Now that that little rant is out of the way, here is my header and script tags&lt;/p&gt;
+&lt;br /&gt;
+&lt;p style=&quot;font-weight: bold;&quot;&gt;First the head tags:&lt;/p&gt;
+&lt;div class=&quot;code-surround&quot;&gt;
+  &lt;xmp style=&quot;font-size: 11px;&quot;&gt;
+    &lt;head&gt;
+      &lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+      &lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+      &lt;script src=&quot;/bootstrap/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+      &lt;script src=&quot;/js/slider_input.js&quot;&gt;&lt;/script&gt;
+
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css&quot; type=&quot;text/css&quot; media=&quot;all&quot; /&gt;
+      &lt;link href=&quot;/bootstrap/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot; /&gt;
+    &lt;/head&gt;
+  &lt;/xmp&gt;
+&lt;/div&gt;
+&lt;p style=&quot;font-weight: bold;&quot;&gt;Then the script tags below the last line within your body:&lt;/p&gt;
+&lt;div class=&quot;code-surround&quot;&gt;
+  &lt;xmp style=&quot;font-size: 11px;&quot;&gt;
+    &lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/bootstrap/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+  &lt;/xmp&gt;
+&lt;/div&gt;
+&lt;p style=&quot;font-size: 12px; color: lightgrey;&quot;&gt;keep in mind that at the time of writing this tutorial, all libraries are the latest versions, if you are coming to this post some time in the future when a library has since been updated you may need to link to the newer version of said library. Im not gonna link here as the same issue would arise but googling &quot;latest version of [insert library name] cdn&quot;.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;h3 class=&quot;orsteps&quot;&gt;Step Two:&lt;span class=&quot;title-instruction&quot;&gt;Add required HTML to your...uhh HTML doc&lt;/span&gt;&lt;/h3&gt;
+&lt;br /&gt;
+&lt;p&gt;Now I want to preface this step with the fact that I have created my own slider but used the bones of the bootstrap version if you will. I mention this because if you would like my version copy and past my code, otherwise just use the bootstrap version which I have also detailed below. If you would like to see my version in action click&lt;a href=&quot;http://codepen.io/greatmaddyave/full/QEXOmO/&quot;&gt; here&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;p style=&quot;font-weight: bold;&quot;&gt;My custom version HTML:&lt;/p&gt;
+
+
+&lt;div class=&quot;code-surround container&quot; style=&quot;overflow: hidden&quot;&gt;
+  &lt;xmp style=&quot;font-size: 13px; max-width: 200px;&quot; id=&quot;wordwrapWITHOUTWidth&quot;&gt;
+    &lt;article&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-12&quot;&gt;
+                &lt;div class=&quot;whatModal&quot; id=&quot;modal-1&quot;&gt;
+                    &lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot; data-interval=&quot;false&quot;&gt;
+                      &lt;ol class=&quot;ballDiv col-md-12&quot; style=&quot;display: inline-block;&quot;&gt;
+                          &lt;div class=&quot;nav-ball active&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; id=&quot;ball1&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;nav-ball&quot; id=&quot;ball2&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;nav-ball&quot; id=&quot;ball3&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot;&gt;&lt;/div&gt;
+                      &lt;/ol&gt;
+                      &lt;h1 id=&quot;lets-talk&quot;&gt; Let&#39;s Talk!&lt;/h1&gt;
+                      &lt;hr /&gt;
+                      &lt;div class=&quot;carousel-inner&quot; role=&quot;listbox&quot;&gt;
+                          &lt;div class=&quot;item active&quot;&gt;
+                              &lt;div class=&quot;inner-content&quot;&gt;
+                                  &lt;div id=&quot;content1&quot;&gt;
+                                      &lt;div class=&quot;button-wrapper&quot;&gt;
+                                          &lt;h6&gt;Need a...&lt;/h6&gt;
+                                          &lt;button id=&quot;btn1&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;
+                                            Website
+                                          &lt;/button&gt;&lt;br /&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class=&quot;button-wrapper&quot;&gt;
+                                          &lt;h6&gt;Have a...&lt;/h6&gt;
+                                          &lt;button id=&quot;btn2&quot; class=&quot;label success new-label&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;
+                                            Job Opportunity
+                                          &lt;/button&gt;
+                                          &lt;br /&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class=&quot;button-wrapper&quot;&gt;
+                                          &lt;h6&gt;Or a...&lt;/h6&gt;
+                                          &lt;button id=&quot;btn3&quot; class=&quot;label success new-label&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;
+                                            General Question
+                                          &lt;/button&gt;
+                                          &lt;br /&gt;
+                                      &lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                          &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;item&quot; id=&quot;data-slide-one&quot;&gt;
+                          &lt;h1 class=&quot;form-header&quot;&gt;CONTACT FORM&lt;/h1&gt;
+                          &lt;form&gt;
+                              &lt;input id=&quot;name&quot; type=&quot;text&quot; placeholder=&quot;NAME&quot; /&gt;
+                              &lt;input id=&quot;email&quot; type=&quot;text&quot; placeholder=&quot;E-MAIL&quot; /&gt;
+                              &lt;textarea id=&quot;message&quot; type=&quot;text&quot; placeholder=&quot;MESSAGE&quot;&gt;&lt;/textarea&gt;
+                              &lt;input id=&quot;submit&quot; type=&quot;submit&quot; value=&quot;GO!&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot; /&gt;
+                          &lt;/form&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;item&quot; id=&quot;data-slide-three&quot;&gt;
+                          &lt;h1 style=&quot;margin-top: 100px;&quot; class=&quot;form-header&quot;&gt;THANK YOU!
+                          &lt;br /&gt;WE WILL BE IN CONTACT SOON.&lt;/h1&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/article&gt;
+  &lt;/xmp&gt;
+&lt;/div&gt;
+&lt;div&gt;
+
+&lt;br /&gt;
+&lt;a href=&quot;http://www.filedropper.com/slider&quot;&gt;&lt;button class=&quot;downloadButton&quot;&gt;Download HTML&lt;/button&gt;&lt;/a&gt;
+
+&lt;p style=&quot;font-size: 12px; color: grey;&quot;&gt;One important note here is that on the div &quot;myCarousel&quot; I included a data value that reads (data-interval=&quot;false&quot;). This is to stop the carousel from automatically switching to the next slide at a given interval. Since I am using this as a contact sheet the slide doesn&#39;t really make sense in my case, however you are more than welcome to remove it without any ill effects&lt;/p&gt;
+&lt;br /&gt;
+
+&lt;p style=&quot;font-weight: bold;&quot;&gt;My Custom version CSS:&lt;/p&gt;
+&lt;div class=&quot;code-surround&quot;&gt;
+  &lt;xmp style=&quot;font-size: 13px;&quot;&gt;
+        body {
+            font-family: &quot;Open Sans&quot;, sans-serif;
+            background: rgba(191, 185, 61, 1);
+            background: -moz-linear-gradient(45deg,
+              rgba(191, 185, 61, 1) 0%,
+              rgba(203, 138, 48, 1) 39%,
+              rgba(217, 80, 31, 0.86) 87%,
+              rgba(217, 80, 31, 0.85) 91%);
+            background: -webkit-gradient(left bottom,
+              right top,
+              color-stop(0%,  rgba(191, 185, 61, 1)),
+              color-stop(39%, rgba(203, 138, 48, 1)),
+              color-stop(87%, rgba(217, 80, 31, 0.86)),
+              color-stop(91%, rgba(217, 80, 31, 0.85)));
+            background: -webkit-linear-gradient(45deg,
+              rgba(191, 185, 61, 1) 0%,
+              rgba(203, 138, 48, 1) 39%,
+              rgba(217, 80, 31, 0.86) 87%,
+              rgba(217, 80, 31, 0.85) 91%);
+            background: -o-linear-gradient(45deg,
+              rgba(191, 185, 61, 1) 0%,
+              rgba(203, 138, 48, 1) 39%,
+              rgba(217, 80, 31, 0.86) 87%,
+              rgba(217, 80, 31, 0.85) 91%);
+            background: -ms-linear-gradient(45deg,
+              rgba(191, 185, 61, 1) 0%,
+              rgba(203, 138, 48, 1) 39%,
+              rgba(217, 80, 31, 0.86) 87%,
+              rgba(217, 80, 31, 0.85) 91%);
+            background: linear-gradient
+            (45deg,
+              rgba(191, 185, 61, 1) 0%,
+              rgba(203, 138, 48, 1) 39%,
+              rgba(217, 80, 31, 0.86) 87%,
+              rgba(217, 80, 31, 0.85) 91%);
+            filter: progid: DXImageTransform.Microsoft.gradient
+            ( startColorstr=&#39;#bfb93d&#39;,
+            endColorstr=&#39;#d9501f&#39;,
+            GradientType=1);
+        }
+
+        article {
+            padding: 100px 0;
+            max-width: 640px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            weight: 300;
+        }
+
+        #lets-talk {
+            color: lightgrey;
+            padding-top: 55px;
+        }
+
+        .whatModal {
+            background-color: #F9F9F9;
+            height: 700px;
+            width: 100%;
+            margin: 25px 0px;
+            box-shadow: 5px 10px 100px -10px black;
+        }
+
+        .whatModal hr {
+            color: darkgrey;
+            margin: auto 20px;
+            width: auto;
+        }
+
+        .whatModal h1 {
+            padding-top: 35px;
+        }
+
+        .item {
+            padding: 0px 35px;
+        }
+
+        .whatModal span {
+            font-size: 2.5em;
+            font-weight: 300;
+            color: lightgrey;
+            transition: all ease-in-out 200ms;
+            text-shadow: 2px 1px 3px darkgrey;
+        }
+
+        .whatModal span:hover {
+            color: darkgrey;
+            cursor: pointer;
+            text-shadow: inset 2px 1px 3px white;
+        }
+
+        .form-header {
+            position: relative;
+            font-size: 2.3em;
+            text-align: center;
+            letter-spacing: 7px;
+            color: #b3aca7;
+            width: 100%;
+        }
+
+        #form {
+            width: 500px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #email,
+        #name {
+            font-family: &#39;Lato&#39;, sans-serif;
+            font-size: 0.875em;
+            width: 400px;
+            height: 50px;
+            background: transparent;
+            outline: none;
+            color: #726659;
+            border: solid 1px #b3aca7;
+            border-bottom: none;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            border-radius: 0px;
+            margin-bottom: -1px;
+        }
+
+        #email:hover,
+        #name:hover {
+            background: #b3aca7;
+            color: #e2dedb;
+        }
+
+        #message {
+            width: 400px;
+            max-width: 400px;
+            height: 110px;
+            max-height: 110px;
+            background-color: transparent;
+            outline: none;
+            color: #726659;
+            font-family: &#39;Lato&#39;, sans-serif;
+            font-size: 0.875em;
+            border: solid 1px #b3aca7;
+            border-radius: 0px;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            margin-bottom: -1px;
+        }
+
+        #message:hover {
+            background: #b3aca7;
+            color: #e2dedb;
+        }
+
+        #submit {
+            width: 400px;
+            height: 40px;
+            padding: 0;
+            font-family: &#39;Lato&#39;, sans-serif;
+            font-size: 0.875em;
+            color: #b3aca7;
+            outline: none;
+            cursor: pointer;
+            border: solid 1px #b3aca7;
+            border-top: none;
+            background-color: transparent;
+            font-size: 20px;
+            border-radius: 0px;
+            margin-top: -56px;
+        }
+
+        #submit:hover {
+            background: #b3aca7;
+            color: #e2dedb;
+        }
+
+        .nav-ball {
+            width: 15px;
+            height: 15px;
+            background-color: grey;
+            border-radius: 50%;
+            box-shadow: 0px 1px 1px 1px darkgrey;
+            margin: 18px 8px;
+            display: inline-block;
+            transition: all ease-in-out 200ms;
+        }
+
+        .glyphicon:hover {
+            color: darkgrey;
+            cursor: pointer;
+        }
+
+        .carousel-inner {
+            margin-top: 50px;
+        }
+
+        .ballDiv {
+            display: inline-flex;
+            height: 15px;
+        }
+
+        a:first-child {
+            margin-right: 85%;
+            display: inline;
+        }
+
+        .nav-ball:hover {
+            cursor: pointer;
+        }
+
+        .nav-ball.active {
+            width: 15px;
+            height: 15px;
+            background-color: orangered;
+            border-radius: 50%;
+            box-shadow: 0px 1px 1px 1px darkgrey;
+            margin: 18px 8px;
+            display: inline-block;
+            transition: all ease-in-out 200ms;
+        }
+
+        .nav-ball-active:hover {
+            width: 16px;
+            height: 17px;
+            margin: 16px 6px;
+            background-color: red;
+        }
+
+        .nav-ball:hover {
+            width: 16px;
+            height: 16px;
+            margin: 16px 6px;
+            background-color: darkgrey;
+        }
+
+        .inner-content {
+            margin: 0px 0px;
+        }
+
+        .inner-content button {
+            margin-bottom: 70px;
+            width: 200px;
+            height: 70px;
+            border: 1px solid transparent;
+            font-size: 16px;
+            text-align: center;
+            padding: 0px;
+            font-weight: 200;
+            color: #00BAFF;
+            border-radius: 0;
+            transition: all ease-in-out 500ms;
+            background-color: white;
+            box-shadow: 2px 2px 5px 1px lightgrey;
+            position: relative;
+            right: 0px;
+        }
+
+        .button-wrapper {
+            width: 200px;
+            margin-left: 50%;
+            left: -100px;
+            position: relative;
+        }
+
+        .button-wrapper:hover button {
+            background-color: white;
+            box-shadow: 2px 42px 70px -30px black;
+            transform: translate(0px, -5px);
+            font-weight: 300;
+            background-color: #00BAFF;
+            color: white;
+            border: none;
+            width: 205px;
+            height: 75px;
+            position: relative;
+            right: 3px;
+        }
+
+        .inner-content h6 {
+            margin-bottom: 5px;
+            color: lightgrey;
+            text-transform: uppercase;
+        }
+
+        #data-slide-one {
+            padding: 0px 10%;
+            text-align: center;
+        }
+  &lt;/xmp&gt;
+&lt;/div&gt;
+&lt;a href=&quot;http://www.filedropper.com/slider_1&quot;&gt;&lt;button class=&quot;downloadButton&quot;&gt;Download CSS&lt;/button&gt;&lt;/a&gt;
+&lt;p style=&quot;font-weight: bold;&quot;&gt;Custom jQuery:&lt;/p&gt;
+&lt;div class=&quot;code-surround&quot;&gt;
+  &lt;xmp style=&quot;font-size: 11px;&quot;&gt;
+        //slider class toggle
+      $(&#39;.nav-ball&#39;).on(&#39;click&#39;, function() {
+          $(&#39;.nav-ball&#39;).removeClass(&#39;active&#39;);
+          $(this).addClass(&#39;active&#39;);
+      });
+
+      $(&#39;#content1 button&#39;).on(&#39;click&#39;, function() {
+          $(&#39;#ball1&#39;).removeClass(&#39;active&#39;);
+          $(&#39;#ball2&#39;).addClass(&#39;active&#39;);
+      });
+
+      $(&#39;#submit&#39;).on(&#39;click&#39;, function() {
+          $(&#39;#ball2&#39;).removeClass(&#39;active&#39;);
+          $(&#39;#ball3&#39;).addClass(&#39;active&#39;);
+      });
+  &lt;/xmp&gt;
+&lt;/div&gt;
+&lt;a href=&quot;http://www.filedropper.com/slider_2&quot;&gt;&lt;button class=&quot;downloadButton&quot;&gt;Download jQuery&lt;/button&gt;&lt;/a&gt;
+
+&lt;br /&gt;
+&lt;p&gt;Well that&#39;s it for my version. Make sure that you change the &quot;body&quot; tag in the CSS to match your particular scenario as this will change the background of all of your HTML page. Unless that is something you want. Then go ahead and leave it in, it&#39;s up to you.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p style=&quot;font-weight: bold;&quot;&gt;Bootstrap Carousel HTML:&lt;/p&gt;
+&lt;div class=&quot;code-surround&quot;&gt;
+  &lt;xmp style=&quot;font-size: 11px;&quot;&gt;
+  &lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+&lt;!-- Indicators --&gt;
+&lt;ol class=&quot;carousel-indicators&quot;&gt;
+  &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+  &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+  &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+  &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;3&quot;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- Wrapper for slides --&gt;
+&lt;div class=&quot;carousel-inner&quot; role=&quot;listbox&quot;&gt;
+  &lt;div class=&quot;item active&quot;&gt;
+    &lt;img src=&quot;img_chania.jpg&quot; alt=&quot;Chania&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img src=&quot;img_chania2.jpg&quot; alt=&quot;Chania&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img src=&quot;img_flower.jpg&quot; alt=&quot;Flower&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img src=&quot;img_flower2.jpg&quot; alt=&quot;Flower&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Left and right controls --&gt;
+&lt;a class=&quot;left carousel-control&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+  &lt;span class=&quot;glyphicon glyphicon-chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class=&quot;right carousel-control&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+  &lt;span class=&quot;glyphicon glyphicon-chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+  &lt;/xmp&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;p&gt;Since bootstrap handles all the css and javascript for you this is really all that is to it. Just Replace the images and you should be good to go at this point if you&#39;ve included the bootstrap links correctly in step 1.&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;h3 class=&quot;orsteps&quot;&gt;Step Three:&lt;span class=&quot;title-instruction&quot;&gt;Test &amp;amp; Shim&lt;/span&gt;&lt;/h3&gt;
+&lt;br /&gt;
+&lt;p&gt;The final part in this tutorial is what I dub the &quot;Test &amp;amp; Shim&quot; phase&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Test because you want to make sure all of the buttons work and act like they are supposed to. Do this even before you start customizing it by adding pictures or other content. The reason you want to hold off on the customization is you want to rule that out as a reason for the code not working the way you intended it to. After it&#39;s working you&#39;ll want to move on to the second part in this step. &quot;Shim&quot;&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;I borrow the word &quot;Shim&quot; from the construction industry. The reason being is that when building a house and installing something modular such as a window or door there is always some sort of shimming required to make it fit to your custom work. In this case the framing of the house is your html, the drywall and paint is your css, jQuery and JavaScript is your electrical and the door or window is this carousel. A margin may be off, the position of it may not be quiet centered, font sizes may be off the container. Point being you need to shim it to fit your custom build. Do this by adding ID&#39;s to your tags and customizing the css for that particular problem area. After everything is looking good then go in and customize it with content. If you do things in this order it will alleviate some of the stress that comes with coding. &lt;/p&gt;
+
+&lt;style&gt;
+h1, h2,{
+  text-align: center;
+  padding: 10px;
+}
+.orsteps {
+  color: orangered;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#imageWrapper {
+  display: inline-block;
+  margin: 15px;
+  margin-left: 60px;
+  margin-bottom: 60px;
+}
+
+#imageWrapper img {
+  width: 30%;
+}
+@media screen and (max-width: 780px) {
+    #imageWrapper img {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    #imageWrapper {
+      margin: 0px;
+
+    }
+}
+
+xmp {
+
+
+}
+.code-surround {
+  background-color: black;
+  border-radius: 10px;
+  color: green;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.title-instruction {
+  color: grey;
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.install {
+  background-color: transparent;
+  border: 2px solid orangered;
+  color: orangered;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all ease-in-out 200ms;
+  margin: 10%;
+  margin-left: 25%;
+}
+
+.install:hover {
+  box-shadow: 0px 0px 0px .2px orangered, 0px 0px 10px 2px white inset;
+  color: white;
+  background: rgba(191, 185, 61, 1);
+  background: -moz-linear-gradient(45deg,
+    rgba(191, 185, 61, 1) 0%,
+    rgba(203, 138, 48, 1) 39%,
+    rgba(217, 80, 31, 0.86) 87%,
+    rgba(217, 80, 31, 0.85) 91%);
+  background: -webkit-gradient(left bottom,
+    right top,
+    color-stop(0%,  rgba(191, 185, 61, 1)),
+    color-stop(39%, rgba(203, 138, 48, 1)),
+    color-stop(87%, rgba(217, 80, 31, 0.86)),
+    color-stop(91%, rgba(217, 80, 31, 0.85)));
+  background: -webkit-linear-gradient(45deg,
+    rgba(191, 185, 61, 1) 0%,
+    rgba(203, 138, 48, 1) 39%,
+    rgba(217, 80, 31, 0.86) 87%,
+    rgba(217, 80, 31, 0.85) 91%);
+  background: -o-linear-gradient(45deg,
+    rgba(191, 185, 61, 1) 0%,
+    rgba(203, 138, 48, 1) 39%,
+    rgba(217, 80, 31, 0.86) 87%,
+    rgba(217, 80, 31, 0.85) 91%);
+  background: -ms-linear-gradient(45deg,
+    rgba(191, 185, 61, 1) 0%,
+    rgba(203, 138, 48, 1) 39%,
+    rgba(217, 80, 31, 0.86) 87%,
+    rgba(217, 80, 31, 0.85) 91%);
+  background: linear-gradient
+  (45deg,
+    rgba(191, 185, 61, 1) 0%,
+    rgba(203, 138, 48, 1) 39%,
+    rgba(217, 80, 31, 0.86) 87%,
+    rgba(217, 80, 31, 0.85) 91%);
+  filter: progid: DXImageTransform.Microsoft.gradient
+  ( startColorstr=&#39;#bfb93d&#39;,
+  endColorstr=&#39;#d9501f&#39;,
+  GradientType=1);
+
+}
+
+.downloadButton {
+  background-color: transparent;
+  border: 2px solid orangered;
+  color: orangered;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all ease-in-out 200ms;
+  margin-bottom: 15px;
+}
+
+.downloadButton:hover {
+  background-color: lightgrey;
+  border: 2px solid lightgrey;
+}
+
+#wordwrapWITHOUTWidth
+{   
+    word-wrap: break-word;
+}
+&lt;/style&gt;
+&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 24 Aug 2016 21:38:05 +0000</pubDate>
+        <link>http://TheCodersBrain.com/tutorial/web/development/2016/08/24/Add_a_slider_to_your_website.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/tutorial/web/development/2016/08/24/Add_a_slider_to_your_website.html</guid>
+        
+        
+        <category>tutorial</category>
+        
+        <category>web</category>
+        
+        <category>development</category>
+        
+      </item>
+    
+      <item>
+        <title>Update</title>
+        <description>&lt;div class=&quot;wrapper&quot;&gt;
+&lt;h1&gt;I&#39;ve been gone awhile&lt;/h1&gt;
+
+&lt;p&gt;I&#39;ve missed you guys too. All 3 of my daily readers. But it&#39;s not about how many readers I have,
+It&#39;s about what I started out to do with this website from the beginning and that is to detail my path from novice to web developer.
+So what&#39;s the update? What I have I been up to. Have I landed my first Web Development Job?&lt;/p&gt;&lt;br /&gt;
+&lt;p&gt;We&#39;ll get to all of that shortly just let me get a few updates out of the way.&lt;/p&gt;&lt;br /&gt;
+&lt;h3&gt;First things first&lt;/h3&gt;&lt;br /&gt;
+&lt;p&gt;So I haven&#39;t coded in Ruby since last posting on this site which looks to be a little over 2 months ago. It&#39;s not that I don&#39;t still love Ruby...&lt;em&gt;I still do&lt;/em&gt; It&#39;s not that I found something better....&lt;em&gt;I haven&#39;t&lt;/em&gt; The thing is when you are a web developer you have more use for languages like JavaScript and jQuery. So I have been primarily focusing on those two languages. It&#39;s just that JavaScript and jQuery can manipulate the DOM so much easier. Now thats not to say Rails and Ruby dont have their place in web development, in fact rails is the language I run this website off of and it has been incremental to the success and implimentation of this site. For instance all I need to do is title an html file a particular way and the code behind this website formats the landing page to include it in the line up of most recent post. I don&#39;t touch that page ever. In fact I don&#39;t even style the posts, including the one you are currently reading, that&#39;s the power of Ruby. But when it comes to DOM traversal, there is just no other language that compares.&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;p&gt;So I&#39;ve been using JavaScript but on what?&lt;/p&gt;&lt;br /&gt;
+&lt;p&gt;Well, I have been working on a website for a client that is Huuuuugee. All told, I&#39;m 4 months in and I can almost...&lt;em&gt;ALMOST&lt;/em&gt; see the light at the
+end of the tunnel. Let&#39;s go over what I had to do:&lt;p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Design&lt;/li&gt;
+  &lt;li&gt;Write the HTML &amp;amp; CSS from the ground up&lt;/li&gt;
+  &lt;li&gt;impliment and code several complex calculators for online quotes&lt;/li&gt;
+  &lt;li&gt;Take those quotes and funnel the results into a shopping cart&lt;/li&gt;
+  &lt;li&gt;Allow the user to reject the quote as well as update their shopping list, set an appointment&lt;/li&gt;
+  &lt;li&gt;Create a database to match service providers with those that checked out through our cart&lt;/li&gt;
+  &lt;li&gt;Set up a database and user sign in for our partners&lt;/li&gt;
+  &lt;li&gt;Set up a database and user sign in/up for our customers&lt;/li&gt;
+  &lt;li&gt;Much much more&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And all of this written in HTML, CSS, JavaScript and jQuery so far...from scratch...no real important plug ins. This is all unique code and ther is a lot of it. I&#39;m actually thinking of porting it over to a rails app in the future but for now it is what it is and I just can&#39;t handle the thought of doing more work at this point.&lt;/p&gt;
+
+&lt;h3&gt;My other Mistress...School&lt;/h3&gt;
+&lt;p&gt;I have also been in summer school for college and if you have any idea how stressful an accelerated computer science schedule could be, then you&#39;ll understand my reluctancy to blog rather than focus on school. I&#39;m getting ready to start up the fall semester with 18.5 credit units on my plate so you may not be seeing much of me this term either, which is why I&#39;m writing now. However I&#39;ve made it a point to post a few more times in the coming months that will focus on some plugins I built for the average person to impliment within their websites. I want to focus on making a tutorial for how to include it in your site so keep your eyes peeled for that. &lt;p&gt;
+
+&lt;br /&gt;
+&lt;p&gt;...until we meet again, see you soon!&lt;/p&gt;
+&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 24 Aug 2016 21:38:05 +0000</pubDate>
+        <link>http://TheCodersBrain.com/update/web/development/2016/08/24/Update.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/update/web/development/2016/08/24/Update.html</guid>
+        
+        
+        <category>update</category>
+        
+        <category>web</category>
+        
+        <category>development</category>
+        
+      </item>
     
       <item>
         <title>5 Web Designs and Websites that will blow your %$#?ing mind!</title>
@@ -518,8 +1215,8 @@ input, textarea, select{
 &lt;/html&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h4&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/i&gt;&lt;/i&gt;&lt;/h3&gt;&lt;/div&gt;
 </description>
         <pubDate>Fri, 10 Jun 2016 09:15:05 +0000</pubDate>
-        <link>http://TheCodersBrain.com/jekyll/update/2016/06/10/10-web-designs-that-will-blow-your-mind.html</link>
-        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/06/10/10-web-designs-that-will-blow-your-mind.html</guid>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/06/10/5-web-designs-that-will-blow-your-mind.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/06/10/5-web-designs-that-will-blow-your-mind.html</guid>
         
         
         <category>jekyll</category>
