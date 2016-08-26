@@ -1,0 +1,85 @@
+
+
+<header style = "z-index: 100">
+<nav  style = "background-color: transparent"class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="site-title" style = "font-family: 'Open Sans', sans-serif;color: white; font-size: 25px; "href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <img  style = "height: 30px; width: auto; padding-top: 5px; margin-right: 5px"src = "http://www.davidbott.com/img/icons/brain.png">
+
+      <div class="dropdown" style = "float: right; visibility: hidden">
+  <button class="btn btn-primary dropdown-toggle" style = "margin: 0"type="button" data-toggle="dropdown">MENU
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu" style = "color: black; text-align: left; margin-left: -90px;">
+    <li><a href="{{ site.baseurl }}/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-book" style = "color: #9b59b6" aria-hidden="true"></span> Code Class</a></li>
+  </ul>
+  
+</div>
+  </div>
+  </div>
+</nav>
+<script>
+$(document).ready(function(){
+   var scroll_start = 0;
+   var startchange = $('body');
+   var offset = startchange.offset();
+   $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('.navbar').css('background-color', 'rgba(255,255,255,1)');
+          $('.navbar').css('box-shadow', '2px 2px 2px 1px grey');
+          $('.navbar').css('padding', '10px');
+          $('dropdown-menu li a').css('color', 'black');
+          $('.nav-link').css('color', '#2c3e50');
+          $('.intro-header').css('bottom', '80px');
+          $('.site-title').css('color', 'black');
+          $('.dropdown').css('visibility', 'visible');
+       } else {
+         $('.navbar').css('box-shadow', '0px 0px 0px 0px rgba(255,255,255, 1)');
+          $('.navbar').css('background-color', 'transparent');
+          $('.navbar').css('padding', '25px');
+          $('.site-title').css('color', 'white');
+          $('dropdown-menu li a').css('color', 'black');
+          $('.nav-link').css('color', 'black');
+          $('.dropdown').css('visibility', 'visible');
+       }
+   });
+});
+</script>
+</header>
+<style src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></style>
+<style>
+.navbar {
+  transition-duration: 1s;
+  border: none;
+  padding: 25px;
+}
+
+.btn {
+  border-radius: 0;
+  padding: 15px 25px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  margin-right: 15px;
+  margin-left: 25px;
+
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  font-size: 25px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.site-title {
+  transition: all 900ms ease-out;
+  font-size: 50px;
+  text-align: center;
+
+}
+</style>

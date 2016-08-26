@@ -1,0 +1,28 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: TheCodersBrain
+email: JohnECossack@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A unique perspective on would-be coders as a simple blog evolves alongside the educational process of a newbie coder to his journey of becoming a promanent force in the Web Development Industry.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://TheCodersBrain.com" # the base hostname & protocol for your site
+twitter_username: johncossack
+github_username:  greatmaddyave
+
+gems:
+  - jekyll-seo-tag
+logo:           https://images.unsplash.com/photo-1444086798547-11000e647498?crop=entropy&fit=crop&fm=jpg&h=650&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1275
+timezone:       Pacific # eg. Asia/Kathmandu
+locale:         en_us # eg. en_us
+facebook:
+  app_id:       901532823305543 # site facebook app id
+  publisher:    901532823305543 # site facebook page id
+  admins:       901532823305543 # site admin facebook profile id
+# Build settings
+markdown: kramdown

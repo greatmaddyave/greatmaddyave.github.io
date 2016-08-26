@@ -1,0 +1,2036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TheCodersBrain</title>
+    <description>A unique perspective on would-be coders as a simple blog evolves alongside the educational process of a newbie coder to his journey of becoming a promanent force in the Web Development Industry.
+</description>
+    <link>http://TheCodersBrain.com/</link>
+    <atom:link href="http://TheCodersBrain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 25 Aug 2016 23:47:47 +0000</pubDate>
+    <lastBuildDate>Thu, 25 Aug 2016 23:47:47 +0000</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>How to add a Carousel to your website.</title>
+        <description>&lt;div class=&quot;wrapper&quot; style=&quot;width: 100%;&quot;&gt;
+&lt;h1&gt;Adding an interactive slider to your website&lt;/h1&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://codepen.io/greatmaddyave/full/QEXOmO/&quot;&gt;&lt;button class=&quot;install&quot;&gt;Visit the CodePen for this Project&lt;/button&gt;&lt;/a&gt;
+&lt;br /&gt;
+&lt;p&gt;A jqueryUI or Bootstrap slider can add, not only some style to your webpage but also give it a level of professionalism. Although generally used to showcase an array of images, a slider can also save vertical space on your website for the many levels of an application that the user may not even interact with otherwise. It really leans up the look of your website and is one of my favorite utilizations of the slider that I don&#39;t see a lot of developers using.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;In this tutorial I&#39;m going to be breaking down the step by step process and hopefully get your slider up and running on your very own website. I&#39;m going to try to be as detailed as possible and easy to follow as there are a lot of steps to this process, that if missed, will leave your sliders functionality broken but that anger problem you have otherwise had under control. I&#39;m looking at you Bruce Banner!&lt;/p&gt;
+&lt;br /&gt;
+&lt;div id=&quot;imageWrapper&quot;&gt;
+  &lt;img src=&quot;https://s13.postimg.io/olwajuck7/slider_1.jpg&quot; /&gt;
+  &lt;img src=&quot;https://s13.postimg.io/ytetw8ys7/slider_two.jpg&quot; /&gt;
+  &lt;img src=&quot;https://s13.postimg.io/651vt0wlz/slider_2.jpg&quot; /&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;h3 class=&quot;orsteps&quot;&gt;Step One:&lt;span class=&quot;title-instruction&quot;&gt;Add bootstrap.css &amp;amp; bootstrap.js&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;Often times when pulling some snippet of code offline to impliment into your own website can be quiet frustrating as many of these folks leave off the fact you need to add libraries for the snippet to actually function correctly. So your first step will be to add these libraries straight away so we don&#39;t run into this, all too common, issue.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Since the order of these matter a great deal and going along with our all over theme, are one of the many little things that can make your code not perform the way you intended or worse; not work at all.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;So what I have recently started doing with all my websites is copy and paste a template of all the libraries I use, in the order they need to be, from there I delete the ones that I never intend on using within the site. The reason I don&#39;t just leave them there is some libraries can increase the loading time of your webpage, and in today&#39;s climate of web development the user may be viewing your website on a data restricted tablet or smartphone and you want the user experience to be your number one priority, removing the unused libraries will speed up your load times as well as make the end user a whole lot happier you didn&#39;t eat up their data for a technology that wasn&#39;t even used.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Now that that little rant is out of the way, here is my header and script tags&lt;/p&gt;
+&lt;br /&gt;
+&lt;p style=&quot;font-weight: bold;&quot;&gt;First the head tags:&lt;/p&gt;
+&lt;div class=&quot;code-surround&quot;&gt;
+  &lt;xmp style=&quot;font-size: 11px;&quot;&gt;
+    &lt;head&gt;
+      &lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+      &lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+      &lt;script src=&quot;/bootstrap/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+      &lt;script src=&quot;/js/slider_input.js&quot;&gt;&lt;/script&gt;
+
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css&quot; type=&quot;text/css&quot; media=&quot;all&quot; /&gt;
+      &lt;link href=&quot;/bootstrap/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot; /&gt;
+    &lt;/head&gt;
+  &lt;/xmp&gt;
+&lt;/div&gt;
+&lt;p style=&quot;font-weight: bold;&quot;&gt;Then the script tags below the last line within your body:&lt;/p&gt;
+&lt;div class=&quot;code-surround&quot;&gt;
+  &lt;xmp style=&quot;font-size: 11px;&quot;&gt;
+    &lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/bootstrap/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+  &lt;/xmp&gt;
+&lt;/div&gt;
+&lt;p style=&quot;font-size: 12px; color: lightgrey;&quot;&gt;keep in mind that at the time of writing this tutorial, all libraries are the latest versions, if you are coming to this post some time in the future when a library has since been updated you may need to link to the newer version of said library. Im not gonna link here as the same issue would arise but googling &quot;latest version of [insert library name] cdn&quot;.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;h3 class=&quot;orsteps&quot;&gt;Step Two:&lt;span class=&quot;title-instruction&quot;&gt;Add required HTML to your...uhh HTML doc&lt;/span&gt;&lt;/h3&gt;
+&lt;br /&gt;
+&lt;p&gt;Now I want to preface this step with the fact that I have created my own slider but used the bones of the bootstrap version if you will. I mention this because if you would like my version copy and past my code, otherwise just use the bootstrap version which I have also detailed below. If you would like to see my version in action click&lt;a href=&quot;http://codepen.io/greatmaddyave/full/QEXOmO/&quot;&gt; here&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;p style=&quot;font-weight: bold;&quot;&gt;My custom version HTML:&lt;/p&gt;
+
+
+&lt;div class=&quot;code-surround container&quot; style=&quot;overflow: hidden&quot;&gt;
+  &lt;xmp style=&quot;font-size: 13px; max-width: 200px;&quot; id=&quot;wordwrapWITHOUTWidth&quot;&gt;
+    &lt;article&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-12&quot;&gt;
+                &lt;div class=&quot;whatModal&quot; id=&quot;modal-1&quot;&gt;
+                    &lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot; data-interval=&quot;false&quot;&gt;
+                      &lt;ol class=&quot;ballDiv col-md-12&quot; style=&quot;display: inline-block;&quot;&gt;
+                          &lt;div class=&quot;nav-ball active&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; id=&quot;ball1&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;nav-ball&quot; id=&quot;ball2&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;nav-ball&quot; id=&quot;ball3&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot;&gt;&lt;/div&gt;
+                      &lt;/ol&gt;
+                      &lt;h1 id=&quot;lets-talk&quot;&gt; Let&#39;s Talk!&lt;/h1&gt;
+                      &lt;hr /&gt;
+                      &lt;div class=&quot;carousel-inner&quot; role=&quot;listbox&quot;&gt;
+                          &lt;div class=&quot;item active&quot;&gt;
+                              &lt;div class=&quot;inner-content&quot;&gt;
+                                  &lt;div id=&quot;content1&quot;&gt;
+                                      &lt;div class=&quot;button-wrapper&quot;&gt;
+                                          &lt;h6&gt;Need a...&lt;/h6&gt;
+                                          &lt;button id=&quot;btn1&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;
+                                            Website
+                                          &lt;/button&gt;&lt;br /&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class=&quot;button-wrapper&quot;&gt;
+                                          &lt;h6&gt;Have a...&lt;/h6&gt;
+                                          &lt;button id=&quot;btn2&quot; class=&quot;label success new-label&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;
+                                            Job Opportunity
+                                          &lt;/button&gt;
+                                          &lt;br /&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class=&quot;button-wrapper&quot;&gt;
+                                          &lt;h6&gt;Or a...&lt;/h6&gt;
+                                          &lt;button id=&quot;btn3&quot; class=&quot;label success new-label&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;
+                                            General Question
+                                          &lt;/button&gt;
+                                          &lt;br /&gt;
+                                      &lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                          &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;item&quot; id=&quot;data-slide-one&quot;&gt;
+                          &lt;h1 class=&quot;form-header&quot;&gt;CONTACT FORM&lt;/h1&gt;
+                          &lt;form&gt;
+                              &lt;input id=&quot;name&quot; type=&quot;text&quot; placeholder=&quot;NAME&quot; /&gt;
+                              &lt;input id=&quot;email&quot; type=&quot;text&quot; placeholder=&quot;E-MAIL&quot; /&gt;
+                              &lt;textarea id=&quot;message&quot; type=&quot;text&quot; placeholder=&quot;MESSAGE&quot;&gt;&lt;/textarea&gt;
+                              &lt;input id=&quot;submit&quot; type=&quot;submit&quot; value=&quot;GO!&quot; data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot; /&gt;
+                          &lt;/form&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;item&quot; id=&quot;data-slide-three&quot;&gt;
+                          &lt;h1 style=&quot;margin-top: 100px;&quot; class=&quot;form-header&quot;&gt;THANK YOU!
+                          &lt;br /&gt;WE WILL BE IN CONTACT SOON.&lt;/h1&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/article&gt;
+  &lt;/xmp&gt;
+&lt;/div&gt;
+&lt;div&gt;
+
+&lt;br /&gt;
+&lt;a href=&quot;http://www.filedropper.com/slider&quot;&gt;&lt;button class=&quot;downloadButton&quot;&gt;Download HTML&lt;/button&gt;&lt;/a&gt;
+
+&lt;p style=&quot;font-size: 12px; color: grey;&quot;&gt;One important note here is that on the div &quot;myCarousel&quot; I included a data value that reads (data-interval=&quot;false&quot;). This is to stop the carousel from automatically switching to the next slide at a given interval. Since I am using this as a contact sheet the slide doesn&#39;t really make sense in my case, however you are more than welcome to remove it without any ill effects&lt;/p&gt;
+&lt;br /&gt;
+
+&lt;p style=&quot;font-weight: bold;&quot;&gt;My Custom version CSS:&lt;/p&gt;
+&lt;div class=&quot;code-surround&quot;&gt;
+  &lt;xmp style=&quot;font-size: 13px;&quot;&gt;
+        body {
+            font-family: &quot;Open Sans&quot;, sans-serif;
+            background: rgba(191, 185, 61, 1);
+            background: -moz-linear-gradient(45deg,
+              rgba(191, 185, 61, 1) 0%,
+              rgba(203, 138, 48, 1) 39%,
+              rgba(217, 80, 31, 0.86) 87%,
+              rgba(217, 80, 31, 0.85) 91%);
+            background: -webkit-gradient(left bottom,
+              right top,
+              color-stop(0%,  rgba(191, 185, 61, 1)),
+              color-stop(39%, rgba(203, 138, 48, 1)),
+              color-stop(87%, rgba(217, 80, 31, 0.86)),
+              color-stop(91%, rgba(217, 80, 31, 0.85)));
+            background: -webkit-linear-gradient(45deg,
+              rgba(191, 185, 61, 1) 0%,
+              rgba(203, 138, 48, 1) 39%,
+              rgba(217, 80, 31, 0.86) 87%,
+              rgba(217, 80, 31, 0.85) 91%);
+            background: -o-linear-gradient(45deg,
+              rgba(191, 185, 61, 1) 0%,
+              rgba(203, 138, 48, 1) 39%,
+              rgba(217, 80, 31, 0.86) 87%,
+              rgba(217, 80, 31, 0.85) 91%);
+            background: -ms-linear-gradient(45deg,
+              rgba(191, 185, 61, 1) 0%,
+              rgba(203, 138, 48, 1) 39%,
+              rgba(217, 80, 31, 0.86) 87%,
+              rgba(217, 80, 31, 0.85) 91%);
+            background: linear-gradient
+            (45deg,
+              rgba(191, 185, 61, 1) 0%,
+              rgba(203, 138, 48, 1) 39%,
+              rgba(217, 80, 31, 0.86) 87%,
+              rgba(217, 80, 31, 0.85) 91%);
+            filter: progid: DXImageTransform.Microsoft.gradient
+            ( startColorstr=&#39;#bfb93d&#39;,
+            endColorstr=&#39;#d9501f&#39;,
+            GradientType=1);
+        }
+
+        article {
+            padding: 100px 0;
+            max-width: 640px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            weight: 300;
+        }
+
+        #lets-talk {
+            color: lightgrey;
+            padding-top: 55px;
+        }
+
+        .whatModal {
+            background-color: #F9F9F9;
+            height: 700px;
+            width: 100%;
+            margin: 25px 0px;
+            box-shadow: 5px 10px 100px -10px black;
+        }
+
+        .whatModal hr {
+            color: darkgrey;
+            margin: auto 20px;
+            width: auto;
+        }
+
+        .whatModal h1 {
+            padding-top: 35px;
+        }
+
+        .item {
+            padding: 0px 35px;
+        }
+
+        .whatModal span {
+            font-size: 2.5em;
+            font-weight: 300;
+            color: lightgrey;
+            transition: all ease-in-out 200ms;
+            text-shadow: 2px 1px 3px darkgrey;
+        }
+
+        .whatModal span:hover {
+            color: darkgrey;
+            cursor: pointer;
+            text-shadow: inset 2px 1px 3px white;
+        }
+
+        .form-header {
+            position: relative;
+            font-size: 2.3em;
+            text-align: center;
+            letter-spacing: 7px;
+            color: #b3aca7;
+            width: 100%;
+        }
+
+        #form {
+            width: 500px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #email,
+        #name {
+            font-family: &#39;Lato&#39;, sans-serif;
+            font-size: 0.875em;
+            width: 400px;
+            height: 50px;
+            background: transparent;
+            outline: none;
+            color: #726659;
+            border: solid 1px #b3aca7;
+            border-bottom: none;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            border-radius: 0px;
+            margin-bottom: -1px;
+        }
+
+        #email:hover,
+        #name:hover {
+            background: #b3aca7;
+            color: #e2dedb;
+        }
+
+        #message {
+            width: 400px;
+            max-width: 400px;
+            height: 110px;
+            max-height: 110px;
+            background-color: transparent;
+            outline: none;
+            color: #726659;
+            font-family: &#39;Lato&#39;, sans-serif;
+            font-size: 0.875em;
+            border: solid 1px #b3aca7;
+            border-radius: 0px;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            margin-bottom: -1px;
+        }
+
+        #message:hover {
+            background: #b3aca7;
+            color: #e2dedb;
+        }
+
+        #submit {
+            width: 400px;
+            height: 40px;
+            padding: 0;
+            font-family: &#39;Lato&#39;, sans-serif;
+            font-size: 0.875em;
+            color: #b3aca7;
+            outline: none;
+            cursor: pointer;
+            border: solid 1px #b3aca7;
+            border-top: none;
+            background-color: transparent;
+            font-size: 20px;
+            border-radius: 0px;
+            margin-top: -56px;
+        }
+
+        #submit:hover {
+            background: #b3aca7;
+            color: #e2dedb;
+        }
+
+        .nav-ball {
+            width: 15px;
+            height: 15px;
+            background-color: grey;
+            border-radius: 50%;
+            box-shadow: 0px 1px 1px 1px darkgrey;
+            margin: 18px 8px;
+            display: inline-block;
+            transition: all ease-in-out 200ms;
+        }
+
+        .glyphicon:hover {
+            color: darkgrey;
+            cursor: pointer;
+        }
+
+        .carousel-inner {
+            margin-top: 50px;
+        }
+
+        .ballDiv {
+            display: inline-flex;
+            height: 15px;
+        }
+
+        a:first-child {
+            margin-right: 85%;
+            display: inline;
+        }
+
+        .nav-ball:hover {
+            cursor: pointer;
+        }
+
+        .nav-ball.active {
+            width: 15px;
+            height: 15px;
+            background-color: orangered;
+            border-radius: 50%;
+            box-shadow: 0px 1px 1px 1px darkgrey;
+            margin: 18px 8px;
+            display: inline-block;
+            transition: all ease-in-out 200ms;
+        }
+
+        .nav-ball-active:hover {
+            width: 16px;
+            height: 17px;
+            margin: 16px 6px;
+            background-color: red;
+        }
+
+        .nav-ball:hover {
+            width: 16px;
+            height: 16px;
+            margin: 16px 6px;
+            background-color: darkgrey;
+        }
+
+        .inner-content {
+            margin: 0px 0px;
+        }
+
+        .inner-content button {
+            margin-bottom: 70px;
+            width: 200px;
+            height: 70px;
+            border: 1px solid transparent;
+            font-size: 16px;
+            text-align: center;
+            padding: 0px;
+            font-weight: 200;
+            color: #00BAFF;
+            border-radius: 0;
+            transition: all ease-in-out 500ms;
+            background-color: white;
+            box-shadow: 2px 2px 5px 1px lightgrey;
+            position: relative;
+            right: 0px;
+        }
+
+        .button-wrapper {
+            width: 200px;
+            margin-left: 50%;
+            left: -100px;
+            position: relative;
+        }
+
+        .button-wrapper:hover button {
+            background-color: white;
+            box-shadow: 2px 42px 70px -30px black;
+            transform: translate(0px, -5px);
+            font-weight: 300;
+            background-color: #00BAFF;
+            color: white;
+            border: none;
+            width: 205px;
+            height: 75px;
+            position: relative;
+            right: 3px;
+        }
+
+        .inner-content h6 {
+            margin-bottom: 5px;
+            color: lightgrey;
+            text-transform: uppercase;
+        }
+
+        #data-slide-one {
+            padding: 0px 10%;
+            text-align: center;
+        }
+  &lt;/xmp&gt;
+&lt;/div&gt;
+&lt;a href=&quot;http://www.filedropper.com/slider_1&quot;&gt;&lt;button class=&quot;downloadButton&quot;&gt;Download CSS&lt;/button&gt;&lt;/a&gt;
+&lt;p style=&quot;font-weight: bold;&quot;&gt;Custom jQuery:&lt;/p&gt;
+&lt;div class=&quot;code-surround&quot;&gt;
+  &lt;xmp style=&quot;font-size: 11px;&quot;&gt;
+        //slider class toggle
+      $(&#39;.nav-ball&#39;).on(&#39;click&#39;, function() {
+          $(&#39;.nav-ball&#39;).removeClass(&#39;active&#39;);
+          $(this).addClass(&#39;active&#39;);
+      });
+
+      $(&#39;#content1 button&#39;).on(&#39;click&#39;, function() {
+          $(&#39;#ball1&#39;).removeClass(&#39;active&#39;);
+          $(&#39;#ball2&#39;).addClass(&#39;active&#39;);
+      });
+
+      $(&#39;#submit&#39;).on(&#39;click&#39;, function() {
+          $(&#39;#ball2&#39;).removeClass(&#39;active&#39;);
+          $(&#39;#ball3&#39;).addClass(&#39;active&#39;);
+      });
+  &lt;/xmp&gt;
+&lt;/div&gt;
+&lt;a href=&quot;http://www.filedropper.com/slider_2&quot;&gt;&lt;button class=&quot;downloadButton&quot;&gt;Download jQuery&lt;/button&gt;&lt;/a&gt;
+
+&lt;br /&gt;
+&lt;p&gt;Well that&#39;s it for my version. Make sure that you change the &quot;body&quot; tag in the CSS to match your particular scenario as this will change the background of all of your HTML page. Unless that is something you want. Then go ahead and leave it in, it&#39;s up to you.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p style=&quot;font-weight: bold;&quot;&gt;Bootstrap Carousel HTML:&lt;/p&gt;
+&lt;div class=&quot;code-surround&quot;&gt;
+  &lt;xmp style=&quot;font-size: 11px;&quot;&gt;
+  &lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+&lt;!-- Indicators --&gt;
+&lt;ol class=&quot;carousel-indicators&quot;&gt;
+  &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+  &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+  &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+  &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;3&quot;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- Wrapper for slides --&gt;
+&lt;div class=&quot;carousel-inner&quot; role=&quot;listbox&quot;&gt;
+  &lt;div class=&quot;item active&quot;&gt;
+    &lt;img src=&quot;img_chania.jpg&quot; alt=&quot;Chania&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img src=&quot;img_chania2.jpg&quot; alt=&quot;Chania&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img src=&quot;img_flower.jpg&quot; alt=&quot;Flower&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img src=&quot;img_flower2.jpg&quot; alt=&quot;Flower&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Left and right controls --&gt;
+&lt;a class=&quot;left carousel-control&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+  &lt;span class=&quot;glyphicon glyphicon-chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class=&quot;right carousel-control&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+  &lt;span class=&quot;glyphicon glyphicon-chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+  &lt;/xmp&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;p&gt;Since bootstrap handles all the css and javascript for you this is really all that is to it. Just Replace the images and you should be good to go at this point if you&#39;ve included the bootstrap links correctly in step 1.&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;h3 class=&quot;orsteps&quot;&gt;Step Three:&lt;span class=&quot;title-instruction&quot;&gt;Test &amp;amp; Shim&lt;/span&gt;&lt;/h3&gt;
+&lt;br /&gt;
+&lt;p&gt;The final part in this tutorial is what I dub the &quot;Test &amp;amp; Shim&quot; phase&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Test because you want to make sure all of the buttons work and act like they are supposed to. Do this even before you start customizing it by adding pictures or other content. The reason you want to hold off on the customization is you want to rule that out as a reason for the code not working the way you intended it to. After it&#39;s working you&#39;ll want to move on to the second part in this step. &quot;Shim&quot;&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;I borrow the word &quot;Shim&quot; from the construction industry. The reason being is that when building a house and installing something modular such as a window or door there is always some sort of shimming required to make it fit to your custom work. In this case the framing of the house is your html, the drywall and paint is your css, jQuery and JavaScript is your electrical and the door or window is this carousel. A margin may be off, the position of it may not be quiet centered, font sizes may be off the container. Point being you need to shim it to fit your custom build. Do this by adding ID&#39;s to your tags and customizing the css for that particular problem area. After everything is looking good then go in and customize it with content. If you do things in this order it will alleviate some of the stress that comes with coding. &lt;/p&gt;
+
+&lt;style&gt;
+h1, h2,{
+  text-align: center;
+  padding: 10px;
+}
+.orsteps {
+  color: orangered;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#imageWrapper {
+  display: inline-block;
+  margin: 15px;
+  margin-left: 60px;
+  margin-bottom: 60px;
+}
+
+#imageWrapper img {
+  width: 30%;
+}
+@media screen and (max-width: 780px) {
+    #imageWrapper img {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    #imageWrapper {
+      margin: 0px;
+
+    }
+}
+
+xmp {
+
+
+}
+.code-surround {
+  background-color: black;
+  border-radius: 10px;
+  color: green;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.title-instruction {
+  color: grey;
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.install {
+  background-color: transparent;
+  border: 2px solid orangered;
+  color: orangered;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all ease-in-out 200ms;
+  margin: 10%;
+  margin-left: 25%;
+}
+
+.install:hover {
+  box-shadow: 0px 0px 0px .2px orangered, 0px 0px 10px 2px white inset;
+  color: white;
+  background: rgba(191, 185, 61, 1);
+  background: -moz-linear-gradient(45deg,
+    rgba(191, 185, 61, 1) 0%,
+    rgba(203, 138, 48, 1) 39%,
+    rgba(217, 80, 31, 0.86) 87%,
+    rgba(217, 80, 31, 0.85) 91%);
+  background: -webkit-gradient(left bottom,
+    right top,
+    color-stop(0%,  rgba(191, 185, 61, 1)),
+    color-stop(39%, rgba(203, 138, 48, 1)),
+    color-stop(87%, rgba(217, 80, 31, 0.86)),
+    color-stop(91%, rgba(217, 80, 31, 0.85)));
+  background: -webkit-linear-gradient(45deg,
+    rgba(191, 185, 61, 1) 0%,
+    rgba(203, 138, 48, 1) 39%,
+    rgba(217, 80, 31, 0.86) 87%,
+    rgba(217, 80, 31, 0.85) 91%);
+  background: -o-linear-gradient(45deg,
+    rgba(191, 185, 61, 1) 0%,
+    rgba(203, 138, 48, 1) 39%,
+    rgba(217, 80, 31, 0.86) 87%,
+    rgba(217, 80, 31, 0.85) 91%);
+  background: -ms-linear-gradient(45deg,
+    rgba(191, 185, 61, 1) 0%,
+    rgba(203, 138, 48, 1) 39%,
+    rgba(217, 80, 31, 0.86) 87%,
+    rgba(217, 80, 31, 0.85) 91%);
+  background: linear-gradient
+  (45deg,
+    rgba(191, 185, 61, 1) 0%,
+    rgba(203, 138, 48, 1) 39%,
+    rgba(217, 80, 31, 0.86) 87%,
+    rgba(217, 80, 31, 0.85) 91%);
+  filter: progid: DXImageTransform.Microsoft.gradient
+  ( startColorstr=&#39;#bfb93d&#39;,
+  endColorstr=&#39;#d9501f&#39;,
+  GradientType=1);
+
+}
+
+.downloadButton {
+  background-color: transparent;
+  border: 2px solid orangered;
+  color: orangered;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all ease-in-out 200ms;
+  margin-bottom: 15px;
+}
+
+.downloadButton:hover {
+  background-color: lightgrey;
+  border: 2px solid lightgrey;
+}
+
+#wordwrapWITHOUTWidth
+{   
+    word-wrap: break-word;
+}
+&lt;/style&gt;
+&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 24 Aug 2016 21:38:05 +0000</pubDate>
+        <link>http://TheCodersBrain.com/tutorial/web/development/2016/08/24/Add_a_slider_to_your_website.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/tutorial/web/development/2016/08/24/Add_a_slider_to_your_website.html</guid>
+        
+        
+        <category>tutorial</category>
+        
+        <category>web</category>
+        
+        <category>development</category>
+        
+      </item>
+    
+      <item>
+        <title>Update</title>
+        <description>&lt;div class=&quot;wrapper&quot;&gt;
+&lt;h1&gt;I&#39;ve been gone awhile&lt;/h1&gt;
+
+&lt;p&gt;I&#39;ve missed you guys too. All 3 of my daily readers. But it&#39;s not about how many readers I have,
+It&#39;s about what I started out to do with this website from the beginning and that is to detail my path from novice to web developer.
+So what&#39;s the update? What I have I been up to. Have I landed my first Web Development Job?&lt;/p&gt;&lt;br /&gt;
+&lt;p&gt;We&#39;ll get to all of that shortly just let me get a few updates out of the way.&lt;/p&gt;&lt;br /&gt;
+&lt;h3&gt;First things first&lt;/h3&gt;&lt;br /&gt;
+&lt;p&gt;So I haven&#39;t coded in Ruby since last posting on this site which looks to be a little over 2 months ago. It&#39;s not that I don&#39;t still love Ruby...&lt;em&gt;I still do&lt;/em&gt; It&#39;s not that I found something better....&lt;em&gt;I haven&#39;t&lt;/em&gt; The thing is when you are a web developer you have more use for languages like JavaScript and jQuery. So I have been primarily focusing on those two languages. It&#39;s just that JavaScript and jQuery can manipulate the DOM so much easier. Now thats not to say Rails and Ruby dont have their place in web development, in fact rails is the language I run this website off of and it has been incremental to the success and implimentation of this site. For instance all I need to do is title an html file a particular way and the code behind this website formats the landing page to include it in the line up of most recent post. I don&#39;t touch that page ever. In fact I don&#39;t even style the posts, including the one you are currently reading, that&#39;s the power of Ruby. But when it comes to DOM traversal, there is just no other language that compares.&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;p&gt;So I&#39;ve been using JavaScript but on what?&lt;/p&gt;&lt;br /&gt;
+&lt;p&gt;Well, I have been working on a website for a client that is Huuuuugee. All told, I&#39;m 4 months in and I can almost...&lt;em&gt;ALMOST&lt;/em&gt; see the light at the
+end of the tunnel. Let&#39;s go over what I had to do:&lt;p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Design&lt;/li&gt;
+  &lt;li&gt;Write the HTML &amp;amp; CSS from the ground up&lt;/li&gt;
+  &lt;li&gt;impliment and code several complex calculators for online quotes&lt;/li&gt;
+  &lt;li&gt;Take those quotes and funnel the results into a shopping cart&lt;/li&gt;
+  &lt;li&gt;Allow the user to reject the quote as well as update their shopping list, set an appointment&lt;/li&gt;
+  &lt;li&gt;Create a database to match service providers with those that checked out through our cart&lt;/li&gt;
+  &lt;li&gt;Set up a database and user sign in for our partners&lt;/li&gt;
+  &lt;li&gt;Set up a database and user sign in/up for our customers&lt;/li&gt;
+  &lt;li&gt;Much much more&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And all of this written in HTML, CSS, JavaScript and jQuery so far...from scratch...no real important plug ins. This is all unique code and ther is a lot of it. I&#39;m actually thinking of porting it over to a rails app in the future but for now it is what it is and I just can&#39;t handle the thought of doing more work at this point.&lt;/p&gt;
+
+&lt;h3&gt;My other Mistress...School&lt;/h3&gt;
+&lt;p&gt;I have also been in summer school for college and if you have any idea how stressful an accelerated computer science schedule could be, then you&#39;ll understand my reluctancy to blog rather than focus on school. I&#39;m getting ready to start up the fall semester with 18.5 credit units on my plate so you may not be seeing much of me this term either, which is why I&#39;m writing now. However I&#39;ve made it a point to post a few more times in the coming months that will focus on some plugins I built for the average person to impliment within their websites. I want to focus on making a tutorial for how to include it in your site so keep your eyes peeled for that. &lt;p&gt;
+
+&lt;br /&gt;
+&lt;p&gt;...until we meet again, see you soon!&lt;/p&gt;
+&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 24 Aug 2016 21:38:05 +0000</pubDate>
+        <link>http://TheCodersBrain.com/update/web/development/2016/08/24/Update.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/update/web/development/2016/08/24/Update.html</guid>
+        
+        
+        <category>update</category>
+        
+        <category>web</category>
+        
+        <category>development</category>
+        
+      </item>
+    
+      <item>
+        <title>5 Web Designs and Websites that will blow your %$#?ing mind!</title>
+        <description>&lt;div class=&quot;wrapper&quot;&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;h3&gt;&lt;b&gt;As web developers we are always growing, not only in our skills but also in keeping with trends and styles that the current market finds attractive. After all, web developers are designers first. Whether you&#39;re full-stack or just focus on front-end, user experience should be one, if not the, top priority when it comes to your web application.&lt;/b&gt;&lt;/h3&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;h3&gt;Every now and then I like to humble myself by looking at some &lt;i&gt;Awwward&lt;i&gt; winning web designs, no that&#39;s not a typo &lt;a href=&quot;http://www.awwwards.com/&quot;&gt;Awwards.com&lt;/a&gt; is an expert panel formed by some of the most important designers, bloggers, and agencies in the world takes on the difficult task of assessing the talent, effort, and dedication. At the end of every year Awwwards holds a conference and prize-giving ceremony to the websites with the top designs.
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;h2&gt;How it works&lt;/h2&gt;
+&lt;h3&gt;Websites first need to be submitted (You can&#39;t expect them to know about every single website out there). After that the community votes based on &lt;b&gt;four&lt;/b&gt; main categories: Design, Usability, Creativity and Content. Each category is awarded a score, valuing from 0.0 to 10.0. Those scores are then averaged, giving an overall average score.&lt;/h3&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;text-align: center;&quot;&gt;
+    &lt;img style=&quot;padding: 0px; width: 300px;&quot; src=&quot;http://s33.postimg.org/fofbf9x8f/Screen_Shot_2016_06_10_at_9_32_17_AM.png&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;h2&gt;The takeaway&lt;/h2&gt;
+&lt;h3&gt;The main focus of this post is to stretch your imagination and get you thinking outside of the box. I would also encourage you to try and duplicate some of the animations, scroll effects and stylings that you see on some of these sites. This is a great exercise to expand your repertoire when it comes to, not only design, but coding in general.&lt;/h3&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;!--waark START--&gt;
+&lt;h1&gt;1. &lt;a href=&quot;http://waaark.com/&quot;&gt;waaark.com&lt;/a&gt;&lt;h1&gt;
+&lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-waaark-1.jpg&quot; /&gt;
+
+  &lt;div class=&quot;row&quot; style=&quot;padding: 15px;&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+      &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-waaark-2.jpg&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+      &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-waaark-3.jpg&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+      &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-waaark-4.jpg&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;div class=&quot;score-wrapper&quot;&gt;
+&lt;h2 style=&quot;text-align:center; font-weight: bolder; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: white;&quot;&gt;SCORE CARD&lt;/h2&gt;
+&lt;hr /&gt;
+        &lt;div id=&quot;scores&quot; class=&quot;row&quot; style=&quot;text-align: center&quot;&gt;
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #d35400; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Design&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.19&lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+          &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.39&lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #1abc9c; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Creativity&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.20&lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #3498db; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Content&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.69&lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+  &lt;/div&gt;
+
+          &lt;div style=&quot;text-align: center; margin-top: 20px&quot;&gt;
+            &lt;div id=&quot;box&quot; class=&quot;col-md-10 col-xs-12&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; width:100%; background-color; grey; display: inline-block&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 35px; color: black; background-color: white font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.90&lt;/h4&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;br /&gt;Not surprisingly &lt;i&gt;Waaark&lt;/i&gt; is a French web designing firm that, on their website, list that they currently service such clients as &lt;b&gt;Melville Design&lt;/b&gt;, &lt;b&gt;Alix B d’Anthenay&lt;/b&gt;, &lt;b&gt;Bonne Marque&lt;/b&gt; among many others. I can tell you that each one of their websites is visually stunning. The firm is headed by a Art Director &lt;i&gt;Jimmy Raheriarisoa&lt;/i&gt; who boast an impressive 6 CSS design awards, 5 of the fore-mentioned Awwwards as well as 3 FWA&#39;s. The second half of this duo is none-other than Senior Developer &lt;i&gt;Antoine Wodniack&lt;/i&gt; who is no slouch in the awards department either, claiming a total of 9 CSS design awards, 8 Awwwards and 3 FWA&#39;s. All said Jimmy and Antoine have 8 years of working with each other and it definitely shows in their work.&lt;/h4&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;a href=&quot;&quot;&gt;&lt;button class=&quot;btn btn-default&quot;&gt;&lt;b&gt;Visit Waaark.com&lt;/b&gt;&lt;/button&gt;&lt;/a&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;hr style=&quot;border: 1px solid grey&quot; /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;!--waark END--&gt;
+
+&lt;!--Get lost START--&gt;
+
+    &lt;h1&gt;1. &lt;a href=&quot;http://eng.getlost-getnatural.ru/&quot;&gt;GET LOST. GET NATURAL&lt;/a&gt;&lt;h1&gt;
+    &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/05/awwwards-sotd-getlost-getnatural-1.jpg&quot; /&gt;
+
+      &lt;div class=&quot;row&quot; style=&quot;padding: 15px;&quot;&gt;
+        &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+          &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/05/awwwards-sotd-getlost-getnatural-2.jpg&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+          &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/05/awwwards-sotd-getlost-getnatural-3.jpg&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+          &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/05/awwwards-sotd-getlost-getnatural-5.jpg&quot; /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+
+&lt;div class=&quot;score-wrapper&quot;&gt;
+&lt;h2 style=&quot;text-align:center; font-weight: bolder; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: white;&quot;&gt;SCORE CARD&lt;/h2&gt;
+&lt;hr /&gt;
+        &lt;div id=&quot;scores&quot; class=&quot;row&quot; style=&quot;text-align: center&quot;&gt;
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #d35400; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Design&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.84&lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.27&lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #1abc9c; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Creativity&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.60&lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #3498db; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Content&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.45&lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+  &lt;/div&gt;
+
+      &lt;div style=&quot;text-align: center; margin-top: 20px&quot;&gt;
+        &lt;div id=&quot;box&quot; class=&quot;col-md-10 col-xs-12&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; width:100%; background-color; grey; display: inline-block&quot;&gt;
+          &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
+          &lt;h4 style=&quot;font-size: 35px; color: black; background-color: white font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.58&lt;/h4&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;br /&gt;GET LOST. GET NATURAL is a website built for the sole purpose to inform about the Grand Tour route and to show that Switzerland is not just about cheese, chocolate and watches....There are a bunch of other adjectives that &lt;i&gt;Hungry Boys&lt;/i&gt; (the Russian based web design firm behind GET LOST. GET NATURAL) uses to describe the site, but to me, it just is a bunch of fluff words strung together to make it sound like they have art degree, which I&#39;m sure they do, but my audience isn&#39;t a bunch of high brow do-gooders that require to be pandered and ostracized from the art community. So...you&#39;re welcome for saving you from reading their description.&lt;/h4&gt;
+
+&lt;h4&gt;Hungry Boys has two more entries in this years Awwwards that you can check out below, they pretty much all hover around the same score so I thought they were worth at least mentioning in passing.
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;ul style=&quot;list-style: none&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.sound-of-change.com/#/&quot;&gt;
+  &lt;img class=&quot;link-img&quot; src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/03/awwwards-sotd-Bonobo-Jeans-1-1.jpg&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;li&gt;&lt;a href=&quot;http://run4tiger.com/#/about&quot;&gt;
+  &lt;img class=&quot;link-img&quot; src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2015/05/Tiger-Challenge-1.jpg&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;a href=&quot;http://eng.getlost-getnatural.ru/&quot;&gt;&lt;button class=&quot;btn btn-default&quot;&gt;&lt;b&gt;Visit getlost-getnatural.ru.com&lt;/b&gt;&lt;/button&gt;&lt;/a&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;hr style=&quot;border: 1px solid grey&quot; /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;!--get Lost END--&gt;
+
+&lt;!--Louises phone START--&gt;
+
+  &lt;h1&gt;3. &lt;a href=&quot;https://www.thiswaslouisesphone.com/&quot;&gt;Ths Was Louises Phone&lt;/a&gt;&lt;h1&gt;
+  &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-This-Was-Louises-phone-1.jpg&quot; /&gt;
+
+    &lt;div class=&quot;row&quot; style=&quot;padding: 15px;&quot;&gt;
+      &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+        &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-This-Was-Louises-phone-2.jpg&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+        &lt;img src=&quot;http://www.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-This-Was-Louises-phone-3.jpg&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+        &lt;img src=&quot;http://s33.postimg.org/3wxg9oyhr/Screen_Shot_2016_06_10_at_2_55_05_PM.png&quot; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;div class=&quot;score-wrapper&quot;&gt;
+&lt;h2 style=&quot;text-align:center; font-weight: bolder; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: white;&quot;&gt;SCORE CARD&lt;/h2&gt;
+&lt;hr /&gt;
+        &lt;div id=&quot;scores&quot; class=&quot;row&quot; style=&quot;text-align: center&quot;&gt;
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #d35400; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Design&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.49&lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.54&lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #1abc9c; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Creativity&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.50&lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #3498db; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Content&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.85&lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+          &lt;div style=&quot;text-align: center; margin-top: 20px&quot;&gt;
+            &lt;div id=&quot;box&quot; class=&quot;col-md-10 col-xs-12&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; width:100%; background-color; grey; display: inline-block&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 35px; color: black; background-color: white font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.74&lt;/h4&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;h4&gt;&lt;br /&gt;This was Louises Phone, is a full immersive and interactive website that plays more like a video game. The message conveyed is narrated by Louises father, detailing the &lt;b&gt;&quot;hells of cyber-bullying&quot;&lt;/b&gt; by reading, then 16 year old, Louises attackers text messages. You may have guessed that Louise ended up ending her own life. Although the over-arching message is to end bullying, through the &lt;b&gt;No Hate Network&lt;/b&gt;, Louises story is the main vehicle to spread that message. Originally in French, the website has been translated to English to help spread the awareness. &lt;br /&gt;
+&lt;br /&gt;A few note worthy points are that the site is entirely transitioned on Javascript, essentially making it one huge web-based application. There are a few oddities within how the app performs which is why I am putting this one a little lower on the list. Don&#39;t get me wrong this is a beautiful site but there are a few mistakes like a huge white space on the page while scrolling down the page.&lt;/h4&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;a href=&quot;https://www.thiswaslouisesphone.com/&quot;&gt;&lt;button class=&quot;btn btn-default&quot;&gt;&lt;b&gt;thiswaslouisesphone.com&lt;/b&gt;&lt;/button&gt;&lt;/a&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;hr style=&quot;border: 1px solid grey&quot; /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+
+&lt;!--Louises phone END--&gt;
+
+
+&lt;!--Penguins START--&gt;
+
+  &lt;h1&gt;4. &lt;a href=&quot;http://www.pocketpenguins.com/&quot;&gt;Pocket Penguins&lt;/a&gt;&lt;h1&gt;
+  &lt;img src=&quot;http://www.awwwards.com/awards/submissions/2016/06/575806fb14c16.png&quot; /&gt;
+
+    &lt;div class=&quot;row&quot; style=&quot;padding: 15px;&quot;&gt;
+      &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+        &lt;img src=&quot;http://s33.postimg.org/cufc5l8gv/Screen_Shot_2016_06_10_at_7_02_30_PM.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+        &lt;img src=&quot;http://s33.postimg.org/n9w4fnbq7/Screen_Shot_2016_06_10_at_7_03_21_PM.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot; style=&quot;padding: 0px&quot;&gt;
+        &lt;img src=&quot;http://s33.postimg.org/n7pir4isf/Screen_Shot_2016_06_10_at_7_03_02_PM.png&quot; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;div class=&quot;score-wrapper&quot;&gt;
+&lt;h2 style=&quot;text-align:center; font-weight: bolder; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: white;&quot;&gt;SCORE CARD&lt;/h2&gt;
+&lt;hr /&gt;
+        &lt;div id=&quot;scores&quot; class=&quot;row&quot; style=&quot;text-align: center&quot;&gt;
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #d35400; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Design&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.48&lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.25&lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #1abc9c; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Creativity&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.32&lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #3498db; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Content&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.31&lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+          &lt;div style=&quot;text-align: center; margin-top: 20px&quot;&gt;
+            &lt;div id=&quot;box&quot; class=&quot;col-md-10 col-xs-12&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; width:100%; background-color; grey; display: inline-block&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 35px; color: black; background-color: white font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.34&lt;/h4&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;h4&gt;&lt;br /&gt;Pocket Penguins is nothing special, yet at the same time, that is exactly what makes it so special. It isn&#39;t trying too hard, it isn&#39;t full of purposeless gimmick eye candy per sake of eye candy. Yes, Pocket Penguins is quiet unique indeed.&lt;br /&gt;
+&lt;br /&gt;
+The secret sauce to this masterpiece is in the fine details. For starters, this is a true &lt;a href=&quot;https://en.wikipedia.org/wiki/Single-page_application&quot;&gt;SPA&lt;/a&gt; (single page application). You wont find any menu&#39;s or links taking you off the single page. The scroll effects are coded perfectly, the Javascript; on spot! It&#39;s not a fancy site done well, rather a simple site done to perfection. That&#39;s it&#39;s charm, it&#39;s simplicity, like the Penguin itself it is a truly perfect simplicity.&lt;/h4&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;a href=&quot;http://www.pocketpenguins.com/&quot;&gt;&lt;button class=&quot;btn btn-default&quot;&gt;&lt;b&gt;Visit pocketpenguins.com&lt;/b&gt;&lt;/button&gt;&lt;/a&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;hr style=&quot;border: 1px solid grey&quot; /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+
+&lt;!--Penguin END--&gt;
+
+&lt;!--Swiss army man START--&gt;
+
+  &lt;h1&gt;4. &lt;a href=&quot;http://swissarmyman.com/&quot;&gt;Swiss Army Man&lt;/a&gt;&lt;h1&gt;
+  &lt;img src=&quot;http://www.awwwards.com/awards/submissions/2016/06/57571c5d38f3f.jpeg&quot; /&gt;
+
+    &lt;div class=&quot;row&quot; style=&quot;padding-top: 15px;&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot; style=&quot;padding-right: 0px&quot;&gt;
+        &lt;img src=&quot;http://s33.postimg.org/yiyfij8v3/Screen_Shot_2016_06_10_at_7_31_15_PM.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot; style=&quot;padding-left: 0px&quot;&gt;
+        &lt;img src=&quot;http://s33.postimg.org/t81wgsgbj/Screen_Shot_2016_06_10_at_7_40_27_PM.png&quot; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;div class=&quot;score-wrapper&quot;&gt;
+&lt;h2 style=&quot;text-align:center; font-weight: bolder; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: white;&quot;&gt;SCORE CARD&lt;/h2&gt;
+&lt;hr /&gt;
+        &lt;div id=&quot;scores&quot; class=&quot;row&quot; style=&quot;text-align: center&quot;&gt;
+            &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #d35400; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Design&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.22&lt;/h4&gt;
+            &lt;/div&gt;
+
+            &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #f1c40f; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Usability&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;7.99&lt;/h4&gt;
+            &lt;/div&gt;
+
+            &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #1abc9c; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Creativity&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.58&lt;/h4&gt;
+            &lt;/div&gt;
+
+            &lt;div id=&quot;box&quot; class=&quot;col-md-2&quot; style=&quot;padding: 0px;&quot;&gt;
+              &lt;h4 style=&quot;color: white; background-color: #3498db; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Content&lt;/h4&gt;
+              &lt;h4 style=&quot;font-size: 25px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.08&lt;/h4&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+
+        &lt;div style=&quot;text-align: center; margin-top: 20px&quot;&gt;
+          &lt;div id=&quot;box&quot; class=&quot;col-md-10 col-xs-12&quot; style=&quot;padding: 0px; box-shadow: 0px 0px 155px 0px grey; width:100%; background-color; grey; display: inline-block&quot;&gt;
+            &lt;h4 style=&quot;color: white; background-color: #2c3e50; padding-bottom: 10px; padding-top: 10px; margin-right: 0px;&quot;&gt;Average&lt;/h4&gt;
+            &lt;h4 style=&quot;font-size: 35px; color: black; background-color: white font-family: Helvetica Neue, Helvetica, Arial, sans-serif;&quot;&gt;8.22&lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;h4&gt;&lt;b&gt;The Swiss Army Man&lt;/b&gt; is a marketing page for a Sundance festival winner by the same name. Starring Daniel Radcliffe as &quot;Manny&quot;, a washed ashore body that sheds some hope and a questionable friendship to Paul Dano&#39;s &quot;Hank&quot;, serving as a catalyst for the questionable sanity of the main character himself as he struggles internally of whether he is witnessing a miracle or simply succumbing to the isolation of finding himself alone on a deserted island. I&#39;ve got to say, I love this idea. A refreshing story in a sea of reboots and sequels ten-poles. However this is about website design, and although the premise of this movie is a great inspiration, does the webpage convey that tone equally as well?&lt;br /&gt;
+&lt;br /&gt;
+Well would you look at that score; a bit of runaway; wouldn&#39;t you say? Well, while I do believe this is very deserving of it&#39;s attention as a website, I do believe this score to be a tad bit presumptuous. While the coding behind the realistic physics that go into ...ah....throwing a graphical dead body around and make it convincing to the website visitor is a feat of engineering prowess, you have to ask yourself does it add to the overall design of the medium? I believe it does, however to an extent. Take away the gimmick that is him being tossed around the screen and what are you left with? A bunch of share buttons for your social network peralus and a play button for the trailer.&lt;br /&gt;
+&lt;br /&gt;
+That being said, I believe this fits nicely into a comfortable second place. Although it delivers a feeling of curiosity and edginess, that I believe to be modeled off of the movies tonality, I just can&#39;t see putting this ahead of Waaark.  &lt;/h4&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;a href=&quot;http://swissarmyman.com/&quot;&gt;&lt;button class=&quot;btn btn-default&quot;&gt;&lt;b&gt;Visit swissarmyman.com/&lt;/b&gt;&lt;/button&gt;&lt;/a&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;hr style=&quot;border: 1px solid grey&quot; /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+
+&lt;!--Penguin END--&gt;
+&lt;!-- Update your html tag to include the itemscope and itemtype attributes. --&gt;
+&lt;html itemscope=&quot;&quot; itemtype=&quot;http://schema.org/Blog&quot;&gt;
+
+&lt;!-- Add the following three tags to your body. --&gt;
+&lt;span itemprop=&quot;name&quot;&gt;5 Web Designs and Websites that will blow your %$#?ing mind!&lt;/span&gt;
+&lt;span itemprop=&quot;description&quot;&gt;As web developers we are always growing, not only in our skills but also in keeping with trends and styles that the current market finds attractive. After all, web developers are designers first. Whether you&amp;#39;re full-stack or just focus on front-end, user experience should be one, if not the, top priority when it comes to your web application.
+subtitle: Testing the limits of UX/UI Design&lt;/span&gt;
+&lt;img itemprop=&quot;image&quot; src=&quot;http://s33.postimg.org/k3rxcgfjy/background.jpg&quot; /&gt;
+
+&lt;style&gt;
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #59C3C6;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.link-img {
+  transition: ease-in-out 300ms;
+  opacity: 0.8;
+  width: 300px;
+  margin: 0 auto;
+
+}
+
+li:hover .link-img{
+  width: 400px;
+  height: auto;
+  opacity: 1;
+}
+
+li {
+  text-align: center;
+}
+
+.score-wrapper {
+  background-color: #bdc3c7;
+  box-shadow: 1px 12px 15px -3px grey;
+  margin-top: 15px;
+  padding: 15px;
+
+
+}
+#scores {
+  display: inline;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+
+}
+
+#scores #box {
+  font-weight: bolder;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 2px 12px 15px -3px grey;
+  color: #59C3C6;
+  text-transform: uppercase;
+  font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+  display: inline-block;
+
+
+}
+.wrapper {
+  padding: 0px;
+}
+#box {
+  min-width: 150px;
+}
+
+#scores #box h4 {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 15px;
+}
+
+a{
+    color:#3c948b;
+    text-decoration:none;
+
+    -webkit-transition: color .25s ease-out;
+    transition: color .25s ease-out;
+}
+a:hover{
+    color: #313131;
+    text-decoration:none;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    margin-bottom:23px;
+    font-weight: normal;
+    line-height: 170%;
+}
+h1, .h1{
+    font-size:34px;
+}
+h2, .h2{
+    font-size:26px;
+}
+h3, .h3{
+    font-size:21px;
+}
+h4{
+    font-size:15px;
+}
+h5{
+    font-size:15px;
+}
+h6{
+    font-size:12px;
+}
+
+.h4{
+    font-size: 18px;
+
+}
+
+h4.hr{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d2d6d5;
+    line-height: normal;
+}
+
+p,
+blockquote,
+.p{
+    margin-bottom:23px;
+    line-height:190%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+input, textarea, select{
+    font-family: MuseoSans, serif;
+    font-size: 15px;
+    color: #313131;
+}
+
+&lt;/style&gt;
+&lt;/html&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h4&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/i&gt;&lt;/i&gt;&lt;/h3&gt;&lt;/div&gt;
+</description>
+        <pubDate>Fri, 10 Jun 2016 09:15:05 +0000</pubDate>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/06/10/5-web-designs-that-will-blow-your-mind.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/06/10/5-web-designs-that-will-blow-your-mind.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>7 Free UX E-Books Worth Reading</title>
+        <description>&lt;div class=&quot;wrapper&quot; style=&quot;padding: 0px;&quot;&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;h3&gt;The best designers are lifelong students. While nothing beats experience in the field, the amount of helpful online resources certainly helps keep our knowledge sharp.&lt;br /&gt;
+In this post, I’ve rounded up some useful e-books that provide excellent UX advice and insights.&lt;h3&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;b&gt;&lt;h1&gt;1. &lt;a href=&quot;http://userfocus.co.uk/ebooks/uxdesign.html&quot;&gt;Bright Ideas for User Experience Designers&lt;/a&gt;&lt;/h1&gt;&lt;/b&gt;
+&lt;div class=&quot;book-div&quot;&gt;&lt;img class=&quot;book&quot; src=&quot;http://cdn.sixrevisions.com/0583-06-bright-ideas-user-experience-designers.png&quot; /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h4&gt;This is a free e-book by usability consultancy firm Userfocus. The best part of this book is its casual tone. Acronyms like &quot;the CRAP way to usability&quot; and The Beatles analogies make remembering the book’s lessons a lot easier, and makes for an interesting read. That’s why this book is one of my favorites.&lt;h4&gt;
+&lt;a class=&quot;a-button&quot; href=&quot;http://userfocus.co.uk/ebooks/Bright_Ideas_for_UX_Designers.php&quot;&gt;&lt;button class=&quot;btn btn-default&quot;&gt;Download the e-book&lt;/button&gt;&lt;/a&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+
+&lt;b&gt;&lt;h1&gt;2. &lt;a href=&quot;http://userexperiencedesigns.com/&quot;&gt;50 User Experience Best Practices&lt;/a&gt;&lt;/h1&gt;&lt;/b&gt;
+&lt;div class=&quot;book-div&quot;&gt;&lt;img class=&quot;book&quot; src=&quot;http://cdn.sixrevisions.com/0583-04-user-experience-best-practices.jpg&quot; /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h4&gt;As the book’s title implies, 50 User Experience Best Practices delivers UX tips and best practices. It delves into subjects such as user research and content strategy. One of the secrets to this book’s success is its creative and easy-to-comprehend visuals. This e-book was written and published by the now-defunct UX design agency, Above the Fold.&lt;h4&gt;
+&lt;a class=&quot;a-button&quot; href=&quot;http://userexperiencedesigns.com/assets/pdf/50-UX-Best-Practices.pdf&quot;&gt;&lt;button class=&quot;btn btn-default&quot;&gt;Download the e-book&lt;/button&gt;&lt;/a&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;b&gt;&lt;h1&gt;3. &lt;a href=&quot;https://studio.uxpin.com/ebooks/free-ui-ux-design-trends-2015-2016-ebook-bundle/&quot;&gt;UX Design Trends Bundle&lt;/a&gt;&lt;/h1&gt;&lt;/b&gt;
+&lt;div class=&quot;book-div&quot;&gt;&lt;img style=&quot;width: 600px; height: auto; display: inline-block;&quot; src=&quot;http://cdn.sixrevisions.com/0583-01-ux-design-trends-bundle.jpg&quot; /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h4&gt;Over at UXPin, the has written and published a lot of free e-books. For this post, I’d like to specifically highlight their UX Design Trends Bundle. It’s a compilation of three of our e-books: Web Design Trends 2016, UX Design Trends 2015 &amp;amp; 2016, and Mobile UI Design Trends 2015 &amp;amp; 2016. Totaling 350+ pages, this bundle examines over 300 excellent designs.&lt;/h4&gt;
+&lt;a class=&quot;a-button&quot; href=&quot;http://mkto-sj020275.com/LVL0UB0010l10RK590L0y0O&quot;&gt;&lt;button class=&quot;btn btn-default&quot;&gt;Download the e-book&lt;/button&gt;&lt;/a&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;b&gt;&lt;h1&gt;4. &lt;a href=&quot;http://uxstorytellers.blogspot.com.tr/2009/01/ux-storytellers-connecting-dots.html&quot;&gt;UX Storytellers: Connecting the Dots&lt;/a&gt;&lt;/h1&gt;&lt;/b&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class=&quot;book-div&quot;&gt;&lt;img class=&quot;book&quot; src=&quot;http://cdn.sixrevisions.com/0583-05-ux-storytellers-connect-the-dots.png&quot; /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h4&gt;Published in 2009, UX Storytellers: Connecting the Dots, continues to be a very insightful read. This classic e-book stays relevant because of its unique format: It collects stand-alone stories and advice from 42 UX professionals. At 586 pages, there’s a ton of content in this book. Download it now to learn about the struggles — and solutions — UX professionals can expect to face.&lt;/h4&gt;
+&lt;a class=&quot;a-button&quot; href=&quot;http://dl.dropbox.com/u/13448882/UX_Storytellers.epub&quot;&gt;&lt;button class=&quot;btn btn-default&quot;&gt;Download the e-book&lt;/button&gt;&lt;/a&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;b&gt;&lt;h1&gt;5. &lt;a href=&quot;http://theuxreader.com/&quot;&gt;The UX Reader&lt;/a&gt;&lt;/h1&gt;&lt;/b&gt;
+&lt;div class=&quot;book-div&quot;&gt;&lt;img class=&quot;book&quot; src=&quot;http://cdn.sixrevisions.com/0583-02-ux-reader.jpg&quot; /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h4&gt;This e-book covers all the important components of the UX design process. It’s full of valuable insights, making it appealing to both beginners and veterans alike. The book is divided into five categories: Collaboration, Research, Design, Development, and Refinement. Each category contains a series of articles written by different members of MailChimp’s UX team.&lt;/h4&gt;
+&lt;a class=&quot;a-button&quot; href=&quot;http://downloads.mailchimp.com/the-ux-reader.zip&quot;&gt;&lt;button class=&quot;btn btn-default&quot;&gt;Download the e-book&lt;/button&gt;&lt;/a&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;b&gt;&lt;h1&gt;6. &lt;a href=&quot;http://learnfromgreatdesign.com/#freechapters&quot;&gt;Learn from Great Design&lt;/a&gt;&lt;/h1&gt;&lt;/b&gt;
+&lt;div class=&quot;book-div&quot;&gt;&lt;img class=&quot;book&quot; src=&quot;http://cdn.sixrevisions.com/0583-03-learn-from-great-design.png&quot; /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h4&gt;Only a portion of this book, 57 pages, is free.
+In this e-book, web designer Tom Kenny does in-depth analyses of great web designs, pointing out what they’re doing right, and also what they could do better. For those that learn best by looking at real-world examples, this book is a great read.&lt;/h4&gt;
+&lt;h4&gt;The full version of this e-book contains 20 case studies; the free sample only has 3 of those case studies.&lt;/h4&gt;
+&lt;a class=&quot;a-button&quot; href=&quot;http://learnfromgreatdesign.com/#freechapters&quot;&gt;&lt;button class=&quot;btn btn-default&quot;&gt;Download the e-book&lt;/button&gt;&lt;/a&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;b&gt;&lt;h1&gt;7. &lt;a href=&quot;https://studio.uxpin.com/ebooks/free-practical-interaction-design-ebook-bundle/&quot;&gt;The Practical Interaction Design Bundle&lt;/a&gt;&lt;/h1&gt;&lt;/b&gt;
+&lt;div class=&quot;book-div&quot;&gt;&lt;img style=&quot;width: 600px; height: auto; display: inline-block;&quot; src=&quot;http://cdn.sixrevisions.com/0583-07-practical-interaction-design-bundle.jpg&quot; /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h4&gt;I’ll end this list with another UXPin selection. This bundle contains three of their IxD e-books: Interaction Design Best Practices Volume 1 and Volume 2, as well as Consistency in UI Design.&lt;br /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Interaction Design Best Practices Volume 1 covers the &quot;tangibles&quot; — visuals, words, and space — and explains how to implement signifiers, how to construct a visual hierarchy, and how to make interactions feel like real conversations.&lt;/li&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;li&gt;Interaction Design Best Practices Volume 2 covers the &quot;intangibles&quot; — time, responsiveness, and behavior — and covers topics from animation to enjoyment.&lt;/li&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;li&gt;Consistency in UI Design explains the role that consistency plays in learnability, reducing friction, and drawing&lt;br /&gt; attention to certain elements.&lt;/li&gt;
+&lt;/ul&gt;
+Altogether, the bundle includes 250 pages of best practices and 60 design examples.&lt;br /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;a class=&quot;a-button&quot; href=&quot;http://mkto-sj020275.com/eO05HU00000BR70VL1cL90y&quot;&gt;&lt;button class=&quot;btn btn-default&quot;&gt;Download the e-book&lt;/button&gt;&lt;/a&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+Did I leave out your favorite UX e-book? Let me know in the comments.&lt;h4&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;style&gt;
+
+hr {
+  box-shadow: 2px 2px 10px 1px grey;
+  border: 2px solid grey;
+  margin: 25px;
+}
+.book-div {
+  text-align: center;
+}
+  .book-div .book {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    transition: all ease-in-out 300ms;
+    box-shadow: 0px 37px 30px -25px rgba(0,0,0,0.6);
+  }
+
+  .wrapper {
+    font-family: &#39;Open Sans&#39;, sans-serif;
+  }
+  .wrapper h4 {
+  line-height: 35px;
+  padding: 20px;
+}
+
+.wrapper h3 {
+line-height: 30px;
+text-align: left;
+font-size: 18px;
+padding: 5px
+}
+
+.wrapper h1 {
+  padding: 15px;
+}
+.a-button {
+  margin-left: 50%;
+  position: relative;
+  left: -140px;
+}
+
+.a-button .btn {
+
+  transition: all ease-in-out 300ms;
+  box-shadow: 1px 2px 21px 1px grey;
+  background-color: #9b59b6;
+  color: white;
+  border: 2px solid #9b59b6;
+
+}
+
+.a-button .btn:hover {
+  border: 2px solid white;
+  box-shadow: 0px 3px 10px 1px grey;
+}
+
+.a-button .btn:active {
+  background-color: #9b59b6;
+  color: white;
+}
+&lt;/style&gt;
+&lt;/h4&gt;&lt;/h4&gt;&lt;/h4&gt;&lt;/h4&gt;&lt;/h4&gt;&lt;/h4&gt;&lt;/h3&gt;&lt;/h3&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 08 Jun 2016 00:44:05 +0000</pubDate>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/06/08/7-Free-E-Books-Worth-Reading.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/06/08/7-Free-E-Books-Worth-Reading.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Configuring Jekyll</title>
+        <description>&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class=&quot;wrapper&quot;&gt;
+&lt;i style=&quot;font-weight: muted&quot;&gt;This tutorial is a series of tutorials on Jekyll, if you are interested in learning how you can utilize all the features of Jekyll click here for more tutorials.&lt;/i&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;img src=&quot;http://s33.postimg.org/r0qjauysv/jekyll_tutorial.jpg&quot; /&gt;
+&lt;div style=&quot;font-size: 75px;text-align: center; background-color: rgba(0,0,0,0.8); color: rgba(0, 195, 0, 0.6); box-shadow: 0px 2px 4px 1px grey;&quot;&gt;
+&lt;h1&gt;&lt;b&gt;PART II&lt;/b&gt;&lt;span class=&quot;blink&quot;&gt; _ &lt;/span&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h3 class=&quot;steps&quot;&gt;WHAT&#39;S COVERED IN THIS TUTORIAL&lt;/h3&gt;
+  &lt;div class=&quot;row&quot; style=&quot;text-align: center; font-size: 13px; padding: 0px 15px 0px 15px;&quot;&gt;
+
+  			&lt;p style=&quot;box-shadow: 0px 2px 4px 1px grey;&quot;&gt;WHAT IS JEKYLL?&lt;br /&gt;
+  			WHAT IS A YAML.&lt;br /&gt;
+  			WHERE TO FIND configure.yml.&lt;br /&gt;
+  			HOW TO CONFIGURE JEKYLL.&lt;/p&gt;
+
+  &lt;/div&gt;
+
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;hr style=&quot;border: 3px solid #7f8c8d&quot; /&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;h3&gt;What is a Yaml?&lt;/h3&gt;
+
+  &lt;h4&gt;If you&#39;ve never heard of a Yaml before it can be pretty confusing as to what you do with it. So let&#39;s give you some context so you will have a good foundation to properly impliment your yaml files in the future.&lt;/h4&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;h4&gt;YAML stands for &quot;YAML Ain&#39;t Markdown Language&quot; and it is used extensively in Jekyll for its configuration files and also in page settings. YAML is to configuration what markdown is to markdown. It&#39;s basically a human-readable structured data format.&lt;/h4&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;h4&gt;So this begs the question; &lt;b&gt;&quot;What is Markdown?&quot;&lt;/b&gt;&lt;br /&gt;
+  Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name.&lt;/h4&gt;
+
+  Find more information here:&lt;br /&gt;
+  &lt;a href=&quot;http://rmarkdown.rstudio.com/authoring_basics.html&quot;&gt;Markdown Docs&lt;/a&gt;&lt;br /&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  Keep in mind that if you are going to be serious about using Jekyll for your blog or in general it may be a good idea to visit the link above and familiarize yourself with the syntax. It&#39;s honestly not that hard. Maybe a 10 minute look and you&#39;ve got it.
+
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;h3&gt;Where to find configure.yml&lt;/h3&gt;
+  &lt;h4&gt; config.yml can be found in your main projects folder. Remember in &lt;a href=&quot;/jekyll/update/2016/05/31/Jekyll-tutorial-How-to-install-jekyll.html&quot;&gt;Part I&lt;/a&gt; we learned how to make a new Jekyll project and give it a name? Well that same folder houses your config.yml file. This is the file that we will be going over in detail in the next section so ensure you have it open.&lt;/h4&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+  &lt;h3&gt;How to configure jekyll&lt;/h3&gt;
+  &lt;h4&gt;When you first open the config.yml file it&#39;s filled with some placeholder information. Of course, you&#39;ll want to customize this to make your new project your own. &lt;/h4&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;h4&gt;In order to customize the config file, we need to go over what exactly each variable controls&lt;/h4&gt;
+  I am calling anything that looks like &quot;ThisIsAVariable:&quot; because jekyll runs Ruby on Rails and this config file actually stores each section as a variable that becomes a standard across all pages of your website or project.
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+  &lt;ul&gt;&lt;h3&gt;Config Variables&lt;/h3&gt;
+    &lt;li&gt;&lt;b&gt;title:&lt;/b&gt;&lt;/li&gt;&lt;br /&gt;
+    This is the name of your website, it will populate automatically across your pages in the header and footer. You can also use &lt;i&gt;Configuring Jekyll&lt;/i&gt; to insert it where ever you may wish for it to auto populate.
+    &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+    &lt;li&gt;email:&lt;/li&gt;
+    Again, this will auto populate on your page where ever you may put the variable &quot;&lt;i&gt;&lt;/i&gt;&quot;
+    &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+    &lt;li&gt;description:&lt;/li&gt;
+    This, is pretty self explanatory, This description by default will be found in your footer, however you may...again... use the variable &quot;&lt;i&gt;&lt;/i&gt;&quot; where ever you would like to recycle it.
+    &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+    &lt;li&gt;baseurl:&lt;/li&gt;
+    This is the subpath to your site, it comes after your main url. just after &quot;.com&quot;. Don&#39;t use this anywhere else.
+    &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+    &lt;li&gt;url:&lt;/li&gt;
+    This is...the...ah...url.
+    &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+    &lt;li&gt;twitter_username:&lt;/li&gt;
+    This is another self explanatory one, basically you input your username, not a link just your username, this variable also calls the footer home and it will automatically link to your twitter account. No mess, no fuss.
+    &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+    &lt;li&gt;github_username:&lt;/li&gt;
+    This is the same as the twitter variable only for github. Use it the same.
+    &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+    &lt;li&gt;markdown:&lt;/li&gt;
+    Listen, don&#39;t change this one either, this is the markdown superset converter. if you need more information on the specifics of Kramdown (thats the markdown language) and it&#39;s syntax click &lt;a href=&quot;http://kramdown.gettalong.org/&quot;&gt;here&lt;/a&gt;
+  &lt;/ul&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;h3&gt;Homework&lt;/h3&gt;
+
+&lt;h4&gt;Erase the default information in the variables title:, email:, description:, twitter_username: and github_username: with your own information. Try to see if you can locate all the places on your website it effects. Bonus points if you use one of them as a variable in another part of the page it isn&#39;t already setup in. &lt;/h4&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+
+h3 {
+  color: #9b59b6;
+  font-weight: bolder;
+}
+
+li {
+  font-size: 18px;
+  font-weight: bold;
+  list-style: none;
+}
+p{
+	font-weight: bold;
+	text-align: left;
+	font-size: 20px;
+	padding: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	color: rgba(0, 195, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.9);
+	margin-top: -10px;
+
+}
+p span {
+	color: rgba(255,255,255, 0);
+	background-color: rgba(255,255,255, 0.7);
+}
+a:hover {
+	color: ;
+}
+
+&lt;/style&gt;
+
+</description>
+        <pubDate>Mon, 06 Jun 2016 21:38:05 +0000</pubDate>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/06/06/Jekyll-Tutorial-Configuration.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/06/06/Jekyll-Tutorial-Configuration.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>How to install Jekyll</title>
+        <description>&lt;!-- Google Tag Manager --&gt;
+&lt;noscript&gt;&lt;iframe src=&quot;//www.googletagmanager.com/ns.html?id=GTM-5JC4RX&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+&#39;//www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5JC4RX&#39;);&lt;/script&gt;
+
+&lt;!-- End Google Tag Manager --&gt;
+&lt;div class=&quot;wrapper&quot;&gt;
+&lt;i style=&quot;font-weight: muted&quot;&gt;This tutorial is a series of tutorials on Jekyll, if you are interested in learning how you can utilize all the features of Jekyll click here for more tutorials.&lt;/i&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;img src=&quot;http://s33.postimg.org/r0qjauysv/jekyll_tutorial.jpg&quot; /&gt;
+&lt;div style=&quot;font-size: 75px;text-align: center; background-color: rgba(0,0,0,0.8); color: rgba(0, 195, 0, 0.6); box-shadow: 0px 2px 4px 1px grey;&quot;&gt;
+&lt;h1&gt;&lt;b&gt;PART I&lt;/b&gt;&lt;span class=&quot;blink&quot;&gt; _ &lt;/span&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;h3 class=&quot;steps&quot;&gt;WHAT&#39;S COVERED IN THIS TUTORIAL&lt;/h3&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;text-align: center; font-size: 13px; padding: 0px 15px 0px 15px;&quot;&gt;
+
+			&lt;p style=&quot;box-shadow: 0px 2px 4px 1px grey;&quot;&gt;WHAT IS JEKYLL?&lt;br /&gt;
+			WHO SHOULD USE JEKYLL.&lt;br /&gt;
+			HOW TO INSTALL JEKYLL.&lt;br /&gt;
+			COMMON COMMANDS.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:inline-block;width:336px;height:280px; z-index: 9999;&quot; data-ad-client=&quot;ca-pub-4085915336649467&quot; data-ad-slot=&quot;1120956636&quot;&gt;
+&lt;/ins&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h2 style=&quot;text-align: center&quot;&gt;&lt;b&gt;What is Jekyll?&lt;/b&gt;&lt;/h2&gt;
+&lt;img src=&quot;http://s33.postimg.org/4wcimsh7z/jekyll_hyde.jpg&quot; /&gt;
+&lt;b&gt;Jekyll is a Doctor who occasionally feels he is battling between the good and evil within himself revealing his alter ego &quot;Hyde&quot;....No? Wrong Jekyll?
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+Ahhh yes...of course you mean this Jekyll.&lt;/b&gt;
+&lt;img src=&quot;https://jekyllrb.com/img/logo-2x.png&quot; /&gt;
+Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyllis known as &quot;a simple, blog aware, static site generator&quot;.
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+If you didn’t understand all of that, that’s fine. Basically Jekyll is a ruby based framework that structures your static website. The benefits of Jekyll are really taking the developers industry by storm. Mainly for its “blog awareness”. Which is a fancy way of saying “It automatically sorts and organizes your blog post in chronological order and even display’s them for you on the main index.html page. Of course there is a lot more to what Jekyll is capable of, but I don’t want to over saturate you with information just yet. Just know that Jekyll makes the process way simpler for you.
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:inline-block;width:336px;height:280px; z-index: 9999;&quot; data-ad-client=&quot;ca-pub-4085915336649467&quot; data-ad-slot=&quot;1120956636&quot;&gt;&lt;/ins&gt;
+
+&lt;h2 style=&quot;text-align: center&quot;&gt; &lt;b&gt; Who is Jekyll for? &lt;/b&gt; &lt;/h2&gt;
+Well as you probably guess Jekyll is tailor made for bloggers. However there are many themes (more on theme’s in the future) that the community have available to suit any needs you would have for a static webpage.
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h2 style=&quot;text-align: center&quot;&gt;&lt;b&gt;So then who isn’t Jekyll for?&amp;gt;&lt;/b&gt;&lt;/h2&gt;
+Like stated above Jekyll is a “static site generator” that means that it really is only for static websites. That means if you have a site that has a user base or you are running an e-commerce site; Jekyll isn’t for you.
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class=&quot;midbreak&quot;&gt;
+&lt;h2 style=&quot;padding: 35px; text-align: center; background-color: black; color: white; box-shadow: 0px 2px 4px 1px grey;&quot;&gt;HOW TO INSTALL JEKYLL&lt;/h2&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h3 class=&quot;steps&quot;&gt;Step 1:&lt;/h3&gt;
+&lt;p&gt; Make sure that you have Ruby installed on your system.&lt;br /&gt;
+If Ruby isn’t installed then you really can’t be installing Ruby gems, now can you?&lt;br /&gt;
+If you find you don’t have it installed here is a great tutorial from the source: &lt;a href=&quot;http://www.tutorialspoint.com/ruby-on-rails/rails-installation.htm&quot;&gt; Install Ruby &lt;/a&gt; If you do have it installed go ahead and move on to the next step. &lt;span class=&quot;blink&quot;&gt;$&lt;/span&gt;&lt;/p&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h3 class=&quot;steps&quot;&gt;Step 2:&lt;/h3&gt;
+&lt;p&gt;Open up your terminal and type in the following command: &lt;span class=&quot;blink&quot;&gt;$&lt;/span&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;All of Jekyll’s gem dependencies are automatically installed by the above command, so you won’t have to worry about them at all. &lt;span class=&quot;blink&quot;&gt;$&lt;/span&gt;&lt;/p&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;h3 class=&quot;steps&quot;&gt;Step 3:&lt;/h3&gt;
+&lt;p&gt;Enjoy Jekyll!&lt;br /&gt;
+Yes, really? &lt;span class=&quot;blink&quot;&gt;$&lt;/span&gt;&lt;/p&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h2 style=&quot;text-align: center&quot;&gt;So now that Jekyll is on your system, I&#39;m assuming you&#39;ll want to make an app and run it.&lt;/h2&gt;
+&lt;img src=&quot;http://designmodo.com/wp-content/uploads/2015/11/02-jekyll-cli-screenshot.jpg&quot; /&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class=&quot;wrapper&quot;&gt;If the directions above seem a little daunting, I&#39;ve gone through the trouble of laying out a little cheat sheet with small explainations of each command.
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;h3 style=&quot;margin-left: 15px; margin-right: 15px;&quot;&gt;Below I’ve compiled a list of common command lines you should familiarize yourself with running Jekyll. Keep in mind that if you want to run your website locally you will need to run a server.&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;h3 class=&quot;steps&quot;&gt;Common Commands&lt;/h3&gt;
+&lt;p&gt;
+$ jekyll new&lt;br /&gt;
+&lt;span class=&quot;terminal-white&quot;&gt;# =&amp;gt; jekyll will create a new web app in the current folder.&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;terminal-white&quot;&gt;# =&amp;gt; make sure to add the name of your project directly after &quot;new&quot;&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+$ jekyll build&lt;br /&gt;
+&lt;span class=&quot;terminal-white&quot;&gt;# =&amp;gt; The current folder will be generated into ./site&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+$ jekyll build --destination &lt;destination&gt;&lt;br /&gt;
+&lt;span class=&quot;terminal-white&quot;&gt;# =&amp;gt; The current folder will be generated into destination &lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+$ jekyll build --source &lt;source /&gt; --destination &lt;destination&gt;&lt;br /&gt;
+&lt;span class=&quot;terminal-white&quot;&gt;# =&amp;gt; The &lt;source /&gt; folder will be generated into destination&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+$ jekyll build --watch&lt;br /&gt;
+&lt;span class=&quot;terminal-white&quot;&gt;# =&amp;gt; The current folder will be generated into ./site,&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;terminal-white&quot;&gt;# =&amp;gt; watched for changes, and regenerated automatically.&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+$ jekyll serve&lt;br /&gt;
+&lt;span class=&quot;terminal-white&quot;&gt;# =&amp;gt; A development server will run at http://localhost:4000/&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;terminal-white&quot;&gt;# Auto-regeneration: enabled. Use `--no-watch` to disable.&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+$ jekyll serve --detach&lt;br /&gt;
+&lt;span class=&quot;terminal-white&quot;&gt;# =&amp;gt; Same as `jekyll serve` but will detach from the current terminal.&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;terminal-white&quot;&gt;#    If you need to kill the server, you can `kill -9 1234` where &quot;1234&quot; is the PID.&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;terminal-white&quot;&gt;#    If you cannot find the PID, then do, `ps aux | grep jekyll` and kill the instance.&lt;/span&gt;
+&lt;br /&gt;
+$ jekyll serve --no-watch&lt;br /&gt;
+&lt;span class=&quot;terminal-white&quot;&gt;# =&amp;gt; Same as `jekyll serve` but will not watch for changes.&lt;/span&gt;
+
+
+&lt;script async=&quot;&quot; src=&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+&lt;!-- jekyll ad --&gt;
+&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:inline-block;width:336px;height:280px&quot; data-ad-client=&quot;ca-pub-4085915336649467&quot; data-ad-slot=&quot;1120956636&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+(adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;
+
+&lt;style&gt;
+p{
+	font-weight: bold;
+	text-align: left;
+	font-size: 20px;
+	padding: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	color: rgba(0, 195, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.9);
+	margin-top: -10px;
+
+}
+p span {
+	color: rgba(255,255,255, 0);
+	background-color: rgba(255,255,255, 0.7);
+}
+a:hover {
+	color: white;
+}
+&lt;/style&gt;
+&lt;/destination&gt;&lt;/destination&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 01 Jun 2016 02:38:05 +0000</pubDate>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/06/01/Jekyll-tutorial-How-to-install-jekyll.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/06/01/Jekyll-tutorial-How-to-install-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Top/Best Comput&lt;wbr&gt;er Langua&lt;wbr&gt;ges to learn in 2016!</title>
+        <description>&lt;div class=&quot;wrapper&quot;&gt;
+Which computer language should I learn for my first Language?
+You&#39;ve gotten bad advice from other sites or no advise at all. I&#39;ll tell you which language is best for YOU.
+&lt;script type=&quot;text/javascript&quot;&gt;
+google_ad_client = &quot;ca-pub-4085915336649467&quot;;
+google_ad_slot = &quot;1120956636&quot;;
+google_ad_width = 336;
+google_ad_height = 280;
+&lt;/script&gt;
+&lt;!-- jekyll ad --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
+&lt;h2&gt;Let me guess...&lt;/h2&gt;
+&lt;p&gt;You did a &lt;span style=&quot;color: blue&quot;&gt;G&lt;/span&gt;&lt;span style=&quot;color: red&quot;&gt;o&lt;/span&gt;&lt;span style=&quot;color: yellow&quot;&gt;o&lt;/span&gt;&lt;span style=&quot;color: blue&quot;&gt;g&lt;/span&gt;&lt;span style=&quot;color: green&quot;&gt;l&lt;/span&gt;&lt;span style=&quot;color: red&quot;&gt;e&lt;/span&gt; search and came up with a bunch of results that either told you there is no wrong answer or to go with a specific programming language. Right? I know, it&#39;s like I&#39;m reading you&#39;re freaking mind. The reason is I too did the google search with the same lack-luster results.&lt;/p&gt;
+&lt;img src=&quot;http://s33.postimg.org/rjty1m5q7/post3google.jpg&quot; /&gt;
+
+&lt;h3&gt;Why is this though?&lt;/h3&gt;&lt;p&gt;Well the reason is really quiet simple and the very reason why I created this site to help newbies. See people who write these articles have been working in the industry for multiple years, how do I know this? Well they showed up in your google results right, did they have a big fancy website....yep, that&#39;s a professional alright! The problem is that they are disconnected to what it means to not only be new to the scene but forgot their are new technologies (languages) that have arrived on the scene that they haven&#39;t even considered. So they are going to tell you the language they learned. Well someones personal favorite language and learning process is like other peoples assholes. You acknowledge they have them but you will always prefer your own. You don&#39;t want someone telling you their &lt;strike&gt;asshole&lt;/strike&gt; preferred language should be the one that you should be interacting with, do you? Seriously, do you?&lt;/p&gt;
+&lt;h3&gt; Of course you dont! Right?&lt;/h3&gt;
+&lt;img src=&quot;http://exiledonline.com/wp-content/uploads/2008/12/computernerd-450x341.jpg&quot; /&gt;
+&lt;blockquote&gt;Do you really want to get your advice from this guy?&lt;/blockquote&gt;
+&lt;p&gt;So there is no one in a better position to tell you what languages are cool, easy to pick up and saturated into the industry that you can find a NEW job faster. Because, well I&#39;m a newbie a long-side of you. &quot;But John, you&#39;re site looks awesome and I found you on google!&quot;. All the more reason to trust my opinion you judgmental prick, you! See, I&#39;m so good at google and research that I am able to have this website up and running and you funnling in here in less than a year of touching my first line of code.&lt;/p&gt;
+&lt;br /&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+google_ad_client = &quot;ca-pub-4085915336649467&quot;;
+google_ad_slot = &quot;1120956636&quot;;
+google_ad_width = 336;
+google_ad_height = 280;
+&lt;/script&gt;
+&lt;!-- jekyll ad --&gt;
+&lt;!-- Google Tag Manager --&gt;
+&lt;noscript&gt;&lt;iframe src=&quot;//www.googletagmanager.com/ns.html?id=GTM-5JC4RX&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+&#39;//www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5JC4RX&#39;);&lt;/script&gt;
+&lt;!-- End Google Tag Manager --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
+&lt;h2 class=&quot;section-heading&quot;&gt;Now that you understand where I coming from and that I&#39;m here to &lt;em&gt;actually&lt;/em&gt; here to help you...&lt;/h2&gt;
+&lt;p&gt;I thought long and hard about what the best medium would be to help you decide what language it is you need to learn for your first language.&lt;em&gt;Yes, I said &lt;b&gt;&quot;Need&quot;&lt;/b&gt; because there is definitely a right and wrong answer here, it just needs to be tailored to you.&lt;/em&gt;&lt;/p&gt;
+&lt;img src=&quot;http://gloriumtech.com/blog/wp-content/uploads/2015/01/coolv-moss-mh-round-2500x1443.jpg&quot; /&gt;
+&lt;p&gt;Then, I had a thought. I had always been interested in technology and computers, and I had always wanted to learn to code, even bought a book or two, but I never had the time to commit to such an eguasting ciriculum. &lt;/p&gt;
+&lt;h3 style=&quot;line-height: 0&quot;&gt;So what&#39;s the medium?&lt;/h3&gt;
+&lt;br /&gt;
+&lt;p style=&quot;line-height: 0&quot;&gt;What better than a graphical flow chart?&lt;p&gt;
+&lt;br /&gt;
+&lt;h6 style=&quot;line-height: 0&quot;&gt;What are you waiting for; get &quot;interacting&quot;&lt;/h6&gt;
+&lt;br /&gt;
+&lt;img src=&quot;http://s33.postimg.org/4yjeqyav3/infograph.jpg&quot; /&gt;
+&lt;/p&gt;&lt;/p&gt;&lt;/div&gt;
+</description>
+        <pubDate>Tue, 31 May 2016 18:36:05 +0000</pubDate>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/05/31/Top-Programming-languages-to-learn-in-2015.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/05/31/Top-Programming-languages-to-learn-in-2015.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;div class=&quot;wrapper&quot; style=&quot;background-color: white;&quot;&gt;
+&lt;h2&gt;Hi Folks!&lt;/h2&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+You guessed it! This site is running Jekyll. Yes, that also means I&#39;m running off of githubs very own servers...which I happen to think is pretty cool! Anyways thought I would just share that tid-bit with you as you may see some upcoming posts that talk about Jekyll. If you&#39;re lucky I may even do a tutorial or two. As for now I&#39;m still figuring it out, but so far it&#39;s a blast!
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h3&gt;Below you&#39;ll find what greats you as your first post in Jekyll:&lt;/h3&gt;
+
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+Jekyll also offers powerful support for code snippets:
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: http://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 21 May 2016 03:08:05 +0000</pubDate>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/05/21/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/05/21/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Top 5 Sites to learn Web Develop&lt;wbr&gt;ment</title>
+        <description>&lt;!-- End Google Tag Manager --&gt;
+&lt;p&gt;First off let me preface this by saying this list applies to Web Development since I happen to have the most experience in this area and feel comfortable explaining the landscape of said programming avenue and the best places to pick up the knowledge base fairly quickly and easily.&lt;/p&gt;
+&lt;p&gt;Okay, you still here? Great! So I&#39;m assuming you are looking for starting or adding to a career in Web Development. First lets get the &lt;b&gt;What&lt;/b&gt; of &quot;What you need to learn&quot;. Web Development is a vast enterprise, with the advent of mobile devices and the capability of being able to access the internet from a multitude of device from a multitude of places the need for web developers, and good one&#39;s at that, are in HIGH demand. So what is Web development? First and foremost there are two kinds of web developers. Front End and Back End. Then there is a third mysterious and some believe to be a myth the &quot;Full Stack&quot; Developer. (this just means someone does front end and back end development).&lt;/p&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h2&gt;Front end &lt;/h2&gt;
+&lt;p&gt;Front end is the look and feel of a website or web app. They design how the website functions and looks. This is also sometimes referred to as a UX/UI Designer which stands for &quot;User Experience/User Interface&quot;. So what languages do you need to know to become a Front end developer? Well typically you will need to know HTML, CSS, JavaScript, jQuery and most likely bootstrap. I know, this all sounds daunting at the moment but it really is a lot less than you think. HTML and CSS are really more of laying out and styling a website. JavaScript animates the website and jQuery is what is known as a &quot;framework&quot; of JavaScript. Bootstrap is a in a way a framework of CSS but CSS is not referred to as a language. Confused yet. Well the best way to make sense is to dive right in the learning pool and it will all make sense soon.&lt;/p&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h2&gt;Back end&lt;/h2&gt;
+&lt;p&gt;Back end is how a website functions and handles data. This is a little more advanced stuff and you need a robust language to handle these tasks in a webpage. Thus it should be noted that one must learn, or at least highly encouraged to learn it first. These technologies require a full fledge language. There are a few standouts in today&#39;s development enviroment and I&#39;ll do my best to cover those so their not confusing. Ruby, JavaScript, Ruby on Rails, Python, PHP. Of course there are a lot more than this but these are some of the current most popular languages at writing this with JavaScript being the most popular by far. &quot;But wait, I thought JavaScript was for Front End&quot;. Well, yes it is, it&#39;s also a great little language for backend as well. This may be why it&#39;s popularity is so high currently. Many believe for this reason that JavaScript should be the first language you learn. I tend to agree with that for the most part but found Ruby really spoke to me and so I learned that as my first language. However the important part is to pick a language and learn it all the way through. Once you learn a language all the way through the difference between other language basically comes down to syntax and you can usually pick up a new language fairly easily after that.&lt;/p&gt;
+&lt;h3&gt;Okay, now that you&#39;re up to speed, here are the...&lt;/h3&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;article&gt;
+
+                &lt;!-- CODE CADEMY --&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;h1&gt;&lt;a href=&quot;codecademy.com&quot;&gt;Codecademy.com&lt;/a&gt;&lt;/h1&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+                &lt;p&gt;You may or may not have heard of this site before, if you haven&#39;t then you are surely not researching enough.&lt;/p&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+                &lt;p&gt;&lt;a href=&quot;Codecademy.com&quot;&gt;Codecademy.com&lt;/a&gt; is pretty much an standard for developers to recommend to new budding web developers. Why is it recommended so much? Well for starters it&#39;s free. That is if you don&#39;t require access to quizes and other perks like projects and a personal interview to set up your &quot;path&quot;. They cover everything from HTML basics to advanced SQL and Ruby. The user interface is clean, interactive and does a good job of giving you an idea of how to write code in a text editor. You pass levels by making your code pass as they teach you bits of the syntax and language basics along the way.&lt;/p&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;h3&gt;So what&#39;s the downsides?&lt;/h3&gt;
+                &lt;p&gt;Of course there are downsides, take this as a hint that the rest of this post is going to be exploring the positives and negatives as nothing in life is as cut and dry as &quot;it&#39;s perfect cuz its on my top 10&quot;.&lt;/p&gt;
+                &lt;h2 class=&quot;section-heading&quot;&gt;&quot;It&#39;s a closed ecosystem&quot;&lt;/h2&gt;
+                &lt;p&gt;A lot of programmers that recommend CodeCademy also warn that it is a closed ecosystem and you should most certaintly augment the learning experience with the actual text editors and terminals that they are trying to reproduce in a browser enviroment. So what do they mean by this? Well, the text editor on the CodeCademy website is upholdent to the coders behind it. They do their best to think of every situation but at the end of the day the text editor is an interpretation of an actual text editor.&lt;/p&gt;
+                &lt;blockquote&gt;In fifteen years we&#39;ll be teaching programming just like reading and writing...and wondering why we didn&#39;t do it sooner. -Mark Zuckerburg.&lt;/blockquote&gt;
+                &lt;!--Code Cademy End --&gt;
+                &lt;!-- Freecodecamp Start --&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;hr /&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;h1&gt; &lt;a href=&quot;https://www.freecodecamp.com&quot;&gt; FreeCodeCamp.com&lt;/a&gt;&lt;/h1&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+                &lt;p&gt;&lt;a href=&quot;https://www.freecodecamp.com&quot;&gt;Freecodecamp.com&lt;/a&gt; is an open source community that helps you learn. Work through self paced coding challenges, build projects and earn actual certificates. Free Code Camp also has active groups within your city and connects you so that you can pair program together. So why is this #2 on the list behind Code Cademy? Well the short answer is that Code Cademy has a proven track record. Free Code Camp is new on the scene. Although they offer a unique platform coupled with pair programing, certificates and actual projects where you gain experience and add to your resume and portfolio by coding for non-profit organizations, it&#39;s fairly new to the scene. It still has yet to prove itself in terms of whether or not potential employers will know or even acknowledge FreeCodeCamp.com as an industry preparer.&lt;p&gt;
+                &lt;h2 class=&quot;section-heading&quot;&gt;&quot;You get a certificate!&quot;&lt;/h2&gt;
+                &lt;p&gt;Free Code Camp is not easy or something you can finish in a weekend. They have 3 categories or paths that you can take. Front End, Data Wiz &amp;amp; Back End. Or you can choose to do all three. t takes about 2,080 hours to earn all four of our certifications. This translates into one year of full-time coding. That is no joke. Rest assured if you complete this course you can code in your sleep&lt;/p&gt;
+                &lt;!-- Freecodecamp End --&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;hr /&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;!-- Learn how to Program Start --&gt;                
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;h1&gt;&lt;a href=&quot;learnhowtoprogram.com&quot;&gt; LearnHowToProgram.com&lt;/a&gt;&lt;/h1&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;span style=&quot;font-style: italic; color: grey&quot;&gt;&quot;Free&quot; more on that in a bit. Taking the bootcamp curriculum and bringing it online for free. &lt;/span&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;p&gt;&lt;a href=&quot;http://wwww.learnhowtoprogram.com&quot;&gt;LearnHowToProgram.com&lt;/a&gt; is a little bit different. In what way you ask? Learnhowtoprogram.com is also a for profit bootcamp located in Portland Oregon and Seattle Washington that goes by the name &lt;a href=&quot;http://www.epicodus.com/&quot;&gt;Epicodus&lt;/a&gt; However they offer their exact curriculum online...for free! Of course the bootcamp is the way to go if you can. The reason is you have a team of teachers walking you through those inevitable sticky situations that you encounter in learning to program. However for those that can&#39;t dedicate the time and money to a dedicated bootcamp, LearnHowtoProgram.com is a respectable option. &lt;/p&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;h2 class=&quot;section-heading&quot;&gt;&quot;Internship is part of the process&quot;&lt;/h2&gt;
+                &lt;p&gt;One thing that has seperated Epicodus from other bootcamps was the process of gaining hands on experience through an internship. While Learnhowtoprogram.com has an internship, again you don&#39;t have anyone helping you set it up you do however get a internship and job search&lt;/p&gt;
+                &lt;h3&gt;So what&#39;s the downsides?&lt;/h3&gt;
+                &lt;p&gt;You&#39;re on your own. Then again, so are you with the above options however you can google search when you get stuck on the rest of those. With epicodus/learnhowtoprogram.com being so obscure you are probably not going to find what you are looking for.&lt;/p&gt;
+                &lt;!-- Learn how to program End --&gt;
+                &lt;!-- Treehouse Start --&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;hr /&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;h1&gt;
+                &lt;a href=&quot;https://teamtreehouse.com/join/free-trial-2016?utm_source=google&amp;amp;campaign=105062766&amp;amp;utm_term=&amp;amp;cid=1027&amp;amp;gclid=CjwKEAjw6sC5BRCogcaY_dKZ2nESJABsZihxtpDbbYeJOVW9TJFLj7NMujQW-8sWTKkjIgcN7AHFjBoCxn3w_wcB&quot;&gt; TeamTreeHouse.com&lt;/a&gt;&lt;/h1&gt;
+
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+                &lt;span class=&quot;caption text-muted&quot;&gt;Treehouse is an online technology school that offers beginner to advanced courses in web design, web development, mobile development and game development taught by a team of expert teachers.&lt;/span&gt;
+                &lt;p&gt;&lt;a href=&quot;https://teamtreehouse.com/join/free-trial-2016?utm_source=google&amp;amp;campaign=105062766&amp;amp;utm_term=&amp;amp;cid=1027&amp;amp;gclid=CjwKEAjw6sC5BRCogcaY_dKZ2nESJABsZihxtpDbbYeJOVW9TJFLj7NMujQW-8sWTKkjIgcN7AHFjBoCxn3w_wcB&quot;&gt;TeamTreeHouse.com&lt;/a&gt;.&lt;/p&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;    
+                &lt;p&gt;Up until now are list has consisted of free options, with Team Tree House however they offer two packages. The first of which they aptly name their &quot;Basic&quot; plan which gives you access to 1000+ videos and projects, the ability to practice live coding with their &quot;Engine&quot; and access to their online members-only community. Comes in at $25/month. The next option is $49/month and gives you access to all the latter option but also throws in access to video&#39;s or as they put it &quot;talks&quot; from industry leaders and &quot;bonus material&quot;. For double the price I would go for the $25/month option and if you feel limited by it&#39;s offerings than I would upgrade. However they do offer a Free trial, so there&#39;s that. &lt;/p&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;h2 class=&quot;section-heading&quot;&gt;Why it&#39;s on this list&lt;/h2&gt;
+                &lt;p&gt;For lot&#39;s of reasons really. It&#39;s a solid, well built platform that delivers the goods. It&#39;s recognized by industry leaders and the reviewers are really good. They also have awesome teachers and videos that can walk through the novice to expert through any situation and make it understandable to the intended audience. It really is that you only get this kind of quality with something you pay for.&lt;/p&gt;
+                &lt;h3&gt;So what&#39;s the downsides?&lt;/h3&gt;
+                &lt;p&gt;For starters it&#39;s not accredited, which isn&#39;t a big deal just something that I should let you know given that it is a prduct you are paying for. Which leads me to the next downside, it&#39;s a paid platform. No it&#39;s not free but sometimes you get what you pay for.&lt;/p&gt;
+
+                &lt;!-- Treehouse End --&gt;
+                &lt;!-- Coursera Start --&gt;
+                &lt;script type=&quot;text/javascript&quot;&gt;
+                google_ad_client = &quot;ca-pub-4085915336649467&quot;;
+                google_ad_slot = &quot;1120956636&quot;;
+                google_ad_width = 336;
+                google_ad_height = 280;
+                &lt;/script&gt;
+                &lt;!-- jekyll ad --&gt;
+                &lt;script type=&quot;text/javascript&quot; src=&quot;//pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+                &lt;/script&gt;
+                &lt;hr /&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;h1&gt;&lt;a href=&quot;https://www.coursera.org/&quot;&gt; Coursera.org&lt;/a&gt;&lt;/h1&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;span class=&quot;caption text-muted&quot;&gt;Coursera is a venture-backed, for-profit, educational technology company that offers massive open online courses.&lt;/span&gt;
+                &lt;p&gt;&lt;a href=&quot;https://teamtreehouse.com/join/free-trial-2016?utm_source=google&amp;amp;campaign=105062766&amp;amp;utm_term=&amp;amp;cid=1027&amp;amp;gclid=CjwKEAjw6sC5BRCogcaY_dKZ2nESJABsZihxtpDbbYeJOVW9TJFLj7NMujQW-8sWTKkjIgcN7AHFjBoCxn3w_wcB&quot;&gt;Coursera.org&lt;/a&gt; How does being taught to code from some of the top schools in the nation like John Hopkins, Duke, University of Michigan, University of San Diego, Penn State and even Standford sound? Amazing right. Enter stage right; Coursera.org. Coursera is a for profit online resource that offers, you guessed it, courses on all things computer scienc(y). Each course is offered and you get a certificate stating that you have finished the course. Just like traditional school, there will be test. They even offer a lot of courses for free but eventually you&#39;ll run into one you&#39;ll have to pay for. This really is a great resource I can&#39;t recommend enough.&lt;/p&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+                &lt;!-- Coursera End --&gt;
+
+
+                &lt;ul class=&quot;pager&quot;&gt;
+                     &lt;li class=&quot;next&quot;&gt;
+                         &lt;a href=&quot;#&quot;&gt;Next Artical &amp;rarr;&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+                &amp;lt;/article&amp;gt;
+
+&lt;style&gt;
+p {
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 3vw;
+}
+article {
+  background-color: white;
+  padding: 25px;
+}
+
+img {
+  max-width: 800px;
+}
+&lt;/style&gt;
+&lt;/p&gt;&lt;/p&gt;&lt;/article&gt;
+</description>
+        <pubDate>Tue, 10 May 2016 19:13:05 +0000</pubDate>
+        <link>http://TheCodersBrain.com/jekyll/update/2016/05/10/Top-5-online-sites-for-learning-web-development.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/05/10/Top-5-online-sites-for-learning-web-development.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>One small step...or giant leap?</title>
+        <description>&lt;!-- Google Tag Manager --&gt;
+&lt;noscript&gt;&lt;iframe src=&quot;//www.googletagmanager.com/ns.html?id=GTM-5JC4RX&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+&#39;//www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5JC4RX&#39;);&lt;/script&gt;
+
+&lt;!-- End Google Tag Manager --&gt;
+&lt;div class=&quot;wrapper&quot;&gt;
+It&#39;s never easy to do something new, at least not when you&#39;ve been doing &#39;mundane&#39; for the past six or so years; is it time to do something insane? Should I take the leap to learn something completely new this late in the game, (I&#39;m nearly 30 btw) or is it a chance to rediscover what I&#39;m capable of?
+
+Let me back up for a minute. My name is John and I&#39;m starting this blog nearly 4 months into my Web Development career, or at the very least what i hope is my Web Development career. Why four months in? Well to be frank, I didn&#39;t even know how to write a web page 4 months ago. I came from zero code experience. I know, right? Insane. Why, you ask again? (Geez you are a curious one.) Well I lost my job. Yep, I got laid off...after 6 years with the company. This devastated me to say the least. I just became a father 3 months prior, just purchased a new car and was looking at purchasing my first home. So what now?
+
+Well it was time to find another job right? Hopefully one that wasn&#39;t 2 hours away from me since I had a baby girl at home that I intended on spending every second I could. So I dusted off my resume and hit the job market with tenacity and to my amazement landed a job working in a similar field. (Real Estate). I was doing the analytical side before but I knew how the system worked. This time I was a Loan Officer but I &lt;strong&gt;hated&lt;/strong&gt; it. I hated the people, I hated the atmosphere, I hated it all. Then, just like that i was laid off. I realized that I needed to work for someone or some company that gave me meaning, that used my brain, that wasn&#39;t an office full of postmenopausal women that we&#39;re clearly not morning people. I wanted to work for a &lt;em&gt;.com&lt;/em&gt; again.
+
+I&#39;d always see the developers whenever I&#39;d go to the break room or on my way to the bathroom, they looked like a different company, they had fun stuff on the walls, got to work with big shiny iMacs that made my clunky windows computer look like your last choice for prom date. I envied every part of what they had. They didn&#39;t have to be quiet, they didn&#39;t have to wear &lt;em&gt;business casual&lt;/em&gt; to the office. I wanted that, but I had a good job, actually a great job, and learning to code is so hard I&#39;d never grasp something that difficult this late in my life. That time was over. This was my mentality, before I got laid off and then laid off again. Something was telling me that this was not the field for me.
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;h2&gt;So I&#39;m unemployed, what now?&lt;/h2&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+I was defeated. The white flag was waving, the towel had been thrown in.
+
+Then, I had a thought. I had always been interested in technology and computers, and I had always wanted to learn to code, even bought a book or two, but I never had the time to commit to such an exhausting curriculum.
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;blockquote&gt; I think everyone should learn how to program a computer, because it teaches you how to think.  -Steve Jobs&lt;/blockquote&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+It was a risk but I cashed in my 401k filed for unemployment and set the goal of being a full stack web developer in 4 months.
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;h2&gt;Writing my first line of code.&lt;/h2&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+It&#39;s hard to believe how far I&#39;ve come in just 2 1/2 months but this was my first line of coding. It doesn&#39;t look like much but it was enough to ignite the spark in me to find my love for coding.
+
+&lt;img src=&quot;http://s32.postimg.org/u71twru6d/firstcode.png&quot; /&gt;
+
+&lt;span class=&quot;caption text-muted&quot;&gt;In fifteen years we&#39;ll be teaching programming just like reading and writing...and wondering why we didn&#39;t do it sooner. -Mark Zuckerburg.&lt;/span&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 20 Nov 2015 19:13:05 +0000</pubDate>
+        <link>http://TheCodersBrain.com/jekyll/update/2015/11/20/I-wrote-my-first-line-of-code.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2015/11/20/I-wrote-my-first-line-of-code.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
