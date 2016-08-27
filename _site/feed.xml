@@ -6,9 +6,54 @@
 </description>
     <link>http://TheCodersBrain.com/</link>
     <atom:link href="http://TheCodersBrain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 25 Aug 2016 23:47:47 +0000</pubDate>
-    <lastBuildDate>Thu, 25 Aug 2016 23:47:47 +0000</lastBuildDate>
+    <pubDate>Sat, 27 Aug 2016 06:49:15 +0000</pubDate>
+    <lastBuildDate>Sat, 27 Aug 2016 06:49:15 +0000</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>What is an HTML framer?</title>
+        <description>&lt;div class=&quot;wrapper&quot; style=&quot;padding: 15px&quot;&gt;
+&lt;h1&gt;What is an HTML framing Tool?&lt;/h1&gt;
+&lt;br /&gt;
+&lt;p&gt;An HTML framing Tool is a web developer tool that automatically structures your HTML based on a few clicks for when you are starting a new page. The point of an HTML framing tool is to cut down on initial start time when coding a new webpage as well as to make sure all your links and scripts to CDN&#39;s and libraries are valid and in the correct loading order&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Today I woke up and had the idea for this web application and decided what the heck! Check it out, give it a go, let me know what you think!&lt;/p&gt;
+&lt;br /&gt;
+&lt;a href=&quot;templ8/index.html&quot;&gt;&lt;button&gt;Visit Templ8&lt;/button&gt;&lt;/a&gt;
+
+&lt;style&gt;
+  button {
+    padding: 15px 40px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    margin-left: 50%;
+    right: 100px;
+
+  }
+
+  button:hover {
+    background-color: darkorange;
+  }
+&lt;/style&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 26 Aug 2016 21:38:05 +0000</pubDate>
+        <link>http://TheCodersBrain.com/tutorial/web/development/2016/08/26/What_is_an_HTML_framer.html</link>
+        <guid isPermaLink="true">http://TheCodersBrain.com/tutorial/web/development/2016/08/26/What_is_an_HTML_framer.html</guid>
+        
+        
+        <category>tutorial</category>
+        
+        <category>web</category>
+        
+        <category>development</category>
+        
+      </item>
     
       <item>
         <title>How to add a Carousel to your website.</title>
@@ -1964,66 +2009,6 @@ img {
         <pubDate>Tue, 10 May 2016 19:13:05 +0000</pubDate>
         <link>http://TheCodersBrain.com/jekyll/update/2016/05/10/Top-5-online-sites-for-learning-web-development.html</link>
         <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2016/05/10/Top-5-online-sites-for-learning-web-development.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>One small step...or giant leap?</title>
-        <description>&lt;!-- Google Tag Manager --&gt;
-&lt;noscript&gt;&lt;iframe src=&quot;//www.googletagmanager.com/ns.html?id=GTM-5JC4RX&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
-&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
-new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
-&#39;//www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5JC4RX&#39;);&lt;/script&gt;
-
-&lt;!-- End Google Tag Manager --&gt;
-&lt;div class=&quot;wrapper&quot;&gt;
-It&#39;s never easy to do something new, at least not when you&#39;ve been doing &#39;mundane&#39; for the past six or so years; is it time to do something insane? Should I take the leap to learn something completely new this late in the game, (I&#39;m nearly 30 btw) or is it a chance to rediscover what I&#39;m capable of?
-
-Let me back up for a minute. My name is John and I&#39;m starting this blog nearly 4 months into my Web Development career, or at the very least what i hope is my Web Development career. Why four months in? Well to be frank, I didn&#39;t even know how to write a web page 4 months ago. I came from zero code experience. I know, right? Insane. Why, you ask again? (Geez you are a curious one.) Well I lost my job. Yep, I got laid off...after 6 years with the company. This devastated me to say the least. I just became a father 3 months prior, just purchased a new car and was looking at purchasing my first home. So what now?
-
-Well it was time to find another job right? Hopefully one that wasn&#39;t 2 hours away from me since I had a baby girl at home that I intended on spending every second I could. So I dusted off my resume and hit the job market with tenacity and to my amazement landed a job working in a similar field. (Real Estate). I was doing the analytical side before but I knew how the system worked. This time I was a Loan Officer but I &lt;strong&gt;hated&lt;/strong&gt; it. I hated the people, I hated the atmosphere, I hated it all. Then, just like that i was laid off. I realized that I needed to work for someone or some company that gave me meaning, that used my brain, that wasn&#39;t an office full of postmenopausal women that we&#39;re clearly not morning people. I wanted to work for a &lt;em&gt;.com&lt;/em&gt; again.
-
-I&#39;d always see the developers whenever I&#39;d go to the break room or on my way to the bathroom, they looked like a different company, they had fun stuff on the walls, got to work with big shiny iMacs that made my clunky windows computer look like your last choice for prom date. I envied every part of what they had. They didn&#39;t have to be quiet, they didn&#39;t have to wear &lt;em&gt;business casual&lt;/em&gt; to the office. I wanted that, but I had a good job, actually a great job, and learning to code is so hard I&#39;d never grasp something that difficult this late in my life. That time was over. This was my mentality, before I got laid off and then laid off again. Something was telling me that this was not the field for me.
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-
-&lt;h2&gt;So I&#39;m unemployed, what now?&lt;/h2&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-
-I was defeated. The white flag was waving, the towel had been thrown in.
-
-Then, I had a thought. I had always been interested in technology and computers, and I had always wanted to learn to code, even bought a book or two, but I never had the time to commit to such an exhausting curriculum.
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-
-&lt;blockquote&gt; I think everyone should learn how to program a computer, because it teaches you how to think.  -Steve Jobs&lt;/blockquote&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-
-It was a risk but I cashed in my 401k filed for unemployment and set the goal of being a full stack web developer in 4 months.
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;h2&gt;Writing my first line of code.&lt;/h2&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-It&#39;s hard to believe how far I&#39;ve come in just 2 1/2 months but this was my first line of coding. It doesn&#39;t look like much but it was enough to ignite the spark in me to find my love for coding.
-
-&lt;img src=&quot;http://s32.postimg.org/u71twru6d/firstcode.png&quot; /&gt;
-
-&lt;span class=&quot;caption text-muted&quot;&gt;In fifteen years we&#39;ll be teaching programming just like reading and writing...and wondering why we didn&#39;t do it sooner. -Mark Zuckerburg.&lt;/span&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 20 Nov 2015 19:13:05 +0000</pubDate>
-        <link>http://TheCodersBrain.com/jekyll/update/2015/11/20/I-wrote-my-first-line-of-code.html</link>
-        <guid isPermaLink="true">http://TheCodersBrain.com/jekyll/update/2015/11/20/I-wrote-my-first-line-of-code.html</guid>
         
         
         <category>jekyll</category>

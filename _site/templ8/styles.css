@@ -1,0 +1,160 @@
+  body {
+    min-height: 2000px;
+    text-align: center;
+    padding: 35px;
+    padding-top: 0px;
+    font-family: 'Space Mono', monospace;
+    background: rgba(191, 185, 61, 1);
+          background: -moz-linear-gradient(45deg,
+            rgba(191, 185, 61, 1) 0%,
+            rgba(203, 138, 48, 1) 39%,
+            rgba(217, 80, 31, 0.86) 87%,
+            rgba(217, 80, 31, 0.85) 91%);
+          background: -webkit-gradient(left bottom,
+            right top,
+            color-stop(0%,  rgba(191, 185, 61, 1)),
+            color-stop(39%, rgba(203, 138, 48, 1)),
+            color-stop(87%, rgba(217, 80, 31, 0.86)),
+            color-stop(91%, rgba(217, 80, 31, 0.85)));
+          background: -webkit-linear-gradient(45deg,
+            rgba(191, 185, 61, 1) 0%,
+            rgba(203, 138, 48, 1) 39%,
+            rgba(217, 80, 31, 0.86) 87%,
+            rgba(217, 80, 31, 0.85) 91%);
+          background: -o-linear-gradient(45deg,
+            rgba(191, 185, 61, 1) 0%,
+            rgba(203, 138, 48, 1) 39%,
+            rgba(217, 80, 31, 0.86) 87%,
+            rgba(217, 80, 31, 0.85) 91%);
+          background: -ms-linear-gradient(45deg,
+            rgba(191, 185, 61, 1) 0%,
+            rgba(203, 138, 48, 1) 39%,
+            rgba(217, 80, 31, 0.86) 87%,
+            rgba(217, 80, 31, 0.85) 91%);
+          background: linear-gradient
+          (45deg,
+            rgba(191, 185, 61, 1) 0%,
+            rgba(203, 138, 48, 1) 39%,
+            rgba(217, 80, 31, 0.86) 87%,
+            rgba(217, 80, 31, 0.85) 91%);
+          filter: progid: DXImageTransform.Microsoft.gradient
+          ( startColorstr='#bfb93d',
+          endColorstr='#d9501f',
+          GradientType=1);
+  }
+
+  h1 {
+    font-size: 50px;
+    color: lightgrey;
+    font-weight: 100;
+
+  }
+
+  h1 span {
+    color: darkorange;
+    text-shadow: 2px 2px 3px grey;
+  }
+
+  .container {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 500px;
+    margin: 0px 10%;
+    border-radius: 15px;
+    padding: 15px;
+
+  }
+  code,
+  h5 {
+    color: green;
+    font-size: 13px;
+    text-align: left;
+    display: inline;
+  }
+
+  .language-markup {
+    text-align: left;
+  }
+
+  .button1,
+  button {
+    background-color: transparent;
+    padding: 20px 40px;
+    width: 170px;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition: all ease-in-out 300ms;
+    margin-bottom: 10px;
+
+  }
+
+  @media screen and (max-width: 900px) {
+
+    .container {
+        width: screen;
+        margin: 0px 0%;
+        padding: 0px;
+    }
+
+    body {
+      padding: 0px;
+    }
+
+  }
+  button1:hover,
+  button:hover {
+    background-color: rgba(100, 100, 100, 0.5);
+    color: green;
+  }
+
+  button:active {
+    background-color: rgba(0, 0, 0, 0.5);
+
+  }
+
+  input {
+    width: 100%;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 5px 5px 0px 0px;
+    border: 3px solid white;
+    text-align: center;
+    color: lightgrey;
+    text-transform: uppercase;
+  }
+
+  input:focus,
+  button:focus {
+    outline:none;
+  }
+  input:active,
+  button:active {
+    outline:none;
+  }
+  input:hover {
+    background-color: lightgrey;
+    color: white;
+    border: 3px solid lightgrey;
+  }
+
+  .button2 {
+    background-color: grey;
+    color: green;
+    border: 5px solid grey;
+  }
+  .button2:hover {
+    background-color: grey;
+    color: green;
+    border: 5px solid grey;
+  }
+
+  #addRemoveButton {
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: grey;
+    border: 5px solid grey;
+    color: green;
+
+  }
