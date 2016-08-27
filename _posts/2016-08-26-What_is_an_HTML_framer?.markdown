@@ -17,7 +17,7 @@ baseurl: templ8
 <br>
 <p>Today I woke up and had the idea for this web application and decided what the heck! Check it out, give it a go, let me know what you think!</p>
 <br>
-<img src="img/htmlframer.gif">
+<img src="http://i.makeagif.com/media/8-27-2016/yK6g43.gif">
 <br>
 <a href="http://johncossack.com/templ8/index.html"><button>Visit Templ8</button></a>
 
